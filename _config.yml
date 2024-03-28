@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-remote_theme             : "petterobam/brands-website-tpl@master"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0" # "petterobam/brands-website-tpl@master"
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -14,7 +14,7 @@ locale                   : "en-US"
 title                    : "Zero2You Studio"
 title_separator          : "-"
 subtitle                 : "无何有工作室 #开发有意思的产品"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
+name                     : &name "Petterobam" # &name is a YAML anchor which can be *referenced later
 description              : &description "Zero2You Studio is committed to developing interesting products. The meaning of life is to have fun, have fun, and damn well have fun."
 url                      : https://www.zero2you.tech # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
