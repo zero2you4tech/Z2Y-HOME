@@ -10,7 +10,7 @@ remote_theme             : "petterobam/brands-website-tpl@master" # "mmistakes/m
 minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN" #"en-US"
 title                    : "Zero2You Studio"
 title_separator          : "-"
 subtitle                 : "我们致力于开发有有意思的产品～"
