@@ -3,8 +3,7 @@ _site
 .jekyll-metadata
 .project
 *.log
-ITStory/install-index.bat
-ITStory/install-index/
 vendor/**
 .bundle/*
 *.out
+Gemfile.lock
