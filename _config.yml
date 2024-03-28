@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark
 locale                   : "en-US"
 title                    : "Zero2You Studio"
 title_separator          : "-"
-subtitle                 : "无何有工作室 #开发有意思的产品"
+subtitle                 : "我们致力于开发有有意思的产品～"
 name                     : &name "Petterobam" # &name is a YAML anchor which can be *referenced later
 description              : &description "Zero2You Studio is committed to developing interesting products. The meaning of life is to have fun, have fun, and damn well have fun."
 url                      : https://www.zero2you.tech # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -102,9 +102,9 @@ author:
   bio              : "Zero2You Studio is committed to developing interesting products. The meaning of life is to have fun, have fun, and damn well have fun."
   location         : "Hangzhou, China"
   links:
-    - label: "Made Mistakes"
+    - label: "Zero2You Studio"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
+      url: "https://www.zero2you.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/petter449047746"
@@ -113,7 +113,7 @@ author:
       url: "https://github.com/zero2you4tech"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://instagram.com/zero2you4tech"
 
 
 # Site Footer
@@ -121,10 +121,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/petter449047746"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/zero2you4tech"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/zero2you4tech"
