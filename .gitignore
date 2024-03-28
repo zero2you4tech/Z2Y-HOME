@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-metadata
+.project
+*.log
+ITStory/install-index.bat
+ITStory/install-index/
+vendor/**
+.bundle/*
+*.out
