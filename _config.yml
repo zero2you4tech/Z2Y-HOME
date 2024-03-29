@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark
 locale                   : "zh-CN" #"en-US"
 title                    : "Zero2You Studio"
 title_separator          : "-"
-subtitle                 : "我们致力于开发有有意思的产品～"
+subtitle                 : "我们致力于开发有有意思的产品٩(•̤̀ᵕ•̤́๑)"
 name                     : &name "Petterobam" # &name is a YAML anchor which can be *referenced later
 description              : &description "Zero2You Studio is committed to developing interesting products. The meaning of life is to have fun, have fun, and damn well have fun."
 url                      : https://www.zero2you.tech # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

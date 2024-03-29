@@ -10,9 +10,9 @@ header:
     - label: "<i class='fas fa-download'></i> Install now（现在安装）"
       url: "https://github.com/zero2you4tech"
 excerpt: >
-  人生的意义就是整活、整活，疯狂整活。<br/> 
+  人生意义就是整活、整活，疯狂整活<br/> 
   <small style="font-size:12px;">
-  The meaning of life is to have fun, have fun, and have fun wildly.</small>
+  The life is to have fun, have fun, and have fun wildly.</small>
 feature_row:
   - image_path: /assets/apps/Z2Y/logo.png
     alt: "Z2Y E&M"
@@ -73,7 +73,7 @@ feature_row:
   - image_path: /assets/apps/Z2Y-AC/logo.png
     alt: "Z2Y 天问: Ask Change"
     tags: ["iOS", "free"]
-    title: "Z2Y 天问 | iOS | free"
+    title: "Z2Y 天问"
     excerpt: " 从变化中寻找信念、获取勇气 #游戏 <br/> Ask Change: Find beliefs and gather courage."
     url: "https://github.com/zero2you4tech/Z2Y-AC"
     btn_class: "btn--primary"
