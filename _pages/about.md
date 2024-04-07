@@ -16,8 +16,6 @@ last_modified_at: 2024-01-27T11:59:26-04:00
 toc: false
 ---
 
-工作室首页： [Zero2You Studio ｜ 无何有工作室](https://www.zero2you.tech)
-
 无何有工作室致力于开发有意思的产品。
 
 We are committed to developing interesting products.
