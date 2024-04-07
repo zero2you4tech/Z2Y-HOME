@@ -21,14 +21,14 @@ foo:
 # main links
 main:
   - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
+    url: "https://z2y-zh.zero2you.tech/" # /docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  - title: "Privacy Policy"
     url: /terms/
 
 
