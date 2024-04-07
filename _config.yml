@@ -98,17 +98,23 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/logo.jpg"
-  bio              : "Zero2You Studio is committed to developing interesting products. The meaning of life is to have fun, have fun, and damn well have fun."
+  avatar           : "/assets/images/author.jpeg"
+  bio              : "一段代码，一个故事。<br/> A piece of code, a story."
   location         : "Hangzhou, China"
   links:
-    - label: "Zero2You Studio"
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
-      url: "https://www.zero2you.tech"
+      url: "https://www.petterobam.cn/"
+    - label: "Blog(Studio)"
+      icon: "fas fa-fw fa-link"
+      url: "https://z2y-zh.zero2you.tech/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/petter449047746"
     - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/petterobam"
+    - label: "GitHub(Studio)"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zero2you4tech"
     - label: "Instagram"

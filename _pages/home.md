@@ -27,7 +27,7 @@ feature_row:
     title: "Z2Y AI + Prompt 管理"
     tags: ["Mac", "free"]
     excerpt: "本地或远程 AI + Prompt 管理 <br/> Local&Remote AI + Prompt Management."
-    url: ""
+    url: "https://apps.apple.com/cn/app/z2y-ai-manager/id6479319882?mt=12"
     btn_class: "btn--primary"
     btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
   - image_path: /assets/apps/Z2Y-RM/logo.png
@@ -66,7 +66,7 @@ feature_row:
     alt: "Z2Y Book4?"
     title: "Z2Y Book4?: 文档集成"
     tags: ["Mac", "free"]
-    excerpt: " 垂直专业文档集成工具 <br/> 图书导入、构建、搜索、打包、售卖、导出。"
+    excerpt: " 垂直专业文档集成工具 <br/> 图书导入、构建、搜索、打包、售卖。"
     url: "https://github.com/zero2you4tech/Z2Y-Book"
     btn_class: "btn--primary"
     btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"  
