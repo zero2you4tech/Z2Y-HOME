@@ -10,9 +10,9 @@ header:
     - label: "<i class='fas fa-download'></i> Install now（现在安装）"
       url: "https://github.com/zero2you4tech"
 excerpt: >
-  人生意义就是整活、整活，疯狂整活<br/> 
+  我们在探索成长型应用：使用应用的同时让你能够获得更好的认知，养成更好的习惯。<br/> 
   <small style="font-size:12px;">
-  The life is to have fun, have fun, and have fun wildly.</small>
+  Zero2You Studio is committed to developing products that help people grow.</small>
 feature_row:
   - image_path: /assets/apps/Z2Y/logo.png
     alt: "Z2Y E&M"
@@ -28,6 +28,22 @@ feature_row:
     tags: ["Mac", "free"]
     excerpt: "本地或远程 AI + Prompt 管理 <br/> Local&Remote AI + Prompt Management."
     url: "https://apps.apple.com/cn/app/z2y-ai-manager/id6479319882?mt=12"
+    btn_class: "btn--primary"
+    btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
+  - image_path: /assets/apps/Z2Y-Java/logo.png
+    alt: "Z2Y Java 原理"
+    title: "Java 原理、面试与开发"
+    tags: ["Mac", "free"]
+    excerpt: "更好的理解 Java 及其开发和面试 <br/> Java and its development and interview."
+    url: "https://apps.apple.com/cn/app/z2y-java-%E5%8E%9F%E7%90%86/id6504158005?mt=12"
+    btn_class: "btn--primary"
+    btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
+  - image_path: /assets/apps/Z2Y-Words/logo.png
+    alt: "Z2Y 强记单词
+    title: "工作+学习强记单词"
+    tags: ["Mac", "free"]
+    excerpt: "桌面定时弹出时单词记忆软件 <br/> Forced Memory: Desktop Timed Pop-up Word."
+    url: "https://apps.apple.com/cn/app/z2y-%E5%BC%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/id6743989782"
     btn_class: "btn--primary"
     btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
   - image_path: /assets/apps/Z2Y-RM/logo.png

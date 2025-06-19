@@ -16,13 +16,13 @@ last_modified_at: 2024-01-27T11:59:26-04:00
 toc: false
 ---
 
-无何有工作室致力于开发有意思的产品。
+我们致力于开发出帮助人们成长的产品。
 
-We are committed to developing interesting products.
+Zero2You Studio is committed to developing products that help people grow.
 
-人生的意义就是整活、整活，还特么是整活。
+我们在探索成长型应用，在使用应用的同时让你能够获得更好的认知，养成更好的习惯，而那时候应用本身也就完成了他的使命。
 
-Life is to have fun, have fun, and damn well have fun.
+We explore growth-oriented applications that enable you to gain better cognition and develop better habits while using them,and at that point, the application itself will have fulfilled its mission.
 
 <!-- {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %} -->
 
