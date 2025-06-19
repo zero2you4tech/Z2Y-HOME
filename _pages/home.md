@@ -42,7 +42,7 @@ feature_row:
     alt: "Z2Y 强记单词"
     title: "工作+学习强记单词"
     tags: ["Mac", "free"]
-    excerpt: "桌面定时弹出时单词记忆软件 <br/> Forced Memory: Desktop Timed Pop-up Word."
+    excerpt: "桌面定时弹出时单词记忆软件 <br/> Forced Memory: Timed Pop-up Word."
     url: "https://apps.apple.com/cn/app/z2y-%E5%BC%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/id6743989782"
     btn_class: "btn--primary"
     btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
