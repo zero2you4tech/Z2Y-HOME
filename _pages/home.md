@@ -39,7 +39,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "<i class='fas fa-download'></i> Install now（现在安装）"
   - image_path: /assets/apps/Z2Y-Words/logo.png
-    alt: "Z2Y 强记单词
+    alt: "Z2Y 强记单词"
     title: "工作+学习强记单词"
     tags: ["Mac", "free"]
     excerpt: "桌面定时弹出时单词记忆软件 <br/> Forced Memory: Desktop Timed Pop-up Word."
