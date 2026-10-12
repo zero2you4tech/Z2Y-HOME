@@ -649,3 +649,111 @@
       en: "A public installer is not available yet."
   faq: []
   changelog: []
+- id: z2y-fitness
+  order: 11
+  name:
+    zh: "FormSet 形集"
+    en: "FormSet"
+  tagline:
+    zh: "双语健身训练伴侣"
+    en: "Bilingual gym companion"
+  summary:
+    zh: "在健身房现场快速找到动作、看清步骤、完成每一组，并得到下一次可执行的建议。"
+    en: "Find an exercise, learn the movement, log every set, and get one actionable next step."
+  description:
+    zh: >-
+      FormSet 形集是一款本地优先的双语健身训练伴侣，内置 1,324 条动作目录，可按目标部位、器械或关键词搜索和筛选，
+      并查看示范、步骤、目标肌群与安全提示。训练时记录组数、次数、重量或时长，并自动倒计时休息；完成后生成
+      训练收据、个人最佳与趋势。无需注册账号，训练数据默认保存在本机，离线也能继续训练。
+    en: >-
+      FormSet is a local-first bilingual gym companion with a built-in catalog of 1,324 exercises.
+      Search and filter by body part, equipment, or keyword, then review demos, steps, target muscles,
+      and safety notes. During a workout it logs sets, reps, weight, or time with an automatic rest timer,
+      and produces a receipt, personal bests, and trends afterward. No account is required; training data
+      stays on your device and keeps working offline.
+  logo: "/assets/apps/Z2Y-Fitness/logo.png"
+  accent: "#c8ff5a"
+  platforms:
+    - "iOS"
+  price:
+    zh: "¥15.00"
+    en: "$1.99"
+  status: "available"
+  featured: true
+  version: "1.0"
+  version_label:
+    zh: "App Store 当前版本"
+    en: "Current App Store version"
+  released_at: "2026-08-29"
+  updated_at: "2026-08-29"
+  min_os:
+    zh: "iOS 17.0 或更高版本"
+    en: "iOS 17.0 or later"
+  links:
+    primary: "https://apps.apple.com/cn/app/formset-%E5%BD%A2%E9%9B%86/id6801817700?uo=4"
+    primary_label:
+      zh: "在 App Store 查看"
+      en: "View on the App Store"
+    support: "/support/z2y-fitness/"
+  highlights:
+    - zh: "内置 1,324 条动作，中英双语名称与步骤"
+      en: "1,324 built-in exercises with bilingual names and steps"
+    - zh: "按目标部位、器械与关键词快速筛选动作"
+      en: "Filter exercises by body part, equipment, and keyword"
+    - zh: "记录组数、次数、重量或时长，并自动倒计时休息"
+      en: "Log sets, reps, weight, or time with an automatic rest timer"
+    - zh: "训练收据、个人最佳与趋势都保存在本机"
+      en: "Receipts, personal bests, and trends stay on your device"
+  requirements:
+    - zh: "运行 iOS 17.0 或更高版本的 iPhone 或 iPad"
+      en: "iPhone or iPad running iOS 17.0 or later"
+    - zh: "无需注册账号；训练数据默认保存在本机"
+      en: "No account required; training data is stored on your device"
+  install:
+    - zh: "从 App Store 安装 FormSet 形集并打开，无需注册或登录。"
+      en: "Install FormSet from the App Store and open it; no sign-up or login is required."
+    - zh: "在“今日”页选择一种开始方式：继续训练、空白训练、按部位开始、按器械开始，或直接打开一个训练集。"
+      en: "On Today, pick a starting point: continue a workout, start blank, start by body part, start by equipment, or open a plan."
+    - zh: "在“动作库”用关键词、目标部位或器械筛选动作，打开详情查看示范、步骤、目标肌群与安全提示，并可收藏或加入训练。"
+      en: "In Explore, filter by keyword, body part, or equipment, then open an exercise for its demo, steps, target muscles, and safety notes. Favorite it or add it to a workout."
+    - zh: "在“训练”页调整动作顺序、组数与目标，输入每组的次数、重量或时长；完成一组后自动进入休息倒计时，可暂停、跳过、撤销或加时。"
+      en: "In Workout, adjust order, sets, and targets, then enter reps, weight, or time for each set. Finishing a set starts the rest timer; pause, skip, undo, or add time as needed."
+    - zh: "完成训练后查看训练收据：完成动作、总组数、时长、个人最佳，以及一条基于已记录事实的下一次建议。"
+      en: "After finishing, review the receipt: completed exercises, total sets, duration, personal bests, and one next step based on what you actually logged."
+    - zh: "在“记录”页按日历回看每一次训练，并查看单个动作的历史与趋势。"
+      en: "In History, browse past sessions on the calendar and review per-exercise history and trends."
+    - zh: "在“我的”中切换界面语言与重量单位、管理通知与可选分析，并导出 JSON / CSV 或删除本机记录。"
+      en: "In Profile, switch language and weight unit, manage notifications and optional analytics, and export JSON / CSV or delete local records."
+    - zh: "动作目录与训练记录支持离线使用；重新联网后无需重新登录。"
+      en: "The catalog and workout records work offline; no re-login is needed when you are back online."
+  faq:
+    - q:
+        zh: "需要注册账号吗？"
+        en: "Do I need an account?"
+      a:
+        zh: "不需要。首次打开即可使用全部功能，训练数据默认保存在本机。"
+        en: "No. Every feature is available on first launch, and training data is stored on your device by default."
+    - q:
+        zh: "可以离线使用吗？"
+        en: "Can I use it offline?"
+      a:
+        zh: "可以。动作目录和本地训练记录支持离线访问；联网只用于 App Store 更新等系统功能。"
+        en: "Yes. The exercise catalog and local workout records work offline; the network is only used for system features such as App Store updates."
+    - q:
+        zh: "如何导出或删除我的数据？"
+        en: "How do I export or delete my data?"
+      a:
+        zh: "进入“我的 → 数据权利”，可导出 JSON / CSV 或删除本机记录。删除操作不可撤销。"
+        en: "Open Profile → Data rights to export JSON / CSV or delete local records. Deletion cannot be undone."
+    - q:
+        zh: "训练数据会同步到云端或 Apple 健康吗？"
+        en: "Does my data sync to the cloud or Apple Health?"
+      a:
+        zh: "当前版本不上传训练数据，也未接入 Apple 健康；记录保存在本机，可由你自行导出。"
+        en: "The current version does not upload training data and does not connect to Apple Health; records stay on your device and you can export them yourself."
+  changelog:
+    - version: "1.0"
+      date: "2026-08-29"
+      notes:
+        zh: "上架 App Store：双语动作库、训练记录、训练收据与本机数据管理。"
+        en: "Released on the App Store: bilingual exercise catalog, workout logging, receipts, and on-device data controls."
