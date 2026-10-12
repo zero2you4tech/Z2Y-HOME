@@ -4,8 +4,7 @@ title: "Z2Y 记时 Support"
 title_en: "Z2Y Remember Timer Support"
 permalink: /support/z2y-timer/
 author_profile: false
-toc: true
-toc_label: "Support / 支持"
+toc: false
 ---
 
 # Z2Y 记时 · 使用说明与支持
@@ -37,7 +36,7 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
   </figure>
 </div>
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 ## 快速开始
 
@@ -100,7 +99,7 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 ## Getting started
 
@@ -163,7 +162,7 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
 
 </div>
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 ## iPad
 
@@ -171,7 +170,7 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 ## On iPad
 
@@ -194,7 +193,7 @@ The same interface language scales to iPad: countdown, remember, and focus all a
   </figure>
 </div>
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 ## 常见问题
 
@@ -220,7 +219,7 @@ The same interface language scales to iPad: countdown, remember, and focus all a
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 ## Troubleshooting
 
@@ -246,7 +245,7 @@ Switch between light and dark once in **Settings → Appearance**, then fully cl
 
 </div>
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 ## 联系支持
 
@@ -262,7 +261,7 @@ Switch between light and dark once in **Settings → Appearance**, then fully cl
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 ## Contact support
 
