@@ -1,759 +1,934 @@
+---
 - id: z2y-e-m
   order: 1
   name:
-    zh: "Z2Y E&M"
-    en: "Z2Y E&M"
+    zh: Z2Y E&M
+    en: Z2Y E&M
   tagline:
-    zh: "品牌与创造"
-    en: "Brand and build"
+    zh: 品牌与创造
+    en: Brand and build
   summary:
-    zh: "从品牌雏形到内容发布，把创建个人产品所需的工作放进一个桌面工作台。"
-    en: "A desktop workbench for shaping a brand, publishing content, and building products from scratch."
+    zh: 从品牌雏形到内容发布，把创建个人产品所需的工作放进一个桌面工作台。
+    en: A desktop workbench for shaping a brand, publishing content, and building
+      products from scratch.
   description:
-    zh: >-
-      Z2Y E&M 关注从零开始的创造过程。它把品牌搭建、GitHub 使用、本地 AI、阅读管理、
-      编辑与发布等能力收进同一套桌面工作流，让个人产品不再散落在多个工具之间。
-    en: >-
-      Z2Y E&M is built around creating from zero. It brings brand site generation, GitHub workflows,
-      local AI, reading management, editing, and publishing into one desktop workflow.
+    zh: Z2Y E&M 关注从零开始的创造过程。它把品牌搭建、GitHub 使用、本地 AI、阅读管理、 编辑与发布等能力收进同一套桌面工作流，让个人产品不再散落在多个工具之间。
+    en: Z2Y E&M is built around creating from zero. It brings brand site generation,
+      GitHub workflows, local AI, reading management, editing, and publishing into
+      one desktop workflow.
   logo: "/assets/apps/Z2Y/logo.png"
   accent: "#e8b86d"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "available"
+    zh: 免费
+    en: Free
+  status: available
   featured: true
-  version: "latest"
+  version: latest
   version_label:
-    zh: "Latest Release"
-    en: "Latest Release"
-  released_at: "2024-03-11"
-  updated_at: "2024-06-10"
+    zh: Latest Release
+    en: Latest Release
+  released_at: '2024-03-11'
+  updated_at: '2024-06-10'
   min_os:
-    zh: "macOS"
-    en: "macOS"
+    zh: macOS
+    en: macOS
   links:
-    primary: "https://github.com/petterobam/Z2y-Product/releases/latest"
+    primary: https://github.com/petterobam/Z2y-Product/releases/latest
     primary_label:
-      zh: "下载最新版"
-      en: "Download latest"
-    source: "https://github.com/petterobam/Z2y-Product"
-    product: "https://z2y-zh.zero2you.tech/"
+      zh: 下载最新版
+      en: Download latest
+    source: https://github.com/petterobam/Z2y-Product
+    product: https://z2y-zh.zero2you.tech/
   highlights:
-    - zh: "一键生成品牌、产品、博客与问题等静态门户"
-      en: "Generate brand, product, blog, and knowledge sites"
-    - zh: "把 GitHub 仓库当作文件系统进行浏览、收藏与分组"
-      en: "Browse, collect, and group GitHub repositories as files"
-    - zh: "支持 Ollama 本地模型与 Prompt 管理"
-      en: "Manage Ollama models and prompts locally"
-    - zh: "集成编辑器、浏览器、终端与阅读管理"
-      en: "Integrated editor, browser, terminal, and reading workflows"
+  - zh: 一键生成品牌、产品、博客与问题等静态门户
+    en: Generate brand, product, blog, and knowledge sites
+  - zh: 把 GitHub 仓库当作文件系统进行浏览、收藏与分组
+    en: Browse, collect, and group GitHub repositories as files
+  - zh: 支持 Ollama 本地模型与 Prompt 管理
+    en: Manage Ollama models and prompts locally
+  - zh: 集成编辑器、浏览器、终端与阅读管理
+    en: Integrated editor, browser, terminal, and reading workflows
   requirements:
-    - zh: "macOS 桌面环境"
-      en: "macOS desktop environment"
-    - zh: "使用 GitHub 功能时需要 GitHub 账号"
-      en: "A GitHub account is required for GitHub features"
+  - zh: macOS 桌面环境
+    en: macOS desktop environment
+  - zh: 使用 GitHub 功能时需要 GitHub 账号
+    en: A GitHub account is required for GitHub features
   install:
-    - zh: "从 GitHub Releases 下载最新压缩包。"
-      en: "Download the latest archive from GitHub Releases."
-    - zh: "解压后将 Z2Y 应用移动到“应用程序”文件夹。"
-      en: "Unzip the archive and move the Z2Y app to Applications."
-    - zh: "首次打开时按 macOS 提示完成安全确认。"
-      en: "Follow the macOS security prompt the first time you open it."
+  - zh: 从 GitHub Releases 下载最新压缩包。
+    en: Download the latest archive from GitHub Releases.
+  - zh: 解压后将 Z2Y 应用移动到“应用程序”文件夹。
+    en: Unzip the archive and move the Z2Y app to Applications.
+  - zh: 首次打开时按 macOS 提示完成安全确认。
+    en: Follow the macOS security prompt the first time you open it.
   faq:
-    - q:
-        zh: "为什么第一次打开会被 macOS 拦截？"
-        en: "Why does macOS block the first launch?"
-      a:
-        zh: "应用来自 GitHub 分发时可能未使用 Apple 公证。请在“系统设置 → 隐私与安全性”中确认打开，并核对下载来源。"
-        en: "GitHub-distributed builds may not be notarized by Apple. Confirm the download source, then allow the app from Privacy & Security in System Settings."
+  - q:
+      zh: 为什么第一次打开会被 macOS 拦截？
+      en: Why does macOS block the first launch?
+    a:
+      zh: 应用来自 GitHub 分发时可能未使用 Apple 公证。请在“系统设置 → 隐私与安全性”中确认打开，并核对下载来源。
+      en: GitHub-distributed builds may not be notarized by Apple. Confirm the download
+        source, then allow the app from Privacy & Security in System Settings.
   changelog:
-    - version: "latest"
-      date: "2024-03-11"
-      notes:
-        zh: "发布品牌搭建、GitHub 集成、本地 AI 与阅读管理能力。"
-        en: "Released brand building, GitHub integration, local AI, and reading workflows."
+  - version: latest
+    date: '2024-03-11'
+    notes:
+      zh: 发布品牌搭建、GitHub 集成、本地 AI 与阅读管理能力。
+      en: Released brand building, GitHub integration, local AI, and reading workflows.
 - id: z2y-ai
   order: 2
   name:
-    zh: "Z2Y AI Manager"
-    en: "Z2Y AI Manager"
+    zh: Z2Y AI Manager
+    en: Z2Y AI Manager
   tagline:
-    zh: "本地与远程 AI 管理"
-    en: "Local and remote AI control"
+    zh: 本地与远程 AI 管理
+    en: Local and remote AI control
   summary:
-    zh: "集中管理本地模型、远程 AI 服务与 Prompt，让日常调用不再依赖记忆和重复配置。"
-    en: "Manage local models, remote AI services, and prompts from one focused workspace."
+    zh: 集中管理本地模型、远程 AI 服务与 Prompt，让日常调用不再依赖记忆和重复配置。
+    en: Manage local models, remote AI services, and prompts from one focused workspace.
   description:
-    zh: >-
-      Z2Y AI Manager 用来整理本地 AI 模型、远程 AI 清单与 Prompt。适合需要频繁切换模型、
-      维护提示词或在本地模型与远程服务之间比较结果的用户。
-    en: >-
-      Z2Y AI Manager organizes local models, remote AI services, and prompts for people who switch
-      between models, maintain prompt libraries, or compare local and remote results.
+    zh: Z2Y AI Manager 用来整理本地 AI 模型、远程 AI 清单与 Prompt。适合需要频繁切换模型、 维护提示词或在本地模型与远程服务之间比较结果的用户。
+    en: Z2Y AI Manager organizes local models, remote AI services, and prompts for
+      people who switch between models, maintain prompt libraries, or compare local
+      and remote results.
   logo: "/assets/apps/Z2Y-AI/logo.png"
   accent: "#79c2d0"
   platforms:
-    - "macOS"
+  - macOS
   price:
     zh: "¥1.00"
     en: "¥1.00"
-  status: "available"
+  status: available
   featured: true
-  version: "1.1.0"
+  version: 1.1.0
   version_label:
-    zh: "App Store 当前版本"
-    en: "Current App Store version"
-  released_at: "2024-03-30"
-  updated_at: "2025-03-10"
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2024-03-30'
+  updated_at: '2025-03-10'
   min_os:
-    zh: "macOS 12.0 或更高版本"
-    en: "macOS 12.0 or later"
+    zh: macOS 12.0 或更高版本
+    en: macOS 12.0 or later
   links:
-    primary: "https://apps.apple.com/cn/app/z2y-ai-manager/id6479319882?mt=12"
+    primary: https://apps.apple.com/cn/app/z2y-ai-manager/id6479319882?mt=12
     primary_label:
-      zh: "在 App Store 查看"
-      en: "View on the App Store"
+      zh: 在 App Store 查看
+      en: View on the App Store
   highlights:
-    - zh: "维护本地 AI 模型与远程服务清单"
-      en: "Keep local model and remote service inventories"
-    - zh: "集中整理、检索与复用 Prompt"
-      en: "Collect, search, and reuse prompts"
-    - zh: "减少在不同 AI 客户端之间切换的成本"
-      en: "Reduce context switching between AI clients"
+  - zh: 维护本地 AI 模型与远程服务清单
+    en: Keep local model and remote service inventories
+  - zh: 集中整理、检索与复用 Prompt
+    en: Collect, search, and reuse prompts
+  - zh: 减少在不同 AI 客户端之间切换的成本
+    en: Reduce context switching between AI clients
   requirements:
-    - zh: "macOS 12.0 或更高版本"
-      en: "macOS 12.0 or later"
+  - zh: macOS 12.0 或更高版本
+    en: macOS 12.0 or later
   install:
-    - zh: "打开 App Store 页面并购买或下载应用。"
-      en: "Open the App Store page, then purchase or download the app."
-    - zh: "启动后按应用内引导添加模型或远程服务。"
-      en: "Launch the app and follow its setup flow to add models or services."
+  - zh: 打开 App Store 页面并购买或下载应用。
+    en: Open the App Store page, then purchase or download the app.
+  - zh: 启动后按应用内引导添加模型或远程服务。
+    en: Launch the app and follow its setup flow to add models or services.
   faq:
-    - q:
-        zh: "应用会把模型或 Prompt 上传到服务器吗？"
-        en: "Does the app upload my models or prompts?"
-      a:
-        zh: "当前 App Store 描述强调对本地模型、远程 AI 清单与 Prompt 的管理。请以应用内最新说明和隐私政策为准。"
-        en: "The current App Store description focuses on managing local models, remote AI inventories, and prompts. Check the latest in-app information and privacy policy for details."
+  - q:
+      zh: 应用会把模型或 Prompt 上传到服务器吗？
+      en: Does the app upload my models or prompts?
+    a:
+      zh: 当前 App Store 描述强调对本地模型、远程 AI 清单与 Prompt 的管理。请以应用内最新说明和隐私政策为准。
+      en: The current App Store description focuses on managing local models, remote
+        AI inventories, and prompts. Check the latest in-app information and privacy
+        policy for details.
   changelog:
-    - version: "1.1.0"
-      date: "2025-03-10"
-      notes:
-        zh: "App Store 当前发布版本。"
-        en: "Current release available on the App Store."
+  - version: 1.1.0
+    date: '2025-03-10'
+    notes:
+      zh: App Store 当前发布版本。
+      en: Current release available on the App Store.
 - id: z2y-java
   order: 3
   name:
-    zh: "Z2Y Java 原理与面试"
-    en: "Z2Y Java Principles & Interview"
+    zh: Z2Y Java 原理与面试
+    en: Z2Y Java Principles & Interview
   tagline:
-    zh: "把零散知识变成复习路径"
-    en: "Turn scattered notes into a review path"
+    zh: 把零散知识变成复习路径
+    en: Turn scattered notes into a review path
   summary:
-    zh: "面向 Java 开发者的结构化复习知识库，覆盖基础、JVM、并发、框架与工程主题。"
-    en: "A structured Java review library covering fundamentals, JVM, concurrency, frameworks, and engineering topics."
+    zh: 面向 Java 开发者的结构化复习知识库，覆盖基础、JVM、并发、框架与工程主题。
+    en: A structured Java review library covering fundamentals, JVM, concurrency,
+      frameworks, and engineering topics.
   description:
-    zh: >-
-      Z2Y Java 原理面向正在工作、进阶或准备面试的 Java 开发者，把核心知识按主题整理到
-      可持续复习的知识库中。应用支持目录学习、阅读进度、笔记与跨设备查漏补缺。
-    en: >-
-      Z2Y Java Principles organizes core Java knowledge into a review library for working,
-      advancing, or interview-preparing developers. It supports structured reading, progress,
-      notes, and review across devices.
+    zh: Z2Y Java 原理面向正在工作、进阶或准备面试的 Java 开发者，把核心知识按主题整理到 可持续复习的知识库中。应用支持目录学习、阅读进度、笔记与跨设备查漏补缺。
+    en: Z2Y Java Principles organizes core Java knowledge into a review library for
+      working, advancing, or interview-preparing developers. It supports structured
+      reading, progress, notes, and review across devices.
   logo: "/assets/apps/Z2Y-Java/logo.png"
   accent: "#f08b72"
   platforms:
-    - "macOS"
+  - macOS
   price:
     zh: "¥15.00"
     en: "¥15.00"
-  status: "available"
+  status: available
   featured: true
-  version: "1.2.32"
+  version: 1.2.32
   version_label:
-    zh: "App Store 当前版本"
-    en: "Current App Store version"
-  released_at: "2024-06-12"
-  updated_at: "2026-08-01"
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2024-06-12'
+  updated_at: '2026-08-01'
   min_os:
-    zh: "macOS 15.6 或更高版本"
-    en: "macOS 15.6 or later"
+    zh: macOS 15.6 或更高版本
+    en: macOS 15.6 or later
   links:
-    primary: "https://apps.apple.com/cn/app/z2y-java-%E5%8E%9F%E7%90%86%E4%B8%8E%E9%9D%A2%E8%AF%95/id6504158005"
+    primary: https://apps.apple.com/cn/app/z2y-java-%E5%8E%9F%E7%90%86%E4%B8%8E%E9%9D%A2%E8%AF%95/id6504158005
     primary_label:
-      zh: "在 App Store 查看"
-      en: "View on the App Store"
+      zh: 在 App Store 查看
+      en: View on the App Store
   highlights:
-    - zh: "300 篇核心知识按主题组织"
-      en: "300 core articles organized by topic"
-    - zh: "覆盖 Java 基础、JVM、并发、集合、Spring、MySQL、Redis 等方向"
-      en: "Covers Java fundamentals, JVM, concurrency, collections, Spring, MySQL, Redis, and more"
-    - zh: "保存阅读进度并在阅读中记录笔记"
-      en: "Save reading progress and take notes while reading"
+  - zh: 300 篇核心知识按主题组织
+    en: 300 core articles organized by topic
+  - zh: 覆盖 Java 基础、JVM、并发、集合、Spring、MySQL、Redis 等方向
+    en: Covers Java fundamentals, JVM, concurrency, collections, Spring, MySQL, Redis,
+      and more
+  - zh: 保存阅读进度并在阅读中记录笔记
+    en: Save reading progress and take notes while reading
   requirements:
-    - zh: "macOS 15.6 或更高版本"
-      en: "macOS 15.6 or later"
-    - zh: "产品提供学习内容与复习工具，不承诺面试结果"
-      en: "The product provides learning content and review tools, not a job-offer guarantee"
+  - zh: macOS 15.6 或更高版本
+    en: macOS 15.6 or later
+  - zh: 产品提供学习内容与复习工具，不承诺面试结果
+    en: The product provides learning content and review tools, not a job-offer guarantee
   install:
-    - zh: "打开 App Store 页面并购买应用。"
-      en: "Open the App Store page and purchase the app."
-    - zh: "进入目录后按主题学习，应用会保存最近阅读和学习进度。"
-      en: "Choose a topic from the library; the app saves recent reading and progress."
+  - zh: 打开 App Store 页面并购买应用。
+    en: Open the App Store page and purchase the app.
+  - zh: 进入目录后按主题学习，应用会保存最近阅读和学习进度。
+    en: Choose a topic from the library; the app saves recent reading and progress.
   faq:
-    - q:
-        zh: "应用包含哪些知识主题？"
-        en: "Which topics are included?"
-      a:
-        zh: "内容覆盖 Java 基础、JVM、并发、集合、Spring、MySQL、Redis、消息队列、分布式、系统与网络等主题。"
-        en: "Topics include Java fundamentals, JVM, concurrency, collections, Spring, MySQL, Redis, messaging, distributed systems, operating systems, and networking."
+  - q:
+      zh: 应用包含哪些知识主题？
+      en: Which topics are included?
+    a:
+      zh: 内容覆盖 Java 基础、JVM、并发、集合、Spring、MySQL、Redis、消息队列、分布式、系统与网络等主题。
+      en: Topics include Java fundamentals, JVM, concurrency, collections, Spring,
+        MySQL, Redis, messaging, distributed systems, operating systems, and networking.
   changelog:
-    - version: "1.2.32"
-      date: "2026-08-01"
-      notes:
-        zh: "App Store 当前发布版本。"
-        en: "Current release available on the App Store."
+  - version: 1.2.32
+    date: '2026-08-01'
+    notes:
+      zh: App Store 当前发布版本。
+      en: Current release available on the App Store.
 - id: z2y-words
   order: 4
   name:
-    zh: "Z2Y 强记单词"
-    en: "Z2Y Forced Memory Words"
+    zh: Z2Y 强记单词
+    en: Z2Y Forced Memory Words
   tagline:
-    zh: "把记忆变成定时提醒"
-    en: "Make recall a timed habit"
+    zh: 把记忆变成定时提醒
+    en: Make recall a timed habit
   summary:
-    zh: "用桌面定时弹窗帮助你在工作与学习之间保持高频词汇记忆。"
-    en: "A timed desktop recall tool for keeping vocabulary practice present throughout the day."
+    zh: 用桌面定时弹窗帮助你在工作与学习之间保持高频词汇记忆。
+    en: A timed desktop recall tool for keeping vocabulary practice present throughout
+      the day.
   description:
-    zh: >-
-      工作+学习强记单词通过桌面定时弹出记忆卡片，让单词复习不再依赖主动打开学习应用。
-      适合需要利用碎片时间持续记忆的用户。
-    en: >-
-      Forced Memory Words uses timed desktop pop-ups to make vocabulary review part of the workday,
-      without requiring you to open a study app first.
+    zh: 工作+学习强记单词通过桌面定时弹出记忆卡片，让单词复习不再依赖主动打开学习应用。 适合需要利用碎片时间持续记忆的用户。
+    en: Forced Memory Words uses timed desktop pop-ups to make vocabulary review part
+      of the workday, without requiring you to open a study app first.
   logo: "/assets/apps/Z2Y-Words/logo.png"
   accent: "#b6d779"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "preview"
+    zh: 免费
+    en: Free
+  status: preview
   featured: false
-  version: ""
+  version: ''
   version_label:
-    zh: "版本待确认"
-    en: "Version pending"
-  released_at: ""
-  updated_at: ""
+    zh: 版本待确认
+    en: Version pending
+  released_at: ''
+  updated_at: ''
   min_os:
-    zh: "macOS"
-    en: "macOS"
+    zh: macOS
+    en: macOS
   links:
-    primary: "https://apps.apple.com/cn/app/z2y-%E5%BC%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/id6743989782"
+    primary: https://apps.apple.com/cn/app/z2y-%E5%BC%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/id6743989782
     primary_label:
-      zh: "查看应用页面"
-      en: "View app page"
+      zh: 查看应用页面
+      en: View app page
   highlights:
-    - zh: "按设定周期弹出词汇记忆提醒"
-      en: "Timed vocabulary recall prompts"
-    - zh: "适合工作与学习场景中的碎片记忆"
-      en: "Designed for short recall sessions during work and study"
+  - zh: 按设定周期弹出词汇记忆提醒
+    en: Timed vocabulary recall prompts
+  - zh: 适合工作与学习场景中的碎片记忆
+    en: Designed for short recall sessions during work and study
   requirements:
-    - zh: "macOS"
-      en: "macOS"
+  - zh: macOS
+    en: macOS
   install:
-    - zh: "打开应用页面并确认当前发布状态。"
-      en: "Open the app page and confirm its current availability."
+  - zh: 打开应用页面并确认当前发布状态。
+    en: Open the app page and confirm its current availability.
   faq: []
   changelog: []
 - id: z2y-reader
   order: 5
   name:
-    zh: "Z2Y Reader & Manager"
-    en: "Z2Y Reader & Manager"
+    zh: Z2Y Reader & Manager
+    en: Z2Y Reader & Manager
   tagline:
-    zh: "把一切当作文件来管理"
-    en: "Treat everything as a file"
+    zh: 把一切当作文件来管理
+    en: Treat everything as a file
   summary:
-    zh: "集成 GitHub、Ollama、导航、阅读、下载与分组管理的个人知识工作台。"
-    en: "A personal knowledge workbench for GitHub, Ollama, navigation, reading, downloads, and grouped files."
+    zh: 集成 GitHub、Ollama、导航、阅读、下载与分组管理的个人知识工作台。
+    en: A personal knowledge workbench for GitHub, Ollama, navigation, reading, downloads,
+      and grouped files.
   description:
-    zh: >-
-      Z2Y Reader & Manager 围绕“一切事物都是文件，都可以集中阅读和分组管理”的理念，
-      提供 GitHub 浏览、Ollama 本地模型、网页阅读、下载和知识分组等能力。
-    en: >-
-      Z2Y Reader & Manager starts from one idea: everything is a file that can be read and grouped.
-      It combines GitHub browsing, Ollama models, web reading, downloads, and knowledge organization.
+    zh: Z2Y Reader & Manager 围绕“一切事物都是文件，都可以集中阅读和分组管理”的理念， 提供 GitHub 浏览、Ollama 本地模型、网页阅读、下载和知识分组等能力。
+    en: 'Z2Y Reader & Manager starts from one idea: everything is a file that can
+      be read and grouped. It combines GitHub browsing, Ollama models, web reading,
+      downloads, and knowledge organization.'
   logo: "/assets/apps/Z2Y-RM/logo.png"
   accent: "#9aa8ef"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "available"
+    zh: 免费
+    en: Free
+  status: available
   featured: true
-  version: "1.3.2"
+  version: 1.3.2
   version_label:
-    zh: "App Store 当前版本"
-    en: "Current App Store version"
-  released_at: "2024-03-06"
-  updated_at: "2025-03-10"
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2024-03-06'
+  updated_at: '2025-03-10'
   min_os:
-    zh: "macOS 13.0 或更高版本"
-    en: "macOS 13.0 or later"
+    zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
   links:
-    primary: "https://apps.apple.com/cn/app/z2y-reader-manager/id6478165076?mt=12"
+    primary: https://apps.apple.com/cn/app/z2y-reader-manager/id6478165076?mt=12
     primary_label:
-      zh: "在 App Store 查看"
-      en: "View on the App Store"
+      zh: 在 App Store 查看
+      en: View on the App Store
   highlights:
-    - zh: "浏览和管理 GitHub 内容"
-      en: "Browse and manage GitHub content"
-    - zh: "接入 Ollama 本地 AI 模型"
-      en: "Connect to local Ollama models"
-    - zh: "统一记录导航、阅读、下载与分组"
-      en: "Keep navigation, reading, downloads, and groups together"
+  - zh: 浏览和管理 GitHub 内容
+    en: Browse and manage GitHub content
+  - zh: 接入 Ollama 本地 AI 模型
+    en: Connect to local Ollama models
+  - zh: 统一记录导航、阅读、下载与分组
+    en: Keep navigation, reading, downloads, and groups together
   requirements:
-    - zh: "macOS 13.0 或更高版本"
-      en: "macOS 13.0 or later"
+  - zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
   install:
-    - zh: "从 App Store 下载并安装。"
-      en: "Download and install from the App Store."
-    - zh: "按需配置 GitHub 与 Ollama 连接。"
-      en: "Configure GitHub and Ollama connections as needed."
+  - zh: 从 App Store 下载并安装。
+    en: Download and install from the App Store.
+  - zh: 按需配置 GitHub 与 Ollama 连接。
+    en: Configure GitHub and Ollama connections as needed.
   faq:
-    - q:
-        zh: "应用是否需要自己的云端账号？"
-        en: "Does the app require its own cloud account?"
-      a:
-        zh: "当前产品描述强调本地数据与 GitHub、Ollama 集成。请以应用内最新说明和隐私政策为准。"
-        en: "The current description emphasizes local data and integrations with GitHub and Ollama. Check the latest in-app information and privacy policy."
+  - q:
+      zh: 应用是否需要自己的云端账号？
+      en: Does the app require its own cloud account?
+    a:
+      zh: 当前产品描述强调本地数据与 GitHub、Ollama 集成。请以应用内最新说明和隐私政策为准。
+      en: The current description emphasizes local data and integrations with GitHub
+        and Ollama. Check the latest in-app information and privacy policy.
   changelog:
-    - version: "1.3.2"
-      date: "2025-03-10"
-      notes:
-        zh: "App Store 当前发布版本。"
-        en: "Current release available on the App Store."
+  - version: 1.3.2
+    date: '2025-03-10'
+    notes:
+      zh: App Store 当前发布版本。
+      en: Current release available on the App Store.
 - id: z2y-water
   order: 6
   name:
-    zh: "Z2Y 请喝水！！！"
-    en: "Z2Y Drink Water!"
+    zh: Z2Y 请喝水！！！
+    en: Z2Y Drink Water!
   tagline:
-    zh: "定时喝水，强制休息"
-    en: "Timed hydration, enforced breaks"
+    zh: 定时喝水，强制休息
+    en: Timed hydration, enforced breaks
   summary:
-    zh: "通过定时全屏提醒监督自己按时喝水，以更有存在感的方式建立健康习惯。"
-    en: "A timed full-screen reminder that makes hydration hard to ignore."
+    zh: 通过定时全屏提醒监督自己按时喝水，以更有存在感的方式建立健康习惯。
+    en: A timed full-screen reminder that makes hydration hard to ignore.
   description:
-    zh: >-
-      Z2Y 请喝水源于开发者自己的真实需求。它通过周期提醒和全屏阻断，
-      帮助长时间工作的人按时喝水、离开座位，逐渐建立稳定的健康习惯。
-    en: >-
-      Z2Y Drink Water! began as a real personal need. Timed reminders and full-screen interruptions
-      help people who work for long stretches hydrate and step away at regular intervals.
+    zh: Z2Y 请喝水源于开发者自己的真实需求。它通过周期提醒和全屏阻断， 帮助长时间工作的人按时喝水、离开座位，逐渐建立稳定的健康习惯。
+    en: Z2Y Drink Water! began as a real personal need. Timed reminders and full-screen
+      interruptions help people who work for long stretches hydrate and step away
+      at regular intervals.
   logo: "/assets/apps/Z2Y-Water/logo.png"
   accent: "#61c9df"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "available"
+    zh: 免费
+    en: Free
+  status: available
   featured: true
-  version: "1.0.5"
+  version: 1.0.5
   version_label:
-    zh: "App Store 当前版本"
-    en: "Current App Store version"
-  released_at: "2024-03-23"
-  updated_at: "2026-07-24"
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2024-03-23'
+  updated_at: '2026-07-24'
   min_os:
-    zh: "macOS 13.0 或更高版本"
-    en: "macOS 13.0 or later"
+    zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
   links:
-    primary: "https://apps.apple.com/cn/app/z2y-%E8%AF%B7%E5%96%9D%E6%B0%B4/id6479874840?mt=12"
+    primary: https://apps.apple.com/cn/app/z2y-%E8%AF%B7%E5%96%9D%E6%B0%B4/id6479874840?mt=12
     primary_label:
-      zh: "在 App Store 查看"
-      en: "View on the App Store"
+      zh: 在 App Store 查看
+      en: View on the App Store
   highlights:
-    - zh: "周期提醒默认约 20 分钟一次"
-      en: "Default reminder interval of about 20 minutes"
-    - zh: "全屏阻断至少持续约 10 秒"
-      en: "Full-screen interruption lasts at least about 10 seconds"
-    - zh: "为难以主动休息的人设计"
-      en: "Designed for people who struggle to take breaks"
+  - zh: 周期提醒默认约 20 分钟一次
+    en: Default reminder interval of about 20 minutes
+  - zh: 全屏阻断至少持续约 10 秒
+    en: Full-screen interruption lasts at least about 10 seconds
+  - zh: 为难以主动休息的人设计
+    en: Designed for people who struggle to take breaks
   requirements:
-    - zh: "macOS 13.0 或更高版本"
-      en: "macOS 13.0 or later"
+  - zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
   install:
-    - zh: "从 App Store 下载并安装应用。"
-      en: "Download and install from the App Store."
-    - zh: "首次启动后设置提醒周期。"
-      en: "Set the reminder interval on first launch."
+  - zh: 从 App Store 下载并安装应用。
+    en: Download and install from the App Store.
+  - zh: 首次启动后设置提醒周期。
+    en: Set the reminder interval on first launch.
   faq:
-    - q:
-        zh: "提醒为什么很难关闭？"
-        en: "Why is the reminder hard to dismiss?"
-      a:
-        zh: "产品刻意用更强的提醒帮助用户离开屏幕。首次安装前请确认你能接受全屏打断。"
-        en: "The product intentionally uses a strong interruption to pull you away from the screen. Confirm that you are comfortable with full-screen prompts before installing."
+  - q:
+      zh: 提醒为什么很难关闭？
+      en: Why is the reminder hard to dismiss?
+    a:
+      zh: 产品刻意用更强的提醒帮助用户离开屏幕。首次安装前请确认你能接受全屏打断。
+      en: The product intentionally uses a strong interruption to pull you away from
+        the screen. Confirm that you are comfortable with full-screen prompts before
+        installing.
   changelog:
-    - version: "1.0.5"
-      date: "2026-07-24"
-      notes:
-        zh: "App Store 当前发布版本。"
-        en: "Current release available on the App Store."
+  - version: 1.0.5
+    date: '2026-07-24'
+    notes:
+      zh: App Store 当前发布版本。
+      en: Current release available on the App Store.
 - id: z2y-dmg
   order: 7
   name:
-    zh: "Z2Y DMG Creator"
-    en: "Z2Y DMG Creator"
+    zh: Z2Y DMG Creator
+    en: Z2Y DMG Creator
   tagline:
-    zh: "把 App 打包成可分发 DMG"
-    en: "Package apps into distributable DMGs"
+    zh: 把 App 打包成可分发 DMG
+    en: Package apps into distributable DMGs
   summary:
-    zh: "面向 macOS 开发者的 DMG 打包工具，支持经典拖拽安装与一键安装布局。"
-    en: "A macOS packaging utility supporting classic drag-to-Applications and one-click installer layouts."
+    zh: 面向 macOS 开发者的 DMG 打包工具，支持经典拖拽安装与一键安装布局。
+    en: A macOS packaging utility supporting classic drag-to-Applications and one-click
+      installer layouts.
   description:
-    zh: >-
-      Z2Y DMG Creator 用于将 App、文件或文件夹制作成 DMG 磁盘映像。它关注可重复的打包流程，
-      并提供经典拖拽安装与一键安装两种布局。
-    en: >-
-      Z2Y DMG Creator turns apps, files, and folders into DMG disk images. It focuses on repeatable
-      packaging and supports both classic drag-to-Applications and one-click installer layouts.
+    zh: Z2Y DMG Creator 用于将 App、文件或文件夹制作成 DMG 磁盘映像。它关注可重复的打包流程， 并提供经典拖拽安装与一键安装两种布局。
+    en: Z2Y DMG Creator turns apps, files, and folders into DMG disk images. It focuses
+      on repeatable packaging and supports both classic drag-to-Applications and one-click
+      installer layouts.
   logo: "/assets/apps/Z2Y-DMG/logo.png"
   accent: "#f2c14e"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "available"
+    zh: 免费
+    en: Free
+  status: available
   featured: true
-  version: "1.0.4"
+  version: 1.0.4
   version_label:
-    zh: "GitHub Release"
-    en: "GitHub Release"
-  released_at: "2025-06-17"
-  updated_at: "2025-06-17"
+    zh: GitHub Release
+    en: GitHub Release
+  released_at: '2025-06-17'
+  updated_at: '2025-06-17'
   min_os:
-    zh: "macOS"
-    en: "macOS"
+    zh: macOS
+    en: macOS
   links:
-    primary: "https://github.com/zero2you4tech/Z2Y-DMG/releases/latest"
+    primary: https://github.com/zero2you4tech/Z2Y-DMG/releases/latest
     primary_label:
-      zh: "下载 1.0.4"
-      en: "Download 1.0.4"
-    source: "https://github.com/zero2you4tech/Z2Y-DMG"
+      zh: 下载 1.0.4
+      en: Download 1.0.4
+    source: https://github.com/zero2you4tech/Z2Y-DMG
     support: "/support/z2y-dmg/"
   highlights:
-    - zh: "支持 App、文件和文件夹打包"
-      en: "Package apps, files, and folders"
-    - zh: "经典拖拽安装布局"
-      en: "Classic drag-to-Applications layout"
-    - zh: "一键安装器布局"
-      en: "One-click installer layout"
+  - zh: 支持 App、文件和文件夹打包
+    en: Package apps, files, and folders
+  - zh: 经典拖拽安装布局
+    en: Classic drag-to-Applications layout
+  - zh: 一键安装器布局
+    en: One-click installer layout
   requirements:
-    - zh: "macOS"
-      en: "macOS"
-    - zh: "输出目录需要可写并具备足够磁盘空间"
-      en: "A writable output folder with enough free space"
+  - zh: macOS
+    en: macOS
+  - zh: 输出目录需要可写并具备足够磁盘空间
+    en: A writable output folder with enough free space
   install:
-    - zh: "从 GitHub Release 下载 1.0.4 的 DMG。"
-      en: "Download the 1.0.4 DMG from GitHub Releases."
-    - zh: "打开 DMG 后将应用拖入“应用程序”。"
-      en: "Open the DMG and drag the app into Applications."
-    - zh: "选择源内容与打包模式后开始构建。"
-      en: "Choose the source item and packaging mode, then start the build."
+  - zh: 从 GitHub Release 下载 1.0.4 的 DMG。
+    en: Download the 1.0.4 DMG from GitHub Releases.
+  - zh: 打开 DMG 后将应用拖入“应用程序”。
+    en: Open the DMG and drag the app into Applications.
+  - zh: 选择源内容与打包模式后开始构建。
+    en: Choose the source item and packaging mode, then start the build.
   faq:
-    - q:
-        zh: "打包后的 App 无法打开怎么办？"
-        en: "What if the packaged app will not open?"
-      a:
-        zh: "先确认原始 App 可以启动且签名有效。Z2Y DMG Creator 会保留源内容，但不会修复无效签名。"
-        en: "Verify that the original app launches and has a valid signature. Z2Y DMG Creator preserves source content but does not repair invalid signatures."
+  - q:
+      zh: 打包后的 App 无法打开怎么办？
+      en: What if the packaged app will not open?
+    a:
+      zh: 先确认原始 App 可以启动且签名有效。Z2Y DMG Creator 会保留源内容，但不会修复无效签名。
+      en: Verify that the original app launches and has a valid signature. Z2Y DMG
+        Creator preserves source content but does not repair invalid signatures.
   changelog:
-    - version: "1.0.4"
-      date: "2025-06-17"
-      notes:
-        zh: "上传 Mac App Store 版本并微调界面。"
-        en: "Uploaded the Mac App Store version and refined the interface."
+  - version: 1.0.4
+    date: '2025-06-17'
+    notes:
+      zh: 上传 Mac App Store 版本并微调界面。
+      en: Uploaded the Mac App Store version and refined the interface.
 - id: z2y-cmd
   order: 8
   name:
-    zh: "Z2Y Command Manager"
-    en: "Z2Y Command Manager"
+    zh: Z2Y Command Manager
+    en: Z2Y Command Manager
   tagline:
-    zh: "把历史命令变成可复用工作流"
-    en: "Turn command history into reusable workflows"
+    zh: 把历史命令变成可复用工作流
+    en: Turn command history into reusable workflows
   summary:
-    zh: "面向命令行的搜索、分组与批处理中心，让常用命令和任务路径更容易被找回与执行。"
-    en: "A command center for searching, grouping, and rerunning terminal commands and batch tasks."
+    zh: 面向命令行的搜索、分组与批处理中心，让常用命令和任务路径更容易被找回与执行。
+    en: A command center for searching, grouping, and rerunning terminal commands
+      and batch tasks.
   description:
-    zh: >-
-      Z2Y Command Manager 用来集中管理命令历史、场景与路径分组，并支持便捷查找和批处理任务。
-      当前项目仍在持续开发中，具体能力以仓库更新为准。
-    en: >-
-      Z2Y Command Manager centralizes command history, path and scenario groups, search, execution,
-      and batch tasks. The project is still under active development; check the repository for updates.
+    zh: Z2Y Command Manager 用来集中管理命令历史、场景与路径分组，并支持便捷查找和批处理任务。 当前项目仍在持续开发中，具体能力以仓库更新为准。
+    en: Z2Y Command Manager centralizes command history, path and scenario groups,
+      search, execution, and batch tasks. The project is still under active development;
+      check the repository for updates.
   logo: "/assets/apps/Z2Y-CMD/logo.png"
   accent: "#77d6b4"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "免费"
-    en: "Free"
-  status: "in-development"
+    zh: 免费
+    en: Free
+  status: in-development
   featured: false
-  version: ""
+  version: ''
   version_label:
-    zh: "开发中"
-    en: "In development"
-  released_at: ""
-  updated_at: ""
+    zh: 开发中
+    en: In development
+  released_at: ''
+  updated_at: ''
   min_os:
-    zh: "macOS"
-    en: "macOS"
+    zh: macOS
+    en: macOS
   links:
-    source: "https://github.com/zero2you4tech/Z2Y-CMD"
+    source: https://github.com/zero2you4tech/Z2Y-CMD
     primary_label:
-      zh: "查看仓库"
-      en: "View repository"
+      zh: 查看仓库
+      en: View repository
   highlights:
-    - zh: "历史命令存储与搜索"
-      en: "Store and search command history"
-    - zh: "场景与路径分组"
-      en: "Scenario and path grouping"
-    - zh: "批处理任务管理"
-      en: "Batch task management"
+  - zh: 历史命令存储与搜索
+    en: Store and search command history
+  - zh: 场景与路径分组
+    en: Scenario and path grouping
+  - zh: 批处理任务管理
+    en: Batch task management
   requirements:
-    - zh: "开发状态与可用性请以仓库为准"
-      en: "Check the repository for current status and availability"
+  - zh: 开发状态与可用性请以仓库为准
+    en: Check the repository for current status and availability
   install:
-    - zh: "当前以源码分发为主，请查看仓库说明。"
-      en: "Currently source-distributed; see the repository for instructions."
+  - zh: 当前以源码分发为主，请查看仓库说明。
+    en: Currently source-distributed; see the repository for instructions.
   faq: []
   changelog: []
 - id: z2y-book
   order: 9
   name:
-    zh: "Z2Y Book4?"
-    en: "Z2Y Book4?"
+    zh: Z2Y Book4?
+    en: Z2Y Book4?
   tagline:
-    zh: "垂直专业文档集成"
-    en: "Focused document pipelines"
+    zh: 垂直专业文档集成
+    en: Focused document pipelines
   summary:
-    zh: "围绕专业图书的导入、构建、搜索、打包与售卖，探索垂直内容产品的完整链路。"
-    en: "A pipeline for importing, building, searching, packaging, and selling focused professional books."
+    zh: 围绕专业图书的导入、构建、搜索、打包与售卖，探索垂直内容产品的完整链路。
+    en: A pipeline for importing, building, searching, packaging, and selling focused
+      professional books.
   description:
-    zh: >-
-      Z2Y Book4? 关注垂直专业文档的完整生产链路，包括图书导入、内容构建、搜索、打包与售卖。
-      当前项目仍在开发阶段。
-    en: >-
-      Z2Y Book4? explores the full production pipeline for focused professional documents:
-      import, content build, search, packaging, and distribution. The project is still in development.
+    zh: Z2Y Book4? 关注垂直专业文档的完整生产链路，包括图书导入、内容构建、搜索、打包与售卖。 当前项目仍在开发阶段。
+    en: 'Z2Y Book4? explores the full production pipeline for focused professional
+      documents: import, content build, search, packaging, and distribution. The project
+      is still in development.'
   logo: "/assets/apps/Z2Y-Book/logo.png"
   accent: "#d69a77"
   platforms:
-    - "macOS"
+  - macOS
   price:
-    zh: "规划中"
-    en: "Planned"
-  status: "in-development"
+    zh: 规划中
+    en: Planned
+  status: in-development
   featured: false
-  version: ""
+  version: ''
   version_label:
-    zh: "开发中"
-    en: "In development"
-  released_at: ""
-  updated_at: ""
+    zh: 开发中
+    en: In development
+  released_at: ''
+  updated_at: ''
   min_os:
-    zh: "macOS"
-    en: "macOS"
+    zh: macOS
+    en: macOS
   links:
-    source: "https://github.com/zero2you4tech/Z2Y-Book"
+    source: https://github.com/zero2you4tech/Z2Y-Book
     primary_label:
-      zh: "查看仓库"
-      en: "View repository"
+      zh: 查看仓库
+      en: View repository
   highlights:
-    - zh: "专业图书导入"
-      en: "Professional book import"
-    - zh: "内容构建与搜索"
-      en: "Content build and search"
-    - zh: "文档打包与售卖链路"
-      en: "Packaging and distribution pipeline"
+  - zh: 专业图书导入
+    en: Professional book import
+  - zh: 内容构建与搜索
+    en: Content build and search
+  - zh: 文档打包与售卖链路
+    en: Packaging and distribution pipeline
   requirements:
-    - zh: "开发状态与可用性请以仓库为准"
-      en: "Check the repository for current status and availability"
+  - zh: 开发状态与可用性请以仓库为准
+    en: Check the repository for current status and availability
   install:
-    - zh: "当前尚未提供正式安装包。"
-      en: "A public installer is not available yet."
+  - zh: 当前尚未提供正式安装包。
+    en: A public installer is not available yet.
   faq: []
   changelog: []
 - id: z2y-ask-change
   order: 10
   name:
-    zh: "Z2Y 天问"
-    en: "Z2Y Ask Change"
+    zh: Z2Y 天问
+    en: Z2Y Ask Change
   tagline:
-    zh: "从变化中寻找信念"
-    en: "Find belief inside change"
+    zh: 从变化中寻找信念
+    en: Find belief inside change
   summary:
-    zh: "一款以变化为主题的游戏化探索，尝试在不确定中寻找信念与勇气。"
-    en: "A game-like exploration of change, belief, and courage in uncertain moments."
+    zh: 一款以变化为主题的游戏化探索，尝试在不确定中寻找信念与勇气。
+    en: A game-like exploration of change, belief, and courage in uncertain moments.
   description:
-    zh: >-
-      Z2Y 天问是一款围绕“变化”展开的实验性游戏产品，希望玩家在探索过程中重新理解选择、
-      信念与勇气。当前项目仍在开发阶段。
-    en: >-
-      Z2Y Ask Change is an experimental game about change, inviting players to reconsider choice,
-      belief, and courage. The project is still in development.
+    zh: Z2Y 天问是一款围绕“变化”展开的实验性游戏产品，希望玩家在探索过程中重新理解选择、 信念与勇气。当前项目仍在开发阶段。
+    en: Z2Y Ask Change is an experimental game about change, inviting players to reconsider
+      choice, belief, and courage. The project is still in development.
   logo: "/assets/apps/Z2Y-AC/logo.png"
   accent: "#e7798f"
   platforms:
-    - "iOS"
+  - iOS
   price:
-    zh: "规划中"
-    en: "Planned"
-  status: "in-development"
+    zh: 规划中
+    en: Planned
+  status: in-development
   featured: false
-  version: ""
+  version: ''
   version_label:
-    zh: "开发中"
-    en: "In development"
-  released_at: ""
-  updated_at: ""
+    zh: 开发中
+    en: In development
+  released_at: ''
+  updated_at: ''
   min_os:
-    zh: "iOS"
-    en: "iOS"
+    zh: iOS
+    en: iOS
   links:
-    source: "https://github.com/zero2you4tech/Z2Y-AC"
+    source: https://github.com/zero2you4tech/Z2Y-AC
     primary_label:
-      zh: "查看仓库"
-      en: "View repository"
+      zh: 查看仓库
+      en: View repository
   highlights:
-    - zh: "以变化为核心主题"
-      en: "Change as the central theme"
-    - zh: "游戏化探索"
-      en: "Game-like exploration"
+  - zh: 以变化为核心主题
+    en: Change as the central theme
+  - zh: 游戏化探索
+    en: Game-like exploration
   requirements:
-    - zh: "开发状态与可用性请以仓库为准"
-      en: "Check the repository for current status and availability"
+  - zh: 开发状态与可用性请以仓库为准
+    en: Check the repository for current status and availability
   install:
-    - zh: "当前尚未提供公开安装包。"
-      en: "A public installer is not available yet."
+  - zh: 当前尚未提供公开安装包。
+    en: A public installer is not available yet.
   faq: []
   changelog: []
 - id: z2y-fitness
   order: 11
   name:
-    zh: "FormSet 形集"
-    en: "FormSet"
+    zh: FormSet 形集
+    en: FormSet
   tagline:
-    zh: "双语健身训练伴侣"
-    en: "Bilingual gym companion"
+    zh: 双语健身训练伴侣
+    en: Bilingual gym companion
   summary:
-    zh: "在健身房现场快速找到动作、看清步骤、完成每一组，并得到下一次可执行的建议。"
-    en: "Find an exercise, learn the movement, log every set, and get one actionable next step."
+    zh: 在健身房现场快速找到动作、看清步骤、完成每一组，并得到下一次可执行的建议。
+    en: Find an exercise, learn the movement, log every set, and get one actionable
+      next step.
   description:
-    zh: >-
-      FormSet 形集是一款本地优先的双语健身训练伴侣，内置 1,324 条动作目录，可按目标部位、器械或关键词搜索和筛选，
-      并查看示范、步骤、目标肌群与安全提示。训练时记录组数、次数、重量或时长，并自动倒计时休息；完成后生成
+    zh: FormSet 形集是一款本地优先的双语健身训练伴侣，内置 1,324 条动作目录，可按目标部位、器械或关键词搜索和筛选， 并查看示范、步骤、目标肌群与安全提示。训练时记录组数、次数、重量或时长，并自动倒计时休息；完成后生成
       训练收据、个人最佳与趋势。无需注册账号，训练数据默认保存在本机，离线也能继续训练。
-    en: >-
-      FormSet is a local-first bilingual gym companion with a built-in catalog of 1,324 exercises.
-      Search and filter by body part, equipment, or keyword, then review demos, steps, target muscles,
-      and safety notes. During a workout it logs sets, reps, weight, or time with an automatic rest timer,
-      and produces a receipt, personal bests, and trends afterward. No account is required; training data
+    en: FormSet is a local-first bilingual gym companion with a built-in catalog of
+      1,324 exercises. Search and filter by body part, equipment, or keyword, then
+      review demos, steps, target muscles, and safety notes. During a workout it logs
+      sets, reps, weight, or time with an automatic rest timer, and produces a receipt,
+      personal bests, and trends afterward. No account is required; training data
       stays on your device and keeps working offline.
   logo: "/assets/apps/Z2Y-Fitness/logo.png"
   accent: "#c8ff5a"
   platforms:
-    - "iOS"
+  - iOS
   price:
     zh: "¥15.00"
     en: "$1.99"
-  status: "available"
+  status: available
   featured: true
-  version: "1.0"
+  version: '1.0'
   version_label:
-    zh: "App Store 当前版本"
-    en: "Current App Store version"
-  released_at: "2026-08-29"
-  updated_at: "2026-08-29"
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2026-08-29'
+  updated_at: '2026-08-29'
   min_os:
-    zh: "iOS 17.0 或更高版本"
-    en: "iOS 17.0 or later"
+    zh: iOS 17.0 或更高版本
+    en: iOS 17.0 or later
   links:
-    primary: "https://apps.apple.com/cn/app/formset-%E5%BD%A2%E9%9B%86/id6801817700?uo=4"
+    primary: https://apps.apple.com/cn/app/formset-%E5%BD%A2%E9%9B%86/id6801817700?uo=4
     primary_label:
-      zh: "在 App Store 查看"
-      en: "View on the App Store"
+      zh: 在 App Store 查看
+      en: View on the App Store
     support: "/support/z2y-fitness/"
   highlights:
-    - zh: "内置 1,324 条动作，中英双语名称与步骤"
-      en: "1,324 built-in exercises with bilingual names and steps"
-    - zh: "按目标部位、器械与关键词快速筛选动作"
-      en: "Filter exercises by body part, equipment, and keyword"
-    - zh: "记录组数、次数、重量或时长，并自动倒计时休息"
-      en: "Log sets, reps, weight, or time with an automatic rest timer"
-    - zh: "训练收据、个人最佳与趋势都保存在本机"
-      en: "Receipts, personal bests, and trends stay on your device"
+  - zh: 内置 1,324 条动作，中英双语名称与步骤
+    en: 1,324 built-in exercises with bilingual names and steps
+  - zh: 按目标部位、器械与关键词快速筛选动作
+    en: Filter exercises by body part, equipment, and keyword
+  - zh: 记录组数、次数、重量或时长，并自动倒计时休息
+    en: Log sets, reps, weight, or time with an automatic rest timer
+  - zh: 训练收据、个人最佳与趋势都保存在本机
+    en: Receipts, personal bests, and trends stay on your device
+  screenshots:
+  - image: "/assets/apps/Z2Y-Fitness/screen-today.jpg"
+    caption:
+      zh: 今日：本周节奏、训练集预览与最近训练
+      en: 'Today: weekly rhythm, plan preview, and recent sessions'
+  - image: "/assets/apps/Z2Y-Fitness/screen-explore.jpg"
+    caption:
+      zh: 动作库：搜索并按部位、器械筛选 1,324 条动作
+      en: 'Explore: search and filter 1,324 exercises by body part and equipment'
+  - image: "/assets/apps/Z2Y-Fitness/screen-workout.jpg"
+    caption:
+      zh: 训练：逐组记录次数、重量与 RPE，并标记疼痛
+      en: 'Workout: log reps, weight, and RPE per set, and flag pain'
+  - image: "/assets/apps/Z2Y-Fitness/screen-ipad-explore.jpg"
+    caption:
+      zh: iPad 同样可用，界面自适应大屏
+      en: Also available on iPad with a layout that adapts to the larger screen
   requirements:
-    - zh: "运行 iOS 17.0 或更高版本的 iPhone 或 iPad"
-      en: "iPhone or iPad running iOS 17.0 or later"
-    - zh: "无需注册账号；训练数据默认保存在本机"
-      en: "No account required; training data is stored on your device"
+  - zh: 运行 iOS 17.0 或更高版本的 iPhone 或 iPad
+    en: iPhone or iPad running iOS 17.0 or later
+  - zh: 无需注册账号；训练数据默认保存在本机
+    en: No account required; training data is stored on your device
   install:
-    - zh: "从 App Store 安装 FormSet 形集并打开，无需注册或登录。"
-      en: "Install FormSet from the App Store and open it; no sign-up or login is required."
-    - zh: "在“今日”页选择一种开始方式：继续训练、空白训练、按部位开始、按器械开始，或直接打开一个训练集。"
-      en: "On Today, pick a starting point: continue a workout, start blank, start by body part, start by equipment, or open a plan."
-    - zh: "在“动作库”用关键词、目标部位或器械筛选动作，打开详情查看示范、步骤、目标肌群与安全提示，并可收藏或加入训练。"
-      en: "In Explore, filter by keyword, body part, or equipment, then open an exercise for its demo, steps, target muscles, and safety notes. Favorite it or add it to a workout."
-    - zh: "在“训练”页调整动作顺序、组数与目标，输入每组的次数、重量或时长；完成一组后自动进入休息倒计时，可暂停、跳过、撤销或加时。"
-      en: "In Workout, adjust order, sets, and targets, then enter reps, weight, or time for each set. Finishing a set starts the rest timer; pause, skip, undo, or add time as needed."
-    - zh: "完成训练后查看训练收据：完成动作、总组数、时长、个人最佳，以及一条基于已记录事实的下一次建议。"
-      en: "After finishing, review the receipt: completed exercises, total sets, duration, personal bests, and one next step based on what you actually logged."
-    - zh: "在“记录”页按日历回看每一次训练，并查看单个动作的历史与趋势。"
-      en: "In History, browse past sessions on the calendar and review per-exercise history and trends."
-    - zh: "在“我的”中切换界面语言与重量单位、管理通知与可选分析，并导出 JSON / CSV 或删除本机记录。"
-      en: "In Profile, switch language and weight unit, manage notifications and optional analytics, and export JSON / CSV or delete local records."
-    - zh: "动作目录与训练记录支持离线使用；重新联网后无需重新登录。"
-      en: "The catalog and workout records work offline; no re-login is needed when you are back online."
+  - zh: 从 App Store 安装 FormSet 形集并打开，无需注册或登录。
+    en: Install FormSet from the App Store and open it; no sign-up or login is required.
+  - zh: 在“今日”页选择一种开始方式：继续训练、空白训练、按部位开始、按器械开始，或直接打开一个训练集。
+    en: 'On Today, pick a starting point: continue a workout, start blank, start by
+      body part, start by equipment, or open a plan.'
+  - zh: 在“动作库”用关键词、目标部位或器械筛选动作，打开详情查看示范、步骤、目标肌群与安全提示，并可收藏或加入训练。
+    en: In Explore, filter by keyword, body part, or equipment, then open an exercise
+      for its demo, steps, target muscles, and safety notes. Favorite it or add it
+      to a workout.
+  - zh: 在“训练”页调整动作顺序、组数与目标，输入每组的次数、重量或时长；完成一组后自动进入休息倒计时，可暂停、跳过、撤销或加时。
+    en: In Workout, adjust order, sets, and targets, then enter reps, weight, or time
+      for each set. Finishing a set starts the rest timer; pause, skip, undo, or add
+      time as needed.
+  - zh: 完成训练后查看训练收据：完成动作、总组数、时长、个人最佳，以及一条基于已记录事实的下一次建议。
+    en: 'After finishing, review the receipt: completed exercises, total sets, duration,
+      personal bests, and one next step based on what you actually logged.'
+  - zh: 在“记录”页按日历回看每一次训练，并查看单个动作的历史与趋势。
+    en: In History, browse past sessions on the calendar and review per-exercise history
+      and trends.
+  - zh: 在“我的”中切换界面语言与重量单位、管理通知与可选分析，并导出 JSON / CSV 或删除本机记录。
+    en: In Profile, switch language and weight unit, manage notifications and optional
+      analytics, and export JSON / CSV or delete local records.
+  - zh: 动作目录与训练记录支持离线使用；重新联网后无需重新登录。
+    en: The catalog and workout records work offline; no re-login is needed when you
+      are back online.
   faq:
-    - q:
-        zh: "需要注册账号吗？"
-        en: "Do I need an account?"
-      a:
-        zh: "不需要。首次打开即可使用全部功能，训练数据默认保存在本机。"
-        en: "No. Every feature is available on first launch, and training data is stored on your device by default."
-    - q:
-        zh: "可以离线使用吗？"
-        en: "Can I use it offline?"
-      a:
-        zh: "可以。动作目录和本地训练记录支持离线访问；联网只用于 App Store 更新等系统功能。"
-        en: "Yes. The exercise catalog and local workout records work offline; the network is only used for system features such as App Store updates."
-    - q:
-        zh: "如何导出或删除我的数据？"
-        en: "How do I export or delete my data?"
-      a:
-        zh: "进入“我的 → 数据权利”，可导出 JSON / CSV 或删除本机记录。删除操作不可撤销。"
-        en: "Open Profile → Data rights to export JSON / CSV or delete local records. Deletion cannot be undone."
-    - q:
-        zh: "训练数据会同步到云端或 Apple 健康吗？"
-        en: "Does my data sync to the cloud or Apple Health?"
-      a:
-        zh: "当前版本不上传训练数据，也未接入 Apple 健康；记录保存在本机，可由你自行导出。"
-        en: "The current version does not upload training data and does not connect to Apple Health; records stay on your device and you can export them yourself."
+  - q:
+      zh: 需要注册账号吗？
+      en: Do I need an account?
+    a:
+      zh: 不需要。首次打开即可使用全部功能，训练数据默认保存在本机。
+      en: No. Every feature is available on first launch, and training data is stored
+        on your device by default.
+  - q:
+      zh: 可以离线使用吗？
+      en: Can I use it offline?
+    a:
+      zh: 可以。动作目录和本地训练记录支持离线访问；联网只用于 App Store 更新等系统功能。
+      en: Yes. The exercise catalog and local workout records work offline; the network
+        is only used for system features such as App Store updates.
+  - q:
+      zh: 如何导出或删除我的数据？
+      en: How do I export or delete my data?
+    a:
+      zh: 进入“我的 → 数据权利”，可导出 JSON / CSV 或删除本机记录。删除操作不可撤销。
+      en: Open Profile → Data rights to export JSON / CSV or delete local records.
+        Deletion cannot be undone.
+  - q:
+      zh: 训练数据会同步到云端或 Apple 健康吗？
+      en: Does my data sync to the cloud or Apple Health?
+    a:
+      zh: 当前版本不上传训练数据，也未接入 Apple 健康；记录保存在本机，可由你自行导出。
+      en: The current version does not upload training data and does not connect to
+        Apple Health; records stay on your device and you can export them yourself.
   changelog:
-    - version: "1.0"
-      date: "2026-08-29"
-      notes:
-        zh: "上架 App Store：双语动作库、训练记录、训练收据与本机数据管理。"
-        en: "Released on the App Store: bilingual exercise catalog, workout logging, receipts, and on-device data controls."
+  - version: '1.0'
+    date: '2026-08-29'
+    notes:
+      zh: 上架 App Store：双语动作库、训练记录、训练收据与本机数据管理。
+      en: 'Released on the App Store: bilingual exercise catalog, workout logging,
+        receipts, and on-device data controls.'
+- id: z2y-timer
+  order: 12
+  status: available
+  featured: true
+  platforms:
+  - iOS
+  price:
+    zh: "¥1.00"
+    en: "$0.99"
+  links:
+    primary: https://apps.apple.com/cn/app/id6747674764
+    primary_label:
+      zh: 在 App Store 查看
+      en: View on the App Store
+    support: "/support/z2y-timer/"
+  highlights:
+  - zh: 计时、记时、专注三个板块，分别对应现在、周期与过程
+    en: 'Three sections for the present, the recurring, and the process: countdown,
+      remember, and focus'
+  - zh: 记时支持每天、工作日、周末、每周、每月、每年，以及公历与农历纪念日
+    en: Repeat daily, on weekdays, weekends, weekly, monthly, or yearly, with Gregorian
+      and lunar anniversaries
+  - zh: 完成后留下一枚印记，时间簿按日、周、月回看真实投入
+    en: Every finished session leaves a mark in the day, week, and month time book
+  - zh: 本地优先：没有账号、没有云端、没有广告
+    en: 'Local-first: no account, no cloud, no ads'
+  requirements:
+  - zh: 运行 iOS 或 iPadOS 16.4 或更高版本的 iPhone 或 iPad
+    en: iPhone or iPad running iOS or iPadOS 16.4 or later
+  - zh: 无需注册账号；方案、记录与印记保存在本机
+    en: No account required; plans, records, and marks stay on your device
+  - zh: 完成提醒与记时提醒需要通知权限，拒绝后计时与时间簿仍然可用
+    en: Completion and reminder alerts need notification permission; the timer and
+      time book still work without it
+  install:
+  - zh: 从 App Store 安装 Z2Y 记时并打开，无需注册或登录。
+    en: Install Z2Y Remember Timer from the App Store and open it; no sign-up or login
+      is required.
+  - zh: 底部固定三个板块：计时用于给一段时长设边界，记时用于周期事务与纪念日，专注用于把总时长拆成提醒环。
+    en: 'Three sections sit in the bottom bar: countdown for a bounded stretch of
+      time, remember for recurring commitments and anniversaries, and focus for splitting
+      a total duration into rings.'
+  - zh: 在计时板块点方案的「开始」，或用「新建自定义计时」设置时、分、秒；运行中可以暂停、继续或结束。
+    en: In countdown, tap Start on a plan or create a custom countdown with hours,
+      minutes, and seconds; pause, resume, or end it while it runs.
+  - zh: 在计时段点「…」或铅笔图标编辑方案：改名称、图标、时长与完成提示，不需要的方案可以直接删除。
+    en: In countdown, edit a plan to change its name, icon, duration, and completion
+      cue, and delete the ones you no longer need.
+  - zh: 在记时板块点「+」新建记时：填写名称、24 小时制时间与重复周期（每天、工作日、周末、每周、每月、每年），或建立公历 / 农历纪念日。
+    en: 'In remember, tap + to add an entry: name, 24-hour time, and a repeat rule
+      (daily, weekdays, weekends, weekly, monthly, yearly), or an anniversary on the
+      Gregorian or lunar calendar.'
+  - zh: 每条记时会显示距离下一次的倒计时，并可以用开关单独暂停或恢复提醒；长按条目的「…」可以编辑或删除。
+    en: Each entry shows a countdown to its next occurrence and has its own reminder
+      switch; open its menu to edit or delete it.
+  - zh: 在专注板块选择或定制专注节奏（总时长加每环时长），运行中每完成一环会有一次轻提醒，结束后保留本次完成情况。
+    en: In focus, pick or build a focus rhythm (total duration plus ring length).
+      Each finished ring gives one gentle cue, and the session result is kept when
+      you stop.
+  - zh: 完成后打开时间簿：日页与周页回看节奏与累积，可以导出分享卡片；月页日历与年度汇总需要 Pro。
+    en: 'After finishing, open the time book: day and week pages show your rhythm
+      and totals, and share cards can be exported; the month calendar and yearly review
+      need Pro.'
+  - zh: 在设置中管理通知、声音与振动、外观与印记主题，并在「数据与隐私」中导出 JSON / CSV、导入旧版数据或查看隐私说明。
+    en: In settings, manage notifications, sound and haptics, appearance and mark
+      themes, then use Data & privacy to export JSON / CSV, import legacy data, or
+      review the privacy note.
+  faq:
+  - q:
+      zh: 需要注册账号吗？
+      en: Do I need an account?
+    a:
+      zh: 不需要。安装后即可使用全部计时功能，方案、记录与印记都保存在本机。
+      en: No. Every timing feature is available right after install, and plans, records,
+        and marks are stored on your device.
+  - q:
+      zh: 免费版和 Pro 有什么区别？
+      en: What does Pro add?
+    a:
+      zh: 基础计时、完成提醒以及日页 / 周页时间簿对所有用户免费；Pro 提供更多印记主题与纸张、月页日历与年度长期回顾，以及专属分享卡片。购买方案与价格以应用内购买页和
+        App Store 显示为准。
+      en: Core timing, completion alerts, and the day / week time book are free for
+        everyone. Pro adds more mark themes and papers, the month calendar with yearly
+        review, and dedicated share cards. Plans and prices follow what the in-app
+        purchase screen and the App Store show.
+  - q:
+      zh: 拒绝通知权限会怎样？
+      en: What happens if I deny notifications?
+    a:
+      zh: 计时与时间簿仍然可以正常使用。完成提醒和记时提醒不会在后台出现，但记时仍会保留并显示下一次发生时间，随时可以在系统设置中重新开启。
+      en: The timer and time book keep working. Completion and reminder alerts will
+        not appear in the background, but each entry still keeps and shows its next
+        occurrence time, and you can enable notifications again in system settings.
+  - q:
+      zh: 数据会被上传吗？
+      en: Is my data uploaded?
+    a:
+      zh: 不会。应用没有账号体系，也不连接云端；方案、记录、印记与偏好只保存在设备上。可在设置中导出 JSON / CSV 备份，或从旧版数据导入。
+      en: No. There is no account system and no cloud service; plans, records, marks,
+        and preferences stay on your device. You can export JSON / CSV backups or
+        import data from the legacy version in settings.
+  - q:
+      zh: 删除 App 会怎样？
+      en: What happens if I delete the app?
+    a:
+      zh: 删除 App 会同时移除保存在设备上的方案、记录与印记，且无法恢复。删除前请先在设置中导出 JSON / CSV。
+      en: Deleting the app also removes the plans, records, and marks stored on the
+        device, and they cannot be restored. Export JSON / CSV from settings first
+        if you want a copy.
+  changelog:
+  - version: 2.0.0
+    date: '2026-10-10'
+    notes:
+      zh: App Store 发布 2.0.0：优化计时、记时与专注三个板块的交互体验，支持删除计划与纪念日，并改进返回与滑动切换。
+      en: '2.0.0 on the App Store: refined the countdown, remember, and focus sections,
+        added deletion for plans and anniversaries, and improved back navigation and
+        swipe switching.'
+  name:
+    zh: Z2Y 记时
+    en: Z2Y Remember Timer
+  tagline:
+    zh: 把完成的时间留成印记
+    en: Turn finished time into a mark
+  summary:
+    zh: 计时、记时与专注收进同一个应用：完成一段就留下一个印记，再在时间簿里看见自己真实的投入。
+    en: Countdowns, recurring reminders, and focus sessions in one app — every finished
+      stretch leaves a mark you can revisit in the time book.
+  description:
+    zh: Z2Y 记时围绕三个板块组织时间：计时给一段时长设定清晰的边界，明确开始，也明确结束；记时按天、工作日、每周、每月或每年记住周期事务，并用公历或农历记下纪念日，只在下一次发生前出现；专注把总时长拆成一圈圈，用轻提醒维持节奏。完成后会留下一枚印记：大小表示实际时长，颜色表示类别，轮廓表示状态。印记落进时间簿，日页与周页随时可以回看；月页与年度汇总属于可选的
+      Pro。应用不需要注册账号，没有云端与广告，方案、记录与印记都保存在设备上，计时状态离开应用也会继续。
+    en: 'Z2Y Remember Timer organises time around three sections. Countdown gives
+      a stretch of time a clear boundary — a clear start and a clear end. Remember
+      keeps recurring commitments (daily, weekdays, weekly, monthly, yearly) and anniversaries
+      on the Gregorian or lunar calendar, showing them only before the next occurrence.
+      Focus splits a total duration into rings with gentle cues that keep the rhythm.
+      Every finished session leaves a mark: size is the real duration, colour is the
+      category, and outline is the status. Marks fall into the time book, where day
+      and week pages are always available and the month page plus yearly review belong
+      to optional Pro. No account, no cloud, no ads: plans, records, and marks stay
+      on your device, and a running timer continues after you leave the app.'
+  logo: "/assets/apps/Z2Y-Timer/logo.png"
+  accent: "#6fd3b4"
+  version: 2.0.0
+  version_label:
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2025-06-24'
+  updated_at: '2026-10-10'
+  min_os:
+    zh: iOS / iPadOS 16.4 或更高版本
+    en: iOS or iPadOS 16.4 or later

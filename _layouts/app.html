@@ -63,6 +63,27 @@ layout: default
     </div>
   </section>
 
+  {% if app.screenshots.size > 0 %}
+  <section class="z2y-section z2y-section--tight z2y-app-screens">
+    <div class="z2y-shell">
+      <div class="z2y-section__head">
+        <div>
+          <p class="z2y-kicker">SCREENS / 01</p>
+          <h2 class="z2y-section__title">{% include lang.html key="app_screens" %}</h2>
+        </div>
+      </div>
+      <div class="z2y-screens">
+        {% for shot in app.screenshots %}
+          <figure class="z2y-screens__item">
+            <img src="{{ shot.image | relative_url }}" alt="{% if page.app_id %}{{ app.name.zh }}{% endif %}" loading="lazy">
+            <figcaption><span data-lang="zh">{{ shot.caption.zh }}</span><span data-lang="en">{{ shot.caption.en }}</span></figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
   <section class="z2y-section">
     <div class="z2y-shell z2y-app-detail-grid">
       <div class="z2y-app-detail__main">

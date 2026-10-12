@@ -1716,6 +1716,45 @@ body.z2y-site .page__footer-copyright {
   color: var(--z2y-accent);
 }
 
+/* App screens */
+.z2y-app-screens {
+  background:
+    radial-gradient(circle at 78% 12%, color-mix(in srgb, var(--app-accent) 10%, transparent), transparent 26%),
+    var(--z2y-bg-soft);
+}
+
+.z2y-screens {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.z2y-screens__item {
+  flex: 0 0 auto;
+  margin: 0;
+  width: 268px;
+  scroll-snap-align: start;
+}
+
+.z2y-screens__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--z2y-line-strong);
+  border-radius: 22px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.34);
+}
+
+.z2y-screens__item figcaption {
+  margin-top: 14px;
+  color: var(--z2y-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
 /* Motion */
 .z2y-reveal {
   opacity: 0;

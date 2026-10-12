@@ -30,6 +30,27 @@ FormSet 形集是一款面向 iPhone 与 iPad 的本地优先双语健身训练�
 5. 在 **记录** 页按日历回看每一次训练，并查看单个动作的历史与趋势。
 6. 在 **我的** 中设置语言与重量单位、管理通知与可选分析，并导出或删除数据。
 
+## Screenshots / 界面预览
+
+<div class="z2y-screens" style="margin: 8px 0 4px;">
+  <figure class="z2y-screens__item">
+    <img src="/assets/apps/Z2Y-Fitness/screen-today.jpg" alt="FormSet 形集 今日" loading="lazy">
+    <figcaption>今日 · Today</figcaption>
+  </figure>
+  <figure class="z2y-screens__item">
+    <img src="/assets/apps/Z2Y-Fitness/screen-explore.jpg" alt="FormSet 形集 动作库" loading="lazy">
+    <figcaption>动作库 · Explore</figcaption>
+  </figure>
+  <figure class="z2y-screens__item">
+    <img src="/assets/apps/Z2Y-Fitness/screen-workout.jpg" alt="FormSet 形集 训练" loading="lazy">
+    <figcaption>训练 · Workout</figcaption>
+  </figure>
+  <figure class="z2y-screens__item">
+    <img src="/assets/apps/Z2Y-Fitness/screen-ipad-explore.jpg" alt="FormSet 形集 iPad" loading="lazy">
+    <figcaption>iPad · 动作库</figcaption>
+  </figure>
+</div>
+
 ## Contact / 联系支持
 
 For help, email [petterobam@gmail.com](mailto:petterobam@gmail.com). Please include your device model, iOS version, FormSet version, the exact steps you took, and the full error message.
