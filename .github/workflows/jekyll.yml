@@ -42,6 +42,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Validate product content
+        run: ruby .codex/skills/zero2you-site-manager/scripts/validate_site_content.rb .
+
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

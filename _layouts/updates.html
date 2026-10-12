@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="z2y-page z2y-index-page">
+  <section class="z2y-page-hero">
+    <div class="z2y-shell">
+      <p class="z2y-kicker">RELEASE LOG / 03</p>
+      <h1 class="z2y-page-hero__title">{% include lang.html key="updates_title" %}</h1>
+      <p class="z2y-page-hero__copy">{% include lang.html key="updates_copy" %}</p>
+      <div class="z2y-page-hero__rule"></div>
+    </div>
+  </section>
+  <section class="z2y-section z2y-section--tight">
+    <div class="z2y-shell">
+      <div class="z2y-update-archive">
+        {% for post in site.categories["app-update"] %}
+          {% assign post_app = site.data.apps | where: "id", post.app_id | first %}
+          <a class="z2y-update-archive__item" href="{{ post.url | relative_url }}">
+            <span class="z2y-update-archive__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <span class="z2y-update-archive__main">
+              {% if post_app %}<small>{{ post_app.name.zh }}</small>{% endif %}
+              <strong>{{ post.title }}</strong>
+              {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 170 }}</p>{% endif %}
+            </span>
+            <span class="z2y-update-archive__arrow" aria-hidden="true">↗</span>
+          </a>
+        {% else %}
+          <p class="z2y-empty">{% include lang.html key="updates_empty" %}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

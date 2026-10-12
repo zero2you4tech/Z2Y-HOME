@@ -1,0 +1,2 @@
+{% assign _key = include.key %}
+<span data-lang="zh">{{ site.data.ui.zh[_key] | default: include.fallback }}</span><span data-lang="en">{{ site.data.ui.en[_key] | default: include.fallback }}</span>

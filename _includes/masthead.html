@@ -1,0 +1,37 @@
+<div class="masthead z2y-masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        {% if site.logo %}
+          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ site.logo | relative_url }}" alt="{{ site.title }}"></a>
+        {% endif %}
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.title }}
+          <span class="site-subtitle"><span data-lang="zh">独立产品工作室</span><span data-lang="en">Independent Product Studio</span></span>
+        </a>
+        <ul class="visible-links">
+          {% for link in site.data.navigation.main %}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}">
+                <span data-lang="zh">{{ link.title_zh | default: link.title }}</span><span data-lang="en">{{ link.title | default: link.title_zh }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="z2y-masthead__controls">
+          {% include language-switch.html compact=true %}
+          {% if site.search == true %}
+            <button class="search__toggle" type="button" aria-label="Search / 搜索">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          {% endif %}
+        </div>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

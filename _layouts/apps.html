@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="z2y-page z2y-index-page">
+  <section class="z2y-page-hero">
+    <div class="z2y-shell">
+      <p class="z2y-kicker">PRODUCT CATALOG / 02</p>
+      <h1 class="z2y-page-hero__title">{% include lang.html key="apps_title" %}</h1>
+      <p class="z2y-page-hero__copy">{% include lang.html key="apps_copy" %}</p>
+      <div class="z2y-page-hero__rule"></div>
+    </div>
+  </section>
+  <section class="z2y-section z2y-section--tight">
+    <div class="z2y-shell">
+      <div class="z2y-filterbar" data-app-controls>
+        <div class="z2y-filterbar__filters" role="group" aria-label="Filter apps">
+          <button type="button" class="is-active" data-filter="all">{% include lang.html key="home_filter_all" %}</button>
+          <button type="button" data-filter="macos">macOS</button>
+          <button type="button" data-filter="ios">iOS</button>
+          <button type="button" data-filter="available">{% include lang.html key="home_filter_available" %}</button>
+          <button type="button" data-filter="in-development">{% include lang.html key="home_filter_development" %}</button>
+        </div>
+        <label class="z2y-search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input type="search" data-app-search placeholder="{{ site.data.ui.zh.home_search_placeholder }}" data-placeholder-zh="{{ site.data.ui.zh.home_search_placeholder }}" data-placeholder-en="{{ site.data.ui.en.home_search_placeholder }}" aria-label="{{ site.data.ui.zh.home_search_placeholder }}">
+        </label>
+      </div>
+      <div class="z2y-app-grid" data-app-grid>
+        {% for app in site.data.apps %}
+          {% include app-card.html app=app %}
+        {% endfor %}
+      </div>
+      <p class="z2y-empty" data-app-empty hidden>{% include lang.html key="home_products_empty" %}</p>
+    </div>
+  </section>
+</div>

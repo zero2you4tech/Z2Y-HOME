@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="z2y-page z2y-index-page">
+  <section class="z2y-page-hero">
+    <div class="z2y-shell">
+      <p class="z2y-kicker">STUDIO NOTES / 04</p>
+      <h1 class="z2y-page-hero__title">{% include lang.html key="journal_title" %}</h1>
+      <p class="z2y-page-hero__copy">{% include lang.html key="journal_copy" %}</p>
+      <div class="z2y-page-hero__rule"></div>
+    </div>
+  </section>
+  <section class="z2y-section z2y-section--tight">
+    <div class="z2y-shell">
+      <div class="z2y-journal-archive">
+        {% for post in site.categories["article"] %}
+          <a class="z2y-journal-archive__item" href="{{ post.url | relative_url }}">
+            <span class="z2y-journal-archive__index">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+            <span class="z2y-journal-archive__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <span class="z2y-journal-archive__content">
+              <strong>{{ post.title }}</strong>
+              {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+            </span>
+            <span class="z2y-journal-archive__arrow" aria-hidden="true">↗</span>
+          </a>
+        {% else %}
+          <p class="z2y-empty">{% include lang.html key="journal_empty" %}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

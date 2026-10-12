@@ -10,11 +10,25 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("z2y-lang");
+          var browser = (navigator.language || "zh").toLowerCase();
+          var lang = saved || (browser.indexOf("zh") === 0 ? "zh" : "en");
+          document.documentElement.setAttribute("data-lang", lang);
+          document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        } catch (error) {
+          document.documentElement.setAttribute("data-lang", "zh");
+        }
+      })();
+    </script>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/z2y.css' | relative_url }}">
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="layout--{{ page.layout | default: layout.layout }} z2y-site{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include browser-upgrade.html %}
     {% include masthead.html %}
@@ -45,6 +59,7 @@
     </div>
 
     {% include scripts.html %}
+    <script src="{{ '/assets/js/z2y.js' | relative_url }}"></script>
     <style>
       .google-auto-placed {
         margin: 2em auto;

@@ -13,9 +13,9 @@ minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark
 locale                   : "zh-CN" #"en-US"
 title                    : "Zero2You Studio"
 title_separator          : "-"
-subtitle                 : "我们致力于开发出帮助人们成长的产品٩(•̤̀ᵕ•̤́๑)"
+subtitle                 : "独立产品工作室 · Independent Product Studio"
 name                     : &name "Petterobam" # &name is a YAML anchor which can be *referenced later
-description              : &description "Zero2You Studio is committed to developing products that help people grow. We explore growth-oriented applications that enable you to gain better cognition and develop better habits while using them,and at that point, the application itself will have fulfilled its mission."
+description              : &description "Zero2You Studio builds thoughtful products for growth, knowledge, and daily work. 我们是一间独立产品工作室，专注于成长、知识与效率工具。"
 url                      : https://www.zero2you.tech # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "zero2you4tech/Z2Y-HOME"
@@ -144,6 +144,7 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
+  - .codex
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -205,6 +206,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  apps:
+    output: true
+    permalink: /apps/:name/
 
 
 # Defaults
@@ -265,6 +269,15 @@ defaults:
       layout: single
       author_profile: false
       share: true
+  # _apps
+  - scope:
+      path: ""
+      type: apps
+    values:
+      layout: app
+      author_profile: false
+      share: false
+      comments: false
 
 
 # Sass/SCSS
@@ -277,7 +290,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

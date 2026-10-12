@@ -1,0 +1,182 @@
+---
+layout: default
+---
+
+{% assign app_matches = site.data.apps | where: "id", page.app_id %}
+{% assign app = app_matches | first %}
+{% assign status_key = "status_" | append: app.status %}
+{% assign app_updates = site.categories["app-update"] %}
+
+{% if app %}
+<div class="z2y-page z2y-app-page" style="--app-accent: {{ app.accent | default: '#e8b86d' }};">
+  <section class="z2y-app-hero">
+    <div class="z2y-shell z2y-app-hero__grid">
+      <div class="z2y-app-hero__visual z2y-reveal">
+        <div class="z2y-app-hero__halo"></div>
+        <img src="{{ app.logo | relative_url }}" alt="{{ app.name.zh }}" width="220" height="220">
+      </div>
+      <div class="z2y-app-hero__content z2y-reveal z2y-reveal--delay">
+        <a class="z2y-back-link" href="{{ '/apps/' | relative_url }}"><span aria-hidden="true">←</span> {% include lang.html key="app_back" %}</a>
+        <p class="z2y-kicker">{{ app.platforms | join: ' / ' }} · {% include lang.html key=status_key fallback=app.status %}</p>
+        <h1><span data-lang="zh">{{ app.name.zh }}</span><span data-lang="en">{{ app.name.en }}</span></h1>
+        <p class="z2y-app-hero__tagline"><span data-lang="zh">{{ app.tagline.zh }}</span><span data-lang="en">{{ app.tagline.en }}</span></p>
+        <p class="z2y-app-hero__summary"><span data-lang="zh">{{ app.summary.zh }}</span><span data-lang="en">{{ app.summary.en }}</span></p>
+        <div class="z2y-app-hero__actions">
+          {% if app.links.primary %}
+            <a class="z2y-button z2y-button--primary" href="{{ app.links.primary }}" target="_blank" rel="noopener noreferrer">
+              <span data-lang="zh">{{ app.links.primary_label.zh | default: "获取应用" }}</span><span data-lang="en">{{ app.links.primary_label.en | default: "Get app" }}</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          {% elsif app.links.source %}
+            <a class="z2y-button z2y-button--primary" href="{{ app.links.source }}" target="_blank" rel="noopener noreferrer">{% include lang.html key="app_source" %}<span aria-hidden="true">↗</span></a>
+          {% endif %}
+          {% if app.links.support %}
+            <a class="z2y-button z2y-button--ghost" href="{{ app.links.support | relative_url }}">{% include lang.html key="app_support" %}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-app-facts">
+    <div class="z2y-shell z2y-app-facts__grid">
+      <div class="z2y-fact-card">
+        <span>{% include lang.html key="app_version" %}</span>
+        <strong>{% if app.version != empty %}v{{ app.version }}{% else %}—{% endif %}</strong>
+        {% if app.version_label %}<small><span data-lang="zh">{{ app.version_label.zh }}</span><span data-lang="en">{{ app.version_label.en }}</span></small>{% endif %}
+      </div>
+      <div class="z2y-fact-card">
+        <span>{% include lang.html key="app_updated" %}</span>
+        <strong>{% if app.updated_at != empty %}{{ app.updated_at | date: "%Y.%m.%d" }}{% else %}—{% endif %}</strong>
+        <small>{% if app.released_at != empty %}{% include lang.html key="app_released" %} · {{ app.released_at | date: "%Y.%m" }}{% endif %}</small>
+      </div>
+      <div class="z2y-fact-card">
+        <span>{% include lang.html key="app_platform" %}</span>
+        <strong>{{ app.platforms | join: ' / ' }}</strong>
+        <small><span data-lang="zh">{{ app.min_os.zh }}</span><span data-lang="en">{{ app.min_os.en }}</span></small>
+      </div>
+      <div class="z2y-fact-card">
+        <span>{% include lang.html key="app_price" %}</span>
+        <strong><span data-lang="zh">{{ app.price.zh }}</span><span data-lang="en">{{ app.price.en }}</span></strong>
+        <small>{% include lang.html key=status_key fallback=app.status %}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-section">
+    <div class="z2y-shell z2y-app-detail-grid">
+      <div class="z2y-app-detail__main">
+        <article class="z2y-content-block">
+          <p class="z2y-kicker">ABOUT / 01</p>
+          <h2>{% include lang.html key="app_features" %}</h2>
+          <div class="z2y-prose">
+            <div data-lang="zh"><p>{{ app.description.zh }}</p></div>
+            <div data-lang="en"><p>{{ app.description.en }}</p></div>
+          </div>
+          <ul class="z2y-feature-list">
+            {% for highlight in app.highlights %}
+              <li><span class="z2y-feature-list__mark" aria-hidden="true"></span><span data-lang="zh">{{ highlight.zh }}</span><span data-lang="en">{{ highlight.en }}</span></li>
+            {% endfor %}
+          </ul>
+        </article>
+
+        <article class="z2y-content-block">
+          <p class="z2y-kicker">SETUP / 02</p>
+          <h2>{% include lang.html key="app_usage" %}</h2>
+          <ol class="z2y-steps">
+            {% for step in app.install %}
+              <li>
+                <span class="z2y-steps__number">0{{ forloop.index }}</span>
+                <span><span data-lang="zh">{{ step.zh }}</span><span data-lang="en">{{ step.en }}</span></span>
+              </li>
+            {% endfor %}
+          </ol>
+        </article>
+
+        {% if app.faq.size > 0 %}
+        <article class="z2y-content-block">
+          <p class="z2y-kicker">FAQ / 03</p>
+          <h2>{% include lang.html key="app_faq" %}</h2>
+          <div class="z2y-faq">
+            {% for item in app.faq %}
+              <details>
+                <summary><span data-lang="zh">{{ item.q.zh }}</span><span data-lang="en">{{ item.q.en }}</span><span class="z2y-faq__icon" aria-hidden="true">+</span></summary>
+                <div><span data-lang="zh">{{ item.a.zh }}</span><span data-lang="en">{{ item.a.en }}</span></div>
+              </details>
+            {% endfor %}
+          </div>
+        </article>
+        {% endif %}
+
+        {% if app.changelog.size > 0 %}
+        <article class="z2y-content-block">
+          <p class="z2y-kicker">CHANGELOG / 04</p>
+          <h2>{% include lang.html key="app_changelog" %}</h2>
+          <div class="z2y-timeline">
+            {% for release in app.changelog %}
+              <div class="z2y-timeline__item">
+                <div class="z2y-timeline__marker"></div>
+                <div>
+                  <div class="z2y-timeline__meta"><strong>v{{ release.version }}</strong><span>{{ release.date | date: "%Y.%m.%d" }}</span></div>
+                  <p><span data-lang="zh">{{ release.notes.zh }}</span><span data-lang="en">{{ release.notes.en }}</span></p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </article>
+        {% endif %}
+      </div>
+
+      <aside class="z2y-app-detail__side">
+        <div class="z2y-side-card">
+          <h3>{% include lang.html key="app_requirements" %}</h3>
+          <ul>
+            {% for item in app.requirements %}
+              <li><span data-lang="zh">{{ item.zh }}</span><span data-lang="en">{{ item.en }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="z2y-side-card">
+          <h3>{% include lang.html key="app_links" %}</h3>
+          <div class="z2y-link-list">
+            {% if app.links.primary %}<a href="{{ app.links.primary }}" target="_blank" rel="noopener noreferrer">{% include lang.html key="app_download" %}<span aria-hidden="true">↗</span></a>{% endif %}
+            {% if app.links.product %}<a href="{{ app.links.product }}" target="_blank" rel="noopener noreferrer">{% include lang.html key="app_product" %}<span aria-hidden="true">↗</span></a>{% endif %}
+            {% if app.links.source %}<a href="{{ app.links.source }}" target="_blank" rel="noopener noreferrer">{% include lang.html key="app_source" %}<span aria-hidden="true">↗</span></a>{% endif %}
+            {% if app.links.support %}<a href="{{ app.links.support | relative_url }}">{% include lang.html key="app_support" %}<span aria-hidden="true">→</span></a>{% endif %}
+          </div>
+        </div>
+        <div class="z2y-side-card z2y-side-card--accent">
+          <p class="z2y-kicker">RELEASE TRACK</p>
+          <h3>{% include lang.html key="app_updates" %}</h3>
+          {% assign related_count = 0 %}
+          {% for post in app_updates %}
+            {% if post.app_id == app.id %}
+              {% assign related_count = related_count | plus: 1 %}
+              <a class="z2y-side-update" href="{{ post.url | relative_url }}"><span>{{ post.date | date: "%Y.%m.%d" }}</span><strong>{{ post.title }}</strong></a>
+            {% endif %}
+          {% endfor %}
+          {% if related_count == 0 %}<p class="z2y-side-muted">{% include lang.html key="app_updates_empty" %}</p>{% endif %}
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ app.name.en | jsonify }},
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": {{ app.platforms | join: ", " | jsonify }},
+  "softwareVersion": {{ app.version | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": {{ app.price.en | jsonify }},
+    "priceCurrency": "CNY"
+  },
+  "url": {{ app.links.primary | default: site.url | jsonify }}
+}
+</script>
+{% else %}
+<div class="z2y-page"><div class="z2y-shell z2y-empty-state"><p>App data not found.</p></div></div>
+{% endif %}

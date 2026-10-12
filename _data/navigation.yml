@@ -20,16 +20,21 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: "https://z2y-zh.zero2you.tech/" # /docs/quick-start-guide/
+  - title: "Apps"
+    title_zh: "应用"
+    url: /apps/
+  - title: "Updates"
+    title_zh: "产品动态"
+    url: /updates/
+  - title: "Journal"
+    title_zh: "手记"
+    url: /journal/
   - title: "About"
+    title_zh: "关于"
     url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  - title: "Privacy Policy"
-    url: /terms/
+  - title: "Support"
+    title_zh: "支持"
+    url: /support/
 
 
 # documentation links

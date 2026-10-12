@@ -1,0 +1,186 @@
+---
+layout: default
+---
+
+{% assign app_count = site.data.apps | size %}
+{% assign live_count = 0 %}
+{% for app in site.data.apps %}
+  {% if app.status == "available" %}
+    {% assign live_count = live_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% assign update_posts = site.categories["app-update"] %}
+{% assign journal_posts = site.categories["article"] %}
+{% assign latest_update = update_posts | first %}
+
+<div class="z2y-page z2y-home">
+  <section class="z2y-hero">
+    <div class="z2y-shell z2y-hero__grid">
+      <div class="z2y-hero__content z2y-reveal">
+        <p class="z2y-kicker">{% include lang.html key="home_kicker" %}</p>
+        <h1 class="z2y-hero__title">{% include lang.html key="home_hero_title" %}</h1>
+        <p class="z2y-hero__copy">{% include lang.html key="home_hero_copy" %}</p>
+        <div class="z2y-hero__actions">
+          <a class="z2y-button z2y-button--primary" href="{{ '/apps/' | relative_url }}">{% include lang.html key="home_explore" %}<span aria-hidden="true">→</span></a>
+          <a class="z2y-button z2y-button--ghost" href="{{ '/updates/' | relative_url }}">{% include lang.html key="home_latest" %}<span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+      <div class="z2y-hero__panel z2y-reveal z2y-reveal--delay">
+        <div class="z2y-orbit" aria-hidden="true">
+          <span class="z2y-orbit__ring z2y-orbit__ring--one"></span>
+          <span class="z2y-orbit__ring z2y-orbit__ring--two"></span>
+          <span class="z2y-orbit__core">Z2Y</span>
+        </div>
+        <div class="z2y-stat-grid">
+          <div class="z2y-stat">
+            <strong>{{ app_count }}</strong>
+            <span>{% include lang.html key="home_status_products" %}</span>
+          </div>
+          <div class="z2y-stat">
+            <strong>{{ live_count }}</strong>
+            <span>{% include lang.html key="home_status_live" %}</span>
+          </div>
+          <div class="z2y-stat">
+            <strong>02</strong>
+            <span>{% include lang.html key="home_status_platforms" %}</span>
+            <small>macOS / iOS</small>
+          </div>
+          <div class="z2y-stat">
+            <strong>{% if latest_update %}{{ latest_update.date | date: "%Y.%m" }}{% else %}2026.10{% endif %}</strong>
+            <span>{% include lang.html key="home_status_updated" %}</span>
+            <small>{% if latest_update %}{{ latest_update.title_en | default: latest_update.title | truncate: 22 }}{% else %}Zero2You Studio{% endif %}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="z2y-hero__ticker" aria-hidden="true">
+      <div class="z2y-hero__ticker-track">
+        <span>BUILD FOR GROWTH</span><span>LOCAL FIRST</span><span>KNOWLEDGE TOOLS</span><span>SHIP SMALL</span><span>LEARN IN PUBLIC</span>
+        <span>BUILD FOR GROWTH</span><span>LOCAL FIRST</span><span>KNOWLEDGE TOOLS</span><span>SHIP SMALL</span><span>LEARN IN PUBLIC</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-section" id="apps">
+    <div class="z2y-shell">
+      <div class="z2y-section__head">
+        <div>
+          <p class="z2y-kicker">PRODUCTS / 01</p>
+          <h2 class="z2y-section__title">{% include lang.html key="home_featured" %}</h2>
+          <p class="z2y-section__copy">{% include lang.html key="home_featured_copy" %}</p>
+        </div>
+        <a class="z2y-inline-link" href="{{ '/apps/' | relative_url }}">{% include lang.html key="apps_title" %}<span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="z2y-filterbar" data-app-controls>
+        <div class="z2y-filterbar__filters" role="group" aria-label="Filter apps">
+          <button type="button" class="is-active" data-filter="all">{% include lang.html key="home_filter_all" %}</button>
+          <button type="button" data-filter="macos">macOS</button>
+          <button type="button" data-filter="ios">iOS</button>
+          <button type="button" data-filter="available">{% include lang.html key="home_filter_available" %}</button>
+          <button type="button" data-filter="in-development">{% include lang.html key="home_filter_development" %}</button>
+        </div>
+        <label class="z2y-search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input type="search" data-app-search placeholder="{{ site.data.ui.zh.home_search_placeholder }}" data-placeholder-zh="{{ site.data.ui.zh.home_search_placeholder }}" data-placeholder-en="{{ site.data.ui.en.home_search_placeholder }}" aria-label="{{ site.data.ui.zh.home_search_placeholder }}">
+        </label>
+      </div>
+      <div class="z2y-app-grid" data-app-grid>
+        {% for app in site.data.apps %}
+          {% include app-card.html app=app %}
+        {% endfor %}
+      </div>
+      <p class="z2y-empty" data-app-empty hidden>{% include lang.html key="home_products_empty" %}</p>
+    </div>
+  </section>
+
+  <section class="z2y-section z2y-section--split">
+    <div class="z2y-shell">
+      <div class="z2y-section__head z2y-section__head--center">
+        <p class="z2y-kicker">{% include lang.html key="home_principles_kicker" %}</p>
+        <h2 class="z2y-section__title">{% include lang.html key="home_principles_title" %}</h2>
+      </div>
+      <div class="z2y-principles">
+        <article class="z2y-principle">
+          <span class="z2y-principle__number">01</span>
+          <h3>{% include lang.html key="home_principle_1_title" %}</h3>
+          <p>{% include lang.html key="home_principle_1_copy" %}</p>
+        </article>
+        <article class="z2y-principle">
+          <span class="z2y-principle__number">02</span>
+          <h3>{% include lang.html key="home_principle_2_title" %}</h3>
+          <p>{% include lang.html key="home_principle_2_copy" %}</p>
+        </article>
+        <article class="z2y-principle">
+          <span class="z2y-principle__number">03</span>
+          <h3>{% include lang.html key="home_principle_3_title" %}</h3>
+          <p>{% include lang.html key="home_principle_3_copy" %}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-section">
+    <div class="z2y-shell z2y-latest-grid">
+      <div class="z2y-section__head z2y-section__head--sticky">
+        <p class="z2y-kicker">{% include lang.html key="home_updates_kicker" %}</p>
+        <h2 class="z2y-section__title">{% include lang.html key="home_updates_title" %}</h2>
+        <p class="z2y-section__copy">{% include lang.html key="home_updates_copy" %}</p>
+        <a class="z2y-inline-link" href="{{ '/updates/' | relative_url }}">{% include lang.html key="home_updates_all" %}<span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="z2y-update-list">
+        {% for post in update_posts limit:3 %}
+          <a class="z2y-update-item" href="{{ post.url | relative_url }}">
+            <span class="z2y-update-item__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <span class="z2y-update-item__body">
+              <strong>{{ post.title }}</strong>
+              {% if post.excerpt %}<small>{{ post.excerpt | strip_html | truncate: 90 }}</small>{% endif %}
+            </span>
+            <span class="z2y-update-item__arrow" aria-hidden="true">→</span>
+          </a>
+        {% else %}
+          <p class="z2y-empty">{% include lang.html key="updates_empty" %}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-section z2y-section--journal">
+    <div class="z2y-shell">
+      <div class="z2y-section__head">
+        <div>
+          <p class="z2y-kicker">{% include lang.html key="home_journal_kicker" %}</p>
+          <h2 class="z2y-section__title">{% include lang.html key="home_journal_title" %}</h2>
+          <p class="z2y-section__copy">{% include lang.html key="home_journal_copy" %}</p>
+        </div>
+        <a class="z2y-inline-link" href="{{ '/journal/' | relative_url }}">{% include lang.html key="home_journal_all" %}<span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="z2y-journal-grid">
+        {% for post in journal_posts limit:3 %}
+          <a class="z2y-journal-card" href="{{ post.url | relative_url }}">
+            <span class="z2y-journal-card__index">0{{ forloop.index }}</span>
+            <span class="z2y-journal-card__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <strong>{{ post.title }}</strong>
+            {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 110 }}</p>{% endif %}
+            <span class="z2y-journal-card__more">{% include lang.html key="updates_read" %}<span aria-hidden="true">↗</span></span>
+          </a>
+        {% else %}
+          <p class="z2y-empty">{% include lang.html key="journal_empty" %}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="z2y-cta">
+    <div class="z2y-shell z2y-cta__inner">
+      <div>
+        <p class="z2y-kicker">{% include lang.html key="home_cta_kicker" %}</p>
+        <h2>{% include lang.html key="home_cta_title" %}</h2>
+        <p>{% include lang.html key="home_cta_copy" %}</p>
+      </div>
+      <div class="z2y-cta__actions">
+        <a class="z2y-button z2y-button--primary" href="https://github.com/zero2you4tech" target="_blank" rel="noopener noreferrer">{% include lang.html key="home_cta_github" %}<span aria-hidden="true">↗</span></a>
+        <a class="z2y-button z2y-button--ghost" href="mailto:petterobam@gmail.com">{% include lang.html key="home_cta_contact" %}</a>
+      </div>
+    </div>
+  </section>
+</div>

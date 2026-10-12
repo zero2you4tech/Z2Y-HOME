@@ -1,0 +1,38 @@
+{% assign app = include.app %}
+{% assign app_status_key = "status_" | append: app.status %}
+{% capture app_search %}{{ app.name.zh }} {{ app.name.en }} {{ app.tagline.zh }} {{ app.tagline.en }} {{ app.summary.zh }} {{ app.summary.en }}{% for highlight in app.highlights %} {{ highlight.zh }} {{ highlight.en }}{% endfor %}{% endcapture %}
+<article class="z2y-card" data-app-card data-platform="{{ app.platforms | join: ' ' | downcase }}" data-status="{{ app.status }}" data-search="{{ app_search | strip_newlines | escape }}">
+  <div class="z2y-card__accent" style="--app-accent: {{ app.accent | default: '#e8b86d' }};"></div>
+  <div class="z2y-card__top">
+    <div class="z2y-card__logo">
+      <img src="{{ app.logo | relative_url }}" alt="{{ app.name.zh }}" loading="lazy" width="76" height="76">
+    </div>
+    <div class="z2y-card__meta">
+      <span class="z2y-pill">{{ app.platforms | join: ' / ' }}</span>
+      <span class="z2y-pill z2y-pill--{{ app.status }}">{% include lang.html key=app_status_key fallback=app.status %}</span>
+    </div>
+  </div>
+  <div class="z2y-card__body">
+    <h3 class="z2y-card__title"><span data-lang="zh">{{ app.name.zh }}</span><span data-lang="en">{{ app.name.en }}</span></h3>
+    <p class="z2y-card__tagline"><span data-lang="zh">{{ app.tagline.zh }}</span><span data-lang="en">{{ app.tagline.en }}</span></p>
+    <p class="z2y-card__summary"><span data-lang="zh">{{ app.summary.zh }}</span><span data-lang="en">{{ app.summary.en }}</span></p>
+    <div class="z2y-card__facts">
+      {% if app.version != empty %}
+        <span><span class="z2y-fact-label">v</span>{{ app.version }}</span>
+      {% endif %}
+      <span>{% include lang.html key="app_price" %} · <span data-lang="zh">{{ app.price.zh }}</span><span data-lang="en">{{ app.price.en }}</span></span>
+    </div>
+  </div>
+  <div class="z2y-card__actions">
+    <a class="z2y-button z2y-button--ghost" href="{{ '/apps/' | append: app.id | append: '/' | relative_url }}">
+      {% include lang.html key="common_read_more" %}
+      <span aria-hidden="true">→</span>
+    </a>
+    {% if app.links.primary %}
+      <a class="z2y-text-link" href="{{ app.links.primary }}" target="_blank" rel="noopener noreferrer">
+        <span data-lang="zh">{{ app.links.primary_label.zh | default: "获取应用" }}</span><span data-lang="en">{{ app.links.primary_label.en | default: "Get app" }}</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    {% endif %}
+  </div>
+</article>
