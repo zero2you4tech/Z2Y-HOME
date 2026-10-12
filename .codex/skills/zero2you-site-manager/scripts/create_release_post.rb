@@ -86,13 +86,13 @@ content = <<~POST
   related: false
   ---
 
-  <div data-lang="zh">
+  <div data-lang="zh" markdown="1">
 
   #{body_zh}
 
   </div>
 
-  <div data-lang="en">
+  <div data-lang="en" markdown="1">
 
   #{body_en}
 
