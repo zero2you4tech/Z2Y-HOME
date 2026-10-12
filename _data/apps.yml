@@ -953,3 +953,175 @@
       en: '2.0.0 on the App Store: refined the countdown, remember, and focus sections,
         added deletion for plans and anniversaries, and improved back navigation and
         swipe switching.'
+- id: z2y-goals-plus
+  order: 13
+  status: available
+  featured: true
+  platforms:
+  - iOS
+  price:
+    zh: "¥8.00"
+    en: "$0.99"
+  links:
+    primary: https://apps.apple.com/cn/app/z2y-%E7%9B%AE%E6%A0%87/id6749314218?uo=4
+    primary_label:
+      zh: 在 App Store 查看
+      en: View on the App Store
+    support: "/support/z2y-goals-plus/"
+  highlights:
+  - zh: 大目标 → 子目标 → 下一步行动：三层拆解，进度按完成证据推进
+    en: 'Big goal → subgoal → next action: three levels, with progress driven by completed
+      work'
+  - zh: 今天：把到期行动、习惯和逾期恢复建议放在同一屏
+    en: 'Today: due actions, habits, and overdue recovery in one place'
+  - zh: 习惯系统：身份认同、触发线索、地点和两分钟版本
+    en: 'Habits: identity, cue, location, and a two-minute version'
+  - zh: 系统提醒带上下文，并支持完成、稍后、跳过和打开详情
+    en: System reminders carry context and support complete, snooze, skip, and open
+  - zh: 周回顾：先看事实，再解释模式，最后决定下周怎么调整
+    en: 'Weekly review: facts first, then the pattern, then next week''s decision'
+  - zh: 本地优先：SQLite 存储、离线可用、ZIP / JSON 导出导入
+    en: 'Local-first: SQLite storage, offline use, ZIP / JSON export and import'
+  - zh: iPhone 与 iPad 上的今天 Widget，以及专注会话的实时活动
+    en: A Today widget on iPhone and iPad, plus Live Activities for focus sessions
+  requirements:
+  - zh: 运行 iOS 16.4 或更高版本的 iPhone 或 iPad
+    en: iPhone or iPad running iOS 16.4 or later
+  - zh: 无需注册账号；目标、习惯与回顾数据默认保存在本机
+    en: No account required; goals, habits, and reviews stay on your device
+  - zh: 系统提醒需要通知权限；拒绝授权后目标与习惯流程仍可正常使用
+    en: System reminders need notification permission; if you decline, every goal
+      and habit flow still works
+  - zh: 当前公开发布的是 iOS 版本，Android 版本尚未公开发布
+    en: The public release is iOS only; the Android build is not publicly released
+      yet
+  install:
+  - zh: 从 App Store 安装并打开，无需注册或登录；数据保存在本机。
+    en: Install from the App Store and open it. No sign-up or login; data stays on
+      your device.
+  - zh: 在「今天」选择起点：创建目标、创建习惯，或直接处理今天到期的行动。
+    en: 'On Today, choose a starting point: create a goal, create a habit, or work
+      through what is due today.'
+  - zh: 创建目标：依次写目标结果、为什么重要、完成证据，再拆出第一个子目标和下一步行动；也可以先浏览默认模板快速起草。
+    en: 'Create a goal: write the outcome, why it matters, and the evidence of completion,
+      then break out the first subgoal and next action. Built-in templates can draft
+      one for you.'
+  - zh: 在目标详情里继续拆解行动、追加备注，并按子目标完成比例查看目标进度。
+    en: In the goal detail, keep breaking down actions, append notes, and track progress
+      by completed subgoals.
+  - zh: 创建习惯：先写身份认同，再写标准行为与两分钟版本，然后设置触发线索、地点和频率。
+    en: 'Create a habit: start with the identity, then the standard behavior and its
+      two-minute version, then set the cue, location, and frequency.'
+  - zh: 在「今天」勾选完成行动和习惯；错过的习惯可以补记或主动跳过，跳过不会清空历史。
+    en: On Today, check off actions and habits. For a missed habit you can backfill
+      it or skip on purpose; skipping never erases history.
+  - zh: 每周打开「回顾」：确认完成行动、习惯完成和主动跳过，写下阻碍、本周学到的和下周三调整。
+    en: 'Open Review each week: confirm completed actions, habit completions, and
+      deliberate skips, then write the main obstacle, what you learned, and next week''s
+      adjustment.'
+  - zh: 在「设置」切换中英文与主题、调整周起始日和默认稍后时间、查看调度健康，并导出或导入 ZIP / JSON 备份。
+    en: In Settings, switch language and theme, set the week start and default snooze,
+      check schedule health, and export or import ZIP / JSON backups.
+  faq:
+  - q:
+      zh: 需要注册账号吗？
+      en: Do I need an account?
+    a:
+      zh: 不需要。首次打开即可使用全部功能，目标、习惯与回顾数据默认保存在本机。
+      en: No. Every feature works on first launch, and goals, habits, and reviews
+        are stored on your device by default.
+  - q:
+      zh: 数据存在哪里，可以带走吗？
+      en: Where is my data, and can I take it with me?
+    a:
+      zh: 数据保存在本机 SQLite 数据库中。在「设置」里可以导出 ZIP 或 JSON 备份，也可以导入恢复；导出包包含清单与逐文件哈希校验，旧版导出包同样可以导入。
+      en: It lives in a local SQLite database. Settings can export a ZIP or JSON backup
+        and import it back; the package includes a manifest and per-file hash checks,
+        and export packages from the earlier version can be imported too.
+  - q:
+      zh: 提醒一定会准时到达吗？
+      en: Will reminders always arrive on time?
+    a:
+      zh: 不会承诺必达。专注模式、通知汇总、后台限制和系统电量策略都会影响到达时间；应用内会显示实际的通知授权与调度状态，并把无法按时送达的提醒如实标记出来。
+      en: No promise of guaranteed delivery. Focus modes, notification summaries,
+        background limits, and battery policies all affect timing; the app shows the
+        real permission and schedule state and marks reminders it cannot deliver on
+        time.
+  - q:
+      zh: 会在设备之间同步吗？
+      en: Does it sync across devices?
+    a:
+      zh: 当前版本不上传数据，也没有账号同步；跨设备请使用导出与导入。
+      en: The current version uploads nothing and has no account sync; move between
+        devices with export and import.
+  - q:
+      zh: 支持哪些设备？
+      en: Which devices are supported?
+    a:
+      zh: iPhone 与 iPad（iOS 16.4 或更高版本）。Android 版本尚未公开发布。
+      en: iPhone and iPad running iOS 16.4 or later. The Android build is not publicly
+        released yet.
+  changelog:
+  - version: 2.0.0
+    date: '2026-09-04'
+    notes:
+      zh: 以 React Native 重写的 2.0.0 上架：今天 / 目标 / 习惯 / 回顾主流程，本地 SQLite 数据与旧版导出包导入，iOS
+        系统提醒、今天 Widget 与专注会话实时活动；同时优化行动日期布局与目标、习惯页面文案。
+      en: '2.0.0 shipped as a React Native rewrite: the Today / Goals / Habits / Review
+        flows, local SQLite data with import of older export packages, iOS system
+        reminders, a Today widget, and Live Activities for focus sessions. Action
+        date layouts and the copy on goal and habit screens were also refined.'
+  name:
+    zh: Z2Y 目标
+    en: Z2Y Goals
+  tagline:
+    zh: 目标执行与习惯系统
+    en: Goal execution and habit system
+  summary:
+    zh: 把足够大的目标拆成今天能执行的下一步，用习惯维持行动，并在中断后给出恢复路径。
+    en: Break a big goal into today's next step, keep it alive with habits, and recover
+      after a break.
+  description:
+    zh: Z2Y 目标是一款本地优先的目标执行与习惯系统。它把足够大的目标拆成子目标与可执行的下一步行动，再把行动安排到今天；习惯模块用身份认同、触发线索和两分钟版本让行为持续，并在错过之后给出恢复路径，而不是清空连续天数。目标、行动、习惯与回顾记录都保存在本机，无需注册账号，也可以随时导出带走。
+    en: Z2Y Goals is a local-first system for executing goals and building habits.
+      It breaks a big goal into subgoals and executable next actions, then schedules
+      those actions into today. The habit side keeps behavior alive with identity,
+      cues, and a two-minute version, and offers a recovery path after a miss instead
+      of resetting the streak. Goals, actions, habits, and reviews are stored on your
+      device; no account is required, and you can export everything at any time.
+  logo: "/assets/apps/Z2Y-Goals-Plus/logo.png"
+  accent: "#b78cf2"
+  version: 2.0.0
+  version_label:
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2025-07-31'
+  updated_at: '2026-09-04'
+  min_os:
+    zh: iOS 16.4 或更高版本
+    en: iOS 16.4 or later
+  screenshots:
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-today.jpg"
+    caption:
+      zh: 今天：行动、习惯与今日完成
+      en: 'Today: actions, habits, and completion'
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-goals.jpg"
+    caption:
+      zh: 渐进式目标：方向、进度与待推进阶段
+      en: 'Progressive goals: direction, progress, and open stages'
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-goal-detail.jpg"
+    caption:
+      zh: 目标详情：完成证据、子目标与下一步行动
+      en: 'Goal detail: evidence, subgoals, and the next action'
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-habits.jpg"
+    caption:
+      zh: 习惯大师：用行为系统代替意志力
+      en: 'Habit Master: a behavior system instead of willpower'
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-habit-detail.jpg"
+    caption:
+      zh: 习惯详情：身份、线索、两分钟版本与最近发生
+      en: 'Habit detail: identity, cue, two-minute version, and recent occurrences'
+  - image: "/assets/apps/Z2Y-Goals-Plus/screen-review.jpg"
+    caption:
+      zh: 周回顾：先看事实，再解释，最后做下周决策
+      en: 'Weekly review: facts, explanation, then next week''s decision'

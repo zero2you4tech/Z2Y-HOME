@@ -41,9 +41,14 @@ Each item in `_data/apps.yml` has this shape:
     - version: "1.0.0"
       date: "2026-10-12"
       notes: { zh: "中文说明", en: "English note" }
+  screenshots:
+    - image: "/assets/apps/Z2Y-Example/screen-today.jpg"
+      caption: { zh: "中文图注", en: "English caption" }
 ```
 
 `id` must match `_apps/<id>.md`. `order` controls catalog order. Empty `version`, `released_at`, and `updated_at` are allowed for preview or in-development products.
+
+`screenshots` is optional. The app page renders it as a "SCREENS" gallery and the support guide can reuse the same files through a `<div class="z2y-guide-shots">` block. Keep one image per entry — the gallery is shared by both languages, so ship the primary-language capture and translate only the caption. Store files under `assets/apps/<App Folder>/` (either flat `screen-*.jpg` or a `screenshots/` directory).
 
 ## Release post
 
