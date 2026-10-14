@@ -14,7 +14,7 @@ share: false
 related: false
 ---
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 Z2Y AI Manager 更新至 **1.1.0**，继续管理本地 AI 模型、远程 AI 清单与 Prompt。[查看应用详情](/apps/z2y-ai/)。
 
@@ -22,7 +22,7 @@ Z2Y Reader & Manager 更新至 **1.3.2**，延续 GitHub、Ollama、阅读、下
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 Z2Y AI Manager is now at **1.1.0**, continuing its work around local models, remote AI inventories, and prompts. [View the app](/apps/z2y-ai/).
 

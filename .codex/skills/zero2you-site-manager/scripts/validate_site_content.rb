@@ -147,6 +147,12 @@ Dir[repo.join("_posts/*.md")].sort.each do |path|
   unless body.include?('data-lang="zh"') && body.include?('data-lang="en"')
     errors << "#{File.basename(path)} must contain bilingual data-lang sections"
   end
+  # kramdown（parse_block_html 关闭）不会解析 HTML 块内部的 markdown，
+  # 双语 div 必须带 markdown="1"，否则链接、加粗会以纯文本平铺显示。
+  bare_divs = body.scan(/<div data-lang="(?:zh|en)">/).size
+  if bare_divs.positive?
+    errors << "#{File.basename(path)} must add markdown=\"1\" to #{bare_divs} bilingual <div> block(s) so markdown renders"
+  end
 
   if categories.include?("app-update")
     unless ids[post["app_id"].to_s]
@@ -154,6 +160,15 @@ Dir[repo.join("_posts/*.md")].sort.each do |path|
     end
     errors << "#{File.basename(path)} must contain version" if post["version"].to_s.strip == ""
   end
+end
+
+# 页面（支持页、关于页等）同样使用双语 div，规则保持一致。
+Dir[repo.join("_pages/*.md")].sort.each do |path|
+  raw = File.read(path)
+  bare_divs = raw.scan(/<div data-lang="(?:zh|en)">/).size
+  next unless bare_divs.positive?
+
+  errors << "#{File.basename(path)} must add markdown=\"1\" to #{bare_divs} bilingual <div> block(s) so markdown renders"
 end
 
 if errors.empty?

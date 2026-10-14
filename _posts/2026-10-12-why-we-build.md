@@ -12,7 +12,7 @@ share: false
 related: false
 ---
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 独立产品最容易犯的错误，是从“我想做一个什么功能”开始。功能很容易被写进清单，但很少能独立解释一个产品为什么值得被长期使用。
 
@@ -24,7 +24,7 @@ Z2Y 的多个产品都来自这种摩擦。请喝水来自一次真实的健康�
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 The easiest mistake in independent product work is starting with “what feature do I want to build?” Features are easy to list, but they rarely explain why a product deserves long-term use.
 

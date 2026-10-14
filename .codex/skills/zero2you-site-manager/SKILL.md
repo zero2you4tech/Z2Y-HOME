@@ -78,7 +78,7 @@ ruby .codex/skills/zero2you-site-manager/scripts/create_release_post.rb \
   --body-en "Release details..."
 ```
 
-The post must include `app_id`, `version`, `categories: [app-update]`, matching `title_en`, and bilingual body sections using `data-lang="zh"` and `data-lang="en"`.
+The post must include `app_id`, `version`, `categories: [app-update]`, matching `title_en`, and bilingual body sections using `data-lang="zh"` and `data-lang="en"` — each block must also carry `markdown="1"`, because kramdown does not parse markdown inside HTML blocks by default (links and bold would otherwise render as plain text). `create_release_post.rb` writes the attribute and `validate_site_content.rb` rejects posts that omit it.
 
 Also update the `version`, `version_label`, `updated_at`, links, changelog, and any changed requirements in `_data/apps.yml`.
 
@@ -99,8 +99,8 @@ related: false
 Use two top-level body sections:
 
 ```html
-<div data-lang="zh">...</div>
-<div data-lang="en">...</div>
+<div data-lang="zh" markdown="1">...</div>
+<div data-lang="en" markdown="1">...</div>
 ```
 
 Do not use this workflow for the legacy sample posts already in `_posts`; leave them untouched.

@@ -7,7 +7,7 @@ author_profile: false
 toc: false
 ---
 
-<div data-lang="zh">
+<div data-lang="zh" markdown="1">
 
 ## 找到答案
 
@@ -34,7 +34,7 @@ toc: false
 
 </div>
 
-<div data-lang="en">
+<div data-lang="en" markdown="1">
 
 ## Find an answer
 
