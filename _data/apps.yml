@@ -165,6 +165,8 @@
   logo: "/assets/apps/Z2Y-Java/logo.png"
   accent: "#f08b72"
   platforms:
+  - iOS
+  - iPadOS
   - macOS
   price:
     zh: "¥15.00"
@@ -178,8 +180,8 @@
   released_at: '2024-06-12'
   updated_at: '2026-08-01'
   min_os:
-    zh: macOS 15.6 或更高版本
-    en: macOS 15.6 or later
+    zh: iOS / iPadOS 15.6 或更高版本，macOS 13.5 或更高版本
+    en: iOS or iPadOS 15.6 or later; macOS 13.5 or later
   links:
     primary: https://apps.apple.com/cn/app/z2y-java-%E5%8E%9F%E7%90%86%E4%B8%8E%E9%9D%A2%E8%AF%95/id6504158005
     primary_label:
@@ -193,9 +195,15 @@
       and more
   - zh: 保存阅读进度并在阅读中记录笔记
     en: Save reading progress and take notes while reading
+  - zh: 直接浏览 GitHub 仓库，也可以检出到本地并参与讨论
+    en: Browse GitHub repositories, check them out locally, and join discussions
   requirements:
-  - zh: macOS 15.6 或更高版本
-    en: macOS 15.6 or later
+  - zh: 运行 iOS / iPadOS 15.6 或更高版本的 iPhone 或 iPad，或 macOS 13.5 或更高版本的 Mac
+    en: An iPhone or iPad running iOS or iPadOS 15.6 or later, or a Mac running macOS
+      13.5 or later
+  - zh: 使用 GitHub 相关能力（检出仓库、在线评论）需要 GitHub 账号
+    en: A GitHub account is required for the GitHub features such as checking out
+      repositories and commenting
   - zh: 产品提供学习内容与复习工具，不承诺面试结果
     en: The product provides learning content and review tools, not a job-offer guarantee
   install:
@@ -215,8 +223,38 @@
   - version: 1.2.32
     date: '2026-08-01'
     notes:
-      zh: App Store 当前发布版本。
-      en: Current release available on the App Store.
+      zh: 优化版本兼容性，并更新商品页信息，进一步明确 Java 核心知识、学习进度与面试复习场景。
+      en: Improved compatibility and updated the product page to better describe Java
+        core concepts, learning progress, and interview review workflows.
+  screenshots:
+  - image: "/assets/apps/Z2Y-Java/screenshots/iphone-01-catalog.png"
+    caption:
+      zh: 课程目录：300 篇内容按主题收进一棵目录树
+      en: 'Catalog: 300 articles organised into one topic tree'
+  - image: "/assets/apps/Z2Y-Java/screenshots/iphone-02-reading.png"
+    caption:
+      zh: 阅读：学习计时、划词评论与批注都在正文里
+      en: 'Reading: a study timer, inline comments, and annotations inside the article'
+  - image: "/assets/apps/Z2Y-Java/screenshots/iphone-03-notes.png"
+    caption:
+      zh: 笔记：正文里的划词评论沉淀成可回看的笔记
+      en: 'Notes: inline comments collect into reviewable notes'
+  - image: "/assets/apps/Z2Y-Java/screenshots/iphone-04-github.png"
+    caption:
+      zh: GitHub：直接浏览仓库内容，也可以检出到本地
+      en: 'GitHub: browse repository content and check it out locally'
+  - image: "/assets/apps/Z2Y-Java/screenshots/ipad-01-catalog.png"
+    caption:
+      zh: iPad 目录：大屏展开同一棵知识树
+      en: 'iPad catalog: the same knowledge tree on a larger canvas'
+  - image: "/assets/apps/Z2Y-Java/screenshots/ipad-02-reading.png"
+    caption:
+      zh: iPad 阅读：正文、批注面板与学习计时同屏
+      en: 'iPad reading: article, annotation panel, and study timer on one screen'
+  - image: "/assets/apps/Z2Y-Java/screenshots/ipad-03-github.png"
+    caption:
+      zh: iPad GitHub：仓库文件、提交信息与检出按钮
+      en: 'iPad GitHub: repository files, commit details, and the checkout control'
 - id: z2y-words
   order: 4
   name:
