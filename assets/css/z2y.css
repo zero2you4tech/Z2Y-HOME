@@ -1739,6 +1739,10 @@ body.z2y-site .page__footer-copyright {
   scroll-snap-align: start;
 }
 
+.z2y-screens--wide .z2y-screens__item {
+  width: 520px;
+}
+
 .z2y-screens__item img {
   display: block;
   width: 100%;

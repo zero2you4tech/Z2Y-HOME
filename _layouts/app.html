@@ -72,7 +72,7 @@ layout: default
           <h2 class="z2y-section__title">{% include lang.html key="app_screens" %}</h2>
         </div>
       </div>
-      <div class="z2y-screens">
+      <div class="z2y-screens{% if app.screens_layout == 'wide' %} z2y-screens--wide{% endif %}">
         {% for shot in app.screenshots %}
           <figure class="z2y-screens__item">
             <img src="{{ shot.image | relative_url }}" alt="{% if page.app_id %}{{ app.name.zh }}{% endif %}" loading="lazy">

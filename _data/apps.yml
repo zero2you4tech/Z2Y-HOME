@@ -410,78 +410,152 @@
 - id: z2y-dmg
   order: 7
   name:
-    zh: Z2Y DMG Creator
-    en: Z2Y DMG Creator
+    zh: Z2Y DMG Plus
+    en: Z2Y DMG Plus
   tagline:
     zh: 把 App 打包成可分发 DMG
     en: Package apps into distributable DMGs
   summary:
-    zh: 面向 macOS 开发者的 DMG 打包工具，支持经典拖拽安装与一键安装布局。
-    en: A macOS packaging utility supporting classic drag-to-Applications and one-click
-      installer layouts.
+    zh: 面向 macOS 开发者的原生 DMG 发布工具：一键安装与经典拖拽两种布局，构建前后都能看清签名、产物与历史。
+    en: A native macOS release tool that turns an app into a distributable DMG, with
+      one-click and classic layouts plus signature, artifact, and build history you
+      can inspect.
   description:
-    zh: Z2Y DMG Creator 用于将 App、文件或文件夹制作成 DMG 磁盘映像。它关注可重复的打包流程， 并提供经典拖拽安装与一键安装两种布局。
-    en: Z2Y DMG Creator turns apps, files, and folders into DMG disk images. It focuses
-      on repeatable packaging and supports both classic drag-to-Applications and one-click
-      installer layouts.
+    zh: Z2Y DMG Plus 把 App、文件或文件夹打包成可分发的 DMG。选择源内容后，可以输出一键安装布局——用户打开 DMG 里的安装器即完成安装并启动，也可以输出经典拖拽布局。构建前先检查源
+      App 的签名与输出位置，构建后给出产物校验结果；每次打包都会写进「构建历史」，随时可以回看配置、结果与产物体积。说明文档等文件还可以附加到 DMG 根目录一起分发，界面支持中英文切换，全部处理都在本机完成。
+    en: Z2Y DMG Plus packages an app, file, or folder into a distributable DMG. After
+      choosing the source you can output a one-click installer layout — the customer
+      opens one app in the DMG and it installs and launches — or the classic drag-to-Applications
+      layout. The build checks the source signature and destination first and reports
+      the artifact verification afterwards; every build is written to Build history
+      so you can revisit its configuration, result, and artifact size. Extra documents
+      can be attached at the DMG root, the interface switches between Chinese and
+      English, and everything runs on your Mac.
   logo: "/assets/apps/Z2Y-DMG/logo.png"
   accent: "#f2c14e"
   platforms:
   - macOS
   price:
-    zh: 免费
-    en: Free
+    zh: "¥8.00"
+    en: "$0.99"
   status: available
   featured: true
-  version: 1.0.4
+  version: 1.0.5
   version_label:
-    zh: GitHub Release
-    en: GitHub Release
+    zh: App Store 当前版本
+    en: Current App Store version
   released_at: '2025-06-17'
-  updated_at: '2025-06-17'
+  updated_at: '2026-08-09'
   min_os:
-    zh: macOS
-    en: macOS
+    zh: macOS 14.0 或更高版本
+    en: macOS 14.0 or later
   links:
-    primary: https://github.com/zero2you4tech/Z2Y-DMG/releases/latest
+    primary: https://apps.apple.com/cn/app/z2y-dmg-%E6%89%93%E5%8C%85%E5%99%A8/id6478312513?mt=12
     primary_label:
-      zh: 下载 1.0.4
-      en: Download 1.0.4
+      zh: 在 App Store 查看
+      en: View on the App Store
     source: https://github.com/zero2you4tech/Z2Y-DMG
     support: "/support/z2y-dmg/"
   highlights:
-  - zh: 支持 App、文件和文件夹打包
-    en: Package apps, files, and folders
-  - zh: 经典拖拽安装布局
-    en: Classic drag-to-Applications layout
-  - zh: 一键安装器布局
-    en: One-click installer layout
+  - zh: 一键安装：用户打开 DMG 中的安装器即完成安装并自动启动
+    en: 'One-click install: open the installer in the DMG and the app installs and
+      launches'
+  - zh: 经典拖拽布局：保留把 App 拖进「应用程序」的既有流程
+    en: 'Classic layout: keep the familiar drag-to-Applications workflow'
+  - zh: 支持 App、文件和文件夹打包，并可把文档附加到 DMG 根目录
+    en: Package apps, files, and folders, and attach documents at the DMG root
+  - zh: 构建历史：回看每次构建的配置、结果与产物体积
+    en: 'Build history: revisit each build''s configuration, result, and artifact
+      size'
+  - zh: 构建前核对源 App 签名与输出位置，构建后给出产物校验结果
+    en: Check the source signature and destination before the build, and verify the
+      artifact afterwards
+  - zh: 中英文界面切换，配置与构建记录保存在本机
+    en: Switch between Chinese and English; configuration and build records stay on
+      your Mac
   requirements:
-  - zh: macOS
-    en: macOS
+  - zh: macOS 14.0 或更高版本
+    en: macOS 14.0 or later
   - zh: 输出目录需要可写并具备足够磁盘空间
     en: A writable output folder with enough free space
+  - zh: 从 Mac App Store 获取需要 Apple 账户
+    en: An Apple account is required to get the app from the Mac App Store
   install:
-  - zh: 从 GitHub Release 下载 1.0.4 的 DMG。
-    en: Download the 1.0.4 DMG from GitHub Releases.
-  - zh: 打开 DMG 后将应用拖入“应用程序”。
-    en: Open the DMG and drag the app into Applications.
-  - zh: 选择源内容与打包模式后开始构建。
-    en: Choose the source item and packaging mode, then start the build.
+  - zh: 在 Mac App Store 安装并打开 Z2Y DMG Plus（¥8.00）。
+    en: Install Z2Y DMG Plus from the Mac App Store ($0.99) and open it.
+  - zh: 选择源内容：App、文件或文件夹；需要一起分发的文档放进「附加文件」。
+    en: Choose the source item — an app, file, or folder — and add any documents to
+      ship alongside it under Attachments.
+  - zh: 选择一键安装或经典模式，确认安装位置与输出目录。
+    en: Pick the one-click installer or the classic layout, then confirm the install
+      destination and output folder.
+  - zh: 开始构建：在「活动记录」里跟随签名检查与构建过程，成功后打开已校验的 DMG。
+    en: Start the build, follow the signature check and progress in the activity log,
+      and open the verified DMG when it succeeds.
+  - zh: 构建记录会留在「构建历史」，可以随时重新打开已校验的产物。
+    en: Every build stays in Build history, where you can reopen a verified artifact
+      later.
   faq:
   - q:
       zh: 打包后的 App 无法打开怎么办？
       en: What if the packaged app will not open?
     a:
-      zh: 先确认原始 App 可以启动且签名有效。Z2Y DMG Creator 会保留源内容，但不会修复无效签名。
+      zh: 先确认原始 App 可以启动且签名有效。Z2Y DMG Plus 会保留源内容，但不会修复无效签名。
       en: Verify that the original app launches and has a valid signature. Z2Y DMG
-        Creator preserves source content but does not repair invalid signatures.
+        Plus preserves source content but does not repair invalid signatures.
+  - q:
+      zh: 构建历史保存在哪里？
+      en: Where is the build history stored?
+    a:
+      zh: 保存在本机的 ~/Library/Application Support/Z2Y DMG Plus/BuildHistory.json。记录只保留产物路径，移动
+        DMG 后请从新位置打开；清空历史会永久删除这些记录。
+      en: On your Mac, at ~/Library/Application Support/Z2Y DMG Plus/BuildHistory.json.
+        A record keeps the artifact path only, so open the DMG from its new location
+        after moving it; clearing history deletes the records permanently.
+  - q:
+      zh: 会把我打包的 App 或证书上传到服务器吗？
+      en: Does it upload my app or signing identities?
+    a:
+      zh: 不会。打包全程在本机完成，源 App、签名身份与构建记录都不会离开这台 Mac。
+      en: No. Packaging happens entirely on your Mac; the source app, signing identities,
+        and build records never leave it.
+  - q:
+      zh: App Store 版本和 GitHub 上的版本是什么关系？
+      en: How do the App Store version and the GitHub build relate?
+    a:
+      zh: App Store 上的 1.0.5 是重构后的 Z2Y DMG Plus，支持一键安装、构建历史与 DMG 根目录附加内容；GitHub 仓库仍保留早先开源的
+        1.0.4 与完整源码。
+      en: The 1.0.5 build on the App Store is the rewritten Z2Y DMG Plus with the
+        one-click installer, build history, and DMG root attachments; the GitHub repository
+        still hosts the earlier open-source 1.0.4 and its source.
   changelog:
+  - version: 1.0.5
+    date: '2026-08-09'
+    notes:
+      zh: 新增构建历史管理，并支持在 DMG 根目录附加文件和文件夹；安装后的应用名称已统一为“Z2Y Dmg 打包器”，同时改进构建验证与活动记录。
+      en: Added build history management and support for attaching files and folders
+        at the DMG root. The installed app is now named Z2Y Dmg 打包器 to match App Store
+        Connect, with improved build verification and activity records.
   - version: 1.0.4
     date: '2025-06-17'
     notes:
       zh: 上传 Mac App Store 版本并微调界面。
       en: Uploaded the Mac App Store version and refined the interface.
+  screens_layout: wide
+  screenshots:
+  - image: "/assets/apps/Z2Y-DMG/screen-build.jpg"
+    caption:
+      zh: 新建构建：拖入源 App，选择一键安装或经典模式
+      en: 'New build: drop in the source app and choose the one-click or classic layout'
+  - image: "/assets/apps/Z2Y-DMG/screen-history.jpg"
+    caption:
+      zh: 构建历史：每次打包的版本、模式、时间与体积，已验证产物可以重新打开
+      en: 'Build history: version, mode, time, and size for every build, with verified
+        artifacts you can reopen'
+  - image: "/assets/apps/Z2Y-DMG/screen-attachments.jpg"
+    caption:
+      zh: 打包前核对：源 App 签名、附加文件与构建活动记录
+      en: 'Before the build: source signature, attachments, and the activity log'
 - id: z2y-cmd
   order: 8
   name:
@@ -803,8 +877,8 @@
       Every finished session leaves a mark: size is the real duration, colour is the
       category, and outline is the status. Marks fall into the time book, where day
       and week pages are always available and the month page plus yearly review are
-      included. No account, no cloud, no ads: plans, records, and marks stay
-      on your device, and a running timer continues after you leave the app.'
+      included. No account, no cloud, no ads: plans, records, and marks stay on your
+      device, and a running timer continues after you leave the app.'
   logo: "/assets/apps/Z2Y-Timer/logo.png"
   accent: "#6fd3b4"
   platforms:
@@ -910,8 +984,8 @@
       en: Does anything cost extra?
     a:
       zh: 不需要。计时、记时、专注三个板块，印记主题与纸张，日 / 周 / 月时间簿与年度长期回顾，以及分享卡片都对所有用户免费，应用内没有内购。
-      en: No. Countdown, remember, and focus, every mark theme and paper, the day /
-        week / month time book with the yearly review, and share cards are all free,
+      en: No. Countdown, remember, and focus, every mark theme and paper, the day
+        / week / month time book with the yearly review, and share cards are all free,
         with no in-app purchases.
   - q:
       zh: 拒绝通知权限会怎样？

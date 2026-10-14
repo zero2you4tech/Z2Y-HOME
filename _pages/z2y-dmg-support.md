@@ -13,6 +13,25 @@ Z2Y DMG Plus is a macOS utility for packaging apps, files, and folders into DMG 
 
 Z2Y DMG Plus 是一款 macOS DMG 打包工具，可将 App、文件或文件夹制作成磁盘映像，并支持经典拖拽安装和一键安装两种模式。
 
+- 平台 Platform：macOS 14.0 或更高版本
+- 价格 Price：Mac App Store ¥8.00 / $0.99
+- 当前版本 Current version：1.0.5
+
+<div class="z2y-guide-shots z2y-guide-shots--wide">
+  <figure class="z2y-guide-shot">
+    <img src="/assets/apps/Z2Y-DMG/screen-build.jpg" alt="新建构建：源 App、打包模式与输出目录" loading="lazy">
+    <figcaption><span data-lang="zh">新建构建：拖入源 App，选择一键安装或经典模式</span><span data-lang="en">New build: drop in the source app and choose the one-click or classic layout</span></figcaption>
+  </figure>
+  <figure class="z2y-guide-shot">
+    <img src="/assets/apps/Z2Y-DMG/screen-history.jpg" alt="构建历史：每次打包的版本、模式、时间与体积" loading="lazy">
+    <figcaption><span data-lang="zh">构建历史：每次打包的版本、模式、时间与体积，已验证产物可以重新打开</span><span data-lang="en">Build history: version, mode, time, and size for every build, with verified artifacts you can reopen</span></figcaption>
+  </figure>
+  <figure class="z2y-guide-shot">
+    <img src="/assets/apps/Z2Y-DMG/screen-attachments.jpg" alt="打包前核对：源 App 签名、附加文件与活动记录" loading="lazy">
+    <figcaption><span data-lang="zh">打包前核对：源 App 签名、附加文件与构建活动记录</span><span data-lang="en">Before the build: source signature, attachments, and the activity log</span></figcaption>
+  </figure>
+</div>
+
 ## Contact / 联系支持
 
 For help, email [petterobam@gmail.com](mailto:petterobam@gmail.com). Please include your macOS version, Z2Y DMG Plus version, the selected packaging mode, and the exact error message.
@@ -66,6 +85,12 @@ Verify that the original app launches and has a valid code signature. Z2Y DMG Pl
 Keep the DMG mounted until installation finishes. Confirm that the destination Applications folder is writable, then retry. If macOS displays a security prompt, review the app publisher before allowing it to open.
 
 请保持 DMG 挂载，直到安装完成。确认目标“应用程序”目录可写后重试。如果 macOS 显示安全提示，请先核对 App 发布者再选择打开。
+
+### Where build history lives / 构建历史存在哪里
+
+Z2Y DMG Plus writes a record for every build — source, packaging mode, output path, and the activity log — and keeps it on your Mac at `~/Library/Application Support/Z2Y DMG Plus/BuildHistory.json`. Clearing history deletes those records permanently. A record stores the output path only, so if you move or delete the DMG, open the artifact from its new location instead.
+
+Z2Y DMG Plus 会为每次构建写入一条记录（源内容、打包模式、产物路径和活动记录），保存在本机 `~/Library/Application Support/Z2Y DMG Plus/BuildHistory.json`。清空历史会永久删除这些记录；记录只保存产物路径，移动或删除 DMG 后，请从新位置打开产物。
 
 ## Response time / 响应时间
 
