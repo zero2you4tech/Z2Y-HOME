@@ -1,6 +1,6 @@
 ---
 name: zero2you-site-manager
-description: Update the Zero2You OPC product website. Use when changing app metadata, versions, release notes, install or support instructions, product updates, journal articles, or publishing content so the GitHub Pages site rebuilds.
+description: Update the Zero2You OPC product website. Use when changing app metadata, versions, release notes, install or support instructions, product updates, journal articles or thought notes, post visuals and illustrations, support-site links, or publishing content so the GitHub Pages site rebuilds.
 metadata:
   short-description: Manage Zero2You product website content
 ---
@@ -24,7 +24,10 @@ Read the narrowest existing source before editing:
 - UI labels: `_data/ui.yml`
 - Release posts: `_posts/*` with `categories: [app-update]`
 - Journal posts: `_posts/*` with `categories: [article]`
+- Support page: `_pages/support.md`, About page: `_pages/about.md`
 - Schema details: `references/content-schema.md`
+- Visual assets and illustration workflow: `references/visual-assets.md`
+- Post layout: `_layouts/single.html` (two-column shell: sticky visual + article body)
 
 Use authoritative release information when a version or date is involved:
 
@@ -105,6 +108,77 @@ Use two top-level body sections:
 
 Do not use this workflow for the legacy sample posts already in `_posts`; leave them untouched.
 
+## Give every post a visual
+
+The post layout is a two-column shell: a sticky visual panel on the left and the article body on the right. A post without a resolvable visual leaves that left column empty, which is the defect this workflow exists to prevent.
+
+Resolution order in `_layouts/single.html`:
+
+1. `visual` in the post front matter.
+2. The first `screenshots` entry for the post's `app_id` in `_data/apps.yml`.
+3. The app logo.
+
+Therefore:
+
+- **Product update posts** must use real product imagery. Register App Store screenshots in the app's `screenshots` list (bilingual captions) so the app page, the release post panel, and the `/updates/` thumbnail all reuse them. Never generate a fake product UI.
+- **Journal articles** must set `visual:` explicitly and point at a 小黑 illustration.
+- **Daily thought notes** additionally set `source_url:` pointing at the published card.
+
+Read `references/visual-assets.md` before producing any image.
+
+## Illustrate an article
+
+For Chinese article illustrations, use the `ian-xiaohei-illustrations` skill and follow `references/visual-assets.md`.
+
+```bash
+ruby .codex/skills/zero2you-site-manager/scripts/xiaohei_sketch.rb \
+  --spec assets/journal/<slug>/spec.json \
+  --out assets/journal/<slug>/01-topic.svg \
+  --png assets/journal/<slug>/01-topic.png \
+  --width 1600
+```
+
+Use the built-in image generation tool when it is available. When it is not reachable, `xiaohei_sketch.rb` is the documented fallback: it renders the same style contract deterministically from a JSON spec, so the illustration stays reproducible and editable. Commit the spec, the SVG, and the PNG. Always inspect the PNG before publishing and regenerate if 小黑 is decorative, the frame looks like a flowchart, a top-left type title appears, or the labels are wrong.
+
+Attach or repoint a visual on an existing post:
+
+```bash
+ruby .codex/skills/zero2you-site-manager/scripts/attach_visual.rb \
+  --post _posts/2026-10-12-why-we-build.md \
+  --visual /assets/journal/2026-10-12-why-we-build/01-real-problem.png \
+  --kind illustration \
+  --caption "配图：..." --caption-en "Illustration: ..."
+```
+
+## Add a journal article or a thought note
+
+Scaffold the post so the visual, bilingual excerpt, and category are correct from the start:
+
+```bash
+ruby .codex/skills/zero2you-site-manager/scripts/create_journal_post.rb \
+  --slug why-we-build \
+  --date 2026-10-12 \
+  --title "为什么我们从一个真实问题开始做产品" \
+  --title-en "Why we start every product with a real problem" \
+  --summary-zh "摘要" --summary-en "Summary" \
+  --visual /assets/journal/2026-10-12-why-we-build/01-real-problem.png \
+  --visual-kind illustration \
+  --visual-caption "配图：小黑把反复出现的摩擦，压成真正能用的产品。" \
+  --visual-caption-en "Illustration: 小黑 presses recurring friction into products people actually use."
+```
+
+For 日常思考手记 use the `aphorism-notebook` skill to think and write the card first, keep the card in the `Thinking` repository, then republish it here as an article with `source_url:` set to the published card. Never invent a card that was not actually written, and never edit the card's journey only on this site.
+
+## Support and About pages
+
+`https://issue-zh.zero2you.tech/` and `https://issue-en.zero2you.tech/` are the canonical public support sites: report an issue, browse known issues, request features. Keep them linked from `_pages/support.md` (which `validate_site_content.rb` enforces) and referenced from `_pages/about.md`.
+
+- `/support/` is the router: support-site entry points, the app catalog, and email for signing or privacy topics.
+- App-specific guidance still belongs on the app's support page under `_pages/`.
+- Email remains only for topics that must not be public, such as signing certificates or private keys.
+
+When adding a support destination, add it to both `_pages/support.md` and `_pages/about.md` instead of only one.
+
 ## Validate and publish
 
 Always run:
@@ -132,5 +206,7 @@ Before publishing, inspect `git diff` and confirm that only intended files chang
 - Every app has a matching `_apps/<id>.md`.
 - Every public field has Chinese and English content.
 - New release posts reference an existing app and the version/date agree with the app entry.
+- Every post resolves a visual: release posts reuse app screenshots, journal posts set `visual:`.
+- `_pages/support.md` and `_pages/about.md` both link the issue-zh and issue-en support sites.
 - `validate_site_content.rb` exits successfully.
 - A GitHub Pages build is triggered after a push to `main`.

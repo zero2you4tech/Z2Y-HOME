@@ -14,17 +14,98 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{%- assign post_app = nil -%}
+{%- if page.app_id -%}
+  {%- assign post_app = site.data.apps | where: "id", page.app_id | first -%}
+{%- endif -%}
+{%- assign post_visual = page.visual -%}
+{%- assign post_visual_caption_zh = page.visual_caption -%}
+{%- assign post_visual_caption_en = page.visual_caption_en -%}
+{%- assign post_visual_kind = page.visual_kind -%}
+{%- if post_visual == nil and post_app and post_app.screenshots.size > 0 -%}
+  {%- assign post_visual = post_app.screenshots.first.image -%}
+  {%- assign post_visual_caption_zh = post_app.screenshots.first.caption.zh -%}
+  {%- assign post_visual_caption_en = post_app.screenshots.first.caption.en -%}
+  {%- assign post_visual_kind = post_visual_kind | default: "product" -%}
+{%- endif -%}
+{%- if post_visual == nil and post_app -%}
+  {%- assign post_visual = post_app.logo -%}
+  {%- assign post_visual_kind = post_visual_kind | default: "product" -%}
+{%- endif -%}
+{%- if post_visual_kind == nil -%}
+  {%- assign post_visual_kind = "note" -%}
+{%- endif -%}
+{%- assign post_category = page.categories | first -%}
+{%- assign use_article_shell = false -%}
+{%- if post_visual or page.app_id or page.date or page.categories -%}{%- assign use_article_shell = true -%}{%- endif -%}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page z2y-article{% unless use_article_shell %} z2y-article--plain{% endunless %}" data-visual-kind="{{ post_visual_kind }}" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
+    {% if use_article_shell %}
+    <aside class="z2y-article__visual" aria-label="Article visual">
+      <div class="z2y-article__visual-inner">
+        {% if post_visual %}
+          <figure class="z2y-article__figure">
+            <a class="z2y-article__figure-link" href="{{ post_visual | relative_url }}" target="_blank" rel="noopener">
+              <img src="{{ post_visual | relative_url }}" alt="{{ page.title | strip_html | escape_once }}" loading="eager">
+              <span class="z2y-article__figure-zoom" aria-hidden="true">↗</span>
+            </a>
+            {% if post_visual_caption_zh or post_visual_caption_en %}
+              <figcaption>
+                {% if post_visual_caption_zh %}<span data-lang="zh">{{ post_visual_caption_zh }}</span>{% endif %}
+                {% if post_visual_caption_en %}<span data-lang="en">{{ post_visual_caption_en }}</span>{% endif %}
+              </figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+
+        {% if post_app and post_app.screenshots.size > 1 %}
+          <div class="z2y-article__strip">
+            {% for shot in post_app.screenshots offset:1 limit:3 %}
+              <img src="{{ shot.image | relative_url }}" alt="{{ post_app.name.zh }}" loading="lazy">
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if post_app %}
+          <div class="z2y-article__card">
+            <div class="z2y-article__card-head">
+              <img src="{{ post_app.logo | relative_url }}" alt="{{ post_app.name.zh }}" loading="lazy" width="44" height="44">
+              <div>
+                <strong><span data-lang="zh">{{ post_app.name.zh }}</span><span data-lang="en">{{ post_app.name.en }}</span></strong>
+                <small>
+                  {% if page.version %}<span data-lang="zh">版本</span><span data-lang="en">Version</span> {{ page.version }}{% else %}{{ post_app.platforms | join: " / " }}{% endif %}
+                </small>
+              </div>
+            </div>
+            <a class="z2y-article__card-link" href="{{ '/apps/' | append: post_app.id | append: '/' | relative_url }}">
+              {% include lang.html key="app_view_detail" %}<span aria-hidden="true">→</span>
+            </a>
+          </div>
+        {% endif %}
+
+        <div class="z2y-article__card z2y-article__card--quiet">
+          <p class="z2y-kicker">SUPPORT</p>
+          {% if post_app and post_app.links.support %}
+            <a class="z2y-article__card-link" href="{{ post_app.links.support | relative_url }}">{% include lang.html key="app_support" %}<span aria-hidden="true">→</span></a>
+          {% endif %}
+          <a class="z2y-article__card-link" href="{{ '/support/' | relative_url }}">{% include lang.html key="support_title" %}<span aria-hidden="true">→</span></a>
+          <a class="z2y-article__card-link" href="https://issue-zh.zero2you.tech/" data-lang="zh" target="_blank" rel="noopener">{{ site.data.ui.zh.support_site_zh }}<span aria-hidden="true">↗</span></a>
+          <a class="z2y-article__card-link" href="https://issue-en.zero2you.tech/" data-lang="en" target="_blank" rel="noopener">{{ site.data.ui.en.support_site_en }}<span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </aside>
+    {% endif %}
+
+    <div class="z2y-article__body">
+      <div class="page__inner-wrap">
         <header>
           {% if page.title %}
             <h1 id="page-title" class="page__title" itemprop="headline">
@@ -35,40 +116,47 @@ layout: default
               {% endif %}
             </h1>
           {% endif %}
+          {% if post_category or page.date %}
+            <p class="z2y-article__submeta">
+              {% if post_category %}<span class="z2y-article__badge">{{ post_category }}</span>{% endif %}
+              {% if page.date %}<span>{{ page.date | date: "%Y.%m.%d" }}</span>{% endif %}
+              {% if post_app %}<span>{{ post_app.platforms | join: " / " }}</span>{% endif %}
+            </p>
+          {% endif %}
           {% include page__meta.html %}
         </header>
-      {% endunless %}
 
-      <div class="z2y-single-toolbar">
-        {% include language-switch.html compact=true %}
-      </div>
-
-      <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-            </nav>
-          </aside>
-        {% endif %}
-        <div class="z2y-prose z2y-prose--article">
-          {{ content }}
+        <div class="z2y-single-toolbar">
+          {% include language-switch.html compact=true %}
         </div>
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
-      </footer>
+        <section class="page__content" itemprop="text">
+          {% if page.toc %}
+            <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+              <nav class="toc">
+                <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+                {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+              </nav>
+            </aside>
+          {% endif %}
+          <div class="z2y-prose z2y-prose--article">
+            {{ content }}
+          </div>
+          {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        </section>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+        <footer class="page__meta">
+          {% if site.data.ui-text[site.locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+          {% endif %}
+          {% include page__taxonomy.html %}
+          {% include page__date.html %}
+        </footer>
 
-      {% include post_pagination.html %}
+        {% if page.share %}{% include social-share.html %}{% endif %}
+
+        {% include post_pagination.html %}
+      </div>
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
@@ -77,35 +165,28 @@ layout: default
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <div align="center" style="margin: 1em 0;">
-        <ins class="adsbygoogle"
-              style="display:block; border-bottom: initial;"
-              data-ad-client="ca-pub-7328585512091257"
-              data-ad-slot="3049671934"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
+  {% if page.related %}
+    {% assign related_pool = site.categories[post_category] %}
+    {% if related_pool.size > 1 %}
+      <div class="z2y-article__related">
+        <h2 class="z2y-article__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+        <div class="z2y-update-list">
+          {% assign related_count = 0 %}
+          {% for post in related_pool %}
+            {% if post.id == page.id %}{% continue %}{% endif %}
+            {% if related_count >= 3 %}{% break %}{% endif %}
+            {% assign related_count = related_count | plus: 1 %}
+            <a class="z2y-update-item" href="{{ post.url | relative_url }}">
+              <span class="z2y-update-item__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+              <span class="z2y-update-item__body">
+                <strong>{{ post.title }}</strong>
+                {% if post.excerpt %}<small>{{ post.excerpt | strip_html | truncate: 90 }}</small>{% endif %}
+              </span>
+              <span class="z2y-update-item__arrow" aria-hidden="true">→</span>
+            </a>
+          {% endfor %}
+        </div>
       </div>
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
-    <div class="page__related">
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}
-            {% continue %}
-          {% endif %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
+    {% endif %}
   {% endif %}
 </div>

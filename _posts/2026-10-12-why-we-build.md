@@ -10,6 +10,10 @@ excerpt_en: "A product is not a feature list. It should remove friction, clarify
 author_profile: false
 share: false
 related: false
+visual: "/assets/journal/2026-10-12-why-we-build/01-real-problem.png"
+visual_kind: "illustration"
+visual_caption: "配图：小黑把反复出现的摩擦，压成真正能用的产品。"
+visual_caption_en: "Illustration: 小黑 presses recurring friction into products people actually use."
 ---
 
 <div data-lang="zh" markdown="1">

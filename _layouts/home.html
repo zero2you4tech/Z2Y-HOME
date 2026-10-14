@@ -129,11 +129,19 @@ layout: default
       </div>
       <div class="z2y-update-list">
         {% for post in update_posts limit:3 %}
+          {%- assign home_app = nil -%}
+          {%- if post.app_id -%}{%- assign home_app = site.data.apps | where: "id", post.app_id | first -%}{%- endif -%}
+          {%- assign home_thumb = post.visual -%}
+          {%- if home_thumb == nil and home_app and home_app.screenshots.size > 0 -%}{%- assign home_thumb = home_app.screenshots.first.image -%}{%- endif -%}
+          {%- if home_thumb == nil and home_app -%}{%- assign home_thumb = home_app.logo -%}{%- endif -%}
           <a class="z2y-update-item" href="{{ post.url | relative_url }}">
+            <span class="z2y-update-item__thumb">
+              {% if home_thumb %}<img src="{{ home_thumb | relative_url }}" alt="{{ post.title | strip_html | escape_once }}" loading="lazy">{% endif %}
+            </span>
             <span class="z2y-update-item__date">{{ post.date | date: "%Y.%m.%d" }}</span>
             <span class="z2y-update-item__body">
-              <strong>{{ post.title }}</strong>
-              {% if post.excerpt %}<small>{{ post.excerpt | strip_html | truncate: 90 }}</small>{% endif %}
+              <strong><span data-lang="zh">{{ post.title }}</span><span data-lang="en">{{ post.title_en | default: post.title }}</span></strong>
+              {% if post.excerpt %}<small><span data-lang="zh">{{ post.excerpt | strip_html | truncate: 90 }}</span><span data-lang="en">{{ post.excerpt_en | default: post.excerpt | strip_html | truncate: 90 }}</span></small>{% endif %}
             </span>
             <span class="z2y-update-item__arrow" aria-hidden="true">→</span>
           </a>
@@ -157,10 +165,11 @@ layout: default
       <div class="z2y-journal-grid">
         {% for post in journal_posts limit:3 %}
           <a class="z2y-journal-card" href="{{ post.url | relative_url }}">
+            {% if post.visual %}<span class="z2y-journal-card__cover"><img src="{{ post.visual | relative_url }}" alt="{{ post.title | strip_html | escape_once }}" loading="lazy"></span>{% endif %}
             <span class="z2y-journal-card__index">0{{ forloop.index }}</span>
             <span class="z2y-journal-card__date">{{ post.date | date: "%Y.%m.%d" }}</span>
-            <strong>{{ post.title }}</strong>
-            {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 110 }}</p>{% endif %}
+            <strong><span data-lang="zh">{{ post.title }}</span><span data-lang="en">{{ post.title_en | default: post.title }}</span></strong>
+            {% if post.excerpt %}<p><span data-lang="zh">{{ post.excerpt | strip_html | truncate: 110 }}</span><span data-lang="en">{{ post.excerpt_en | default: post.excerpt | strip_html | truncate: 110 }}</span></p>{% endif %}
             <span class="z2y-journal-card__more">{% include lang.html key="updates_read" %}<span aria-hidden="true">↗</span></span>
           </a>
         {% else %}

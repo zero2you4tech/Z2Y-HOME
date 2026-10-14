@@ -1,4 +1,4 @@
 interface:
   display_name: "Zero2You Site Manager"
-  short_description: "Update app metadata, release notes, and website articles"
-  default_prompt: "Use $zero2you-site-manager to update the Zero2You website product information and publish the change."
+  short_description: "Update app info, visuals, release notes, and site articles"
+  default_prompt: "Use $zero2you-site-manager to update the Zero2You website content, add the right visuals, and publish the change."

@@ -15,13 +15,24 @@ layout: default
     <div class="z2y-shell">
       <div class="z2y-update-archive">
         {% for post in site.categories["app-update"] %}
-          {% assign post_app = site.data.apps | where: "id", post.app_id | first %}
+          {%- assign post_app = nil -%}
+          {%- if post.app_id -%}{%- assign post_app = site.data.apps | where: "id", post.app_id | first -%}{%- endif -%}
+          {%- assign post_thumb = post.visual -%}
+          {%- if post_thumb == nil and post_app and post_app.screenshots.size > 0 -%}{%- assign post_thumb = post_app.screenshots.first.image -%}{%- endif -%}
+          {%- if post_thumb == nil and post_app -%}{%- assign post_thumb = post_app.logo -%}{%- endif -%}
           <a class="z2y-update-archive__item" href="{{ post.url | relative_url }}">
+            <span class="z2y-update-archive__thumb">
+              {% if post_thumb %}
+                <img src="{{ post_thumb | relative_url }}" alt="{{ post.title | strip_html | escape_once }}" loading="lazy">
+              {% elsif post_app %}
+                <img src="{{ post_app.logo | relative_url }}" alt="{{ post_app.name.zh }}" loading="lazy">
+              {% endif %}
+            </span>
             <span class="z2y-update-archive__date">{{ post.date | date: "%Y.%m.%d" }}</span>
             <span class="z2y-update-archive__main">
-              {% if post_app %}<small>{{ post_app.name.zh }}</small>{% endif %}
-              <strong>{{ post.title }}</strong>
-              {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 170 }}</p>{% endif %}
+              {% if post_app %}<small><span data-lang="zh">{{ post_app.name.zh }}</span><span data-lang="en">{{ post_app.name.en }}</span>{% if post.version %} · v{{ post.version }}{% endif %}</small>{% endif %}
+              <strong><span data-lang="zh">{{ post.title }}</span><span data-lang="en">{{ post.title_en | default: post.title }}</span></strong>
+              {% if post.excerpt %}<p><span data-lang="zh">{{ post.excerpt | strip_html | truncate: 170 }}</span><span data-lang="en">{{ post.excerpt_en | default: post.excerpt | strip_html | truncate: 170 }}</span></p>{% endif %}
             </span>
             <span class="z2y-update-archive__arrow" aria-hidden="true">↗</span>
           </a>

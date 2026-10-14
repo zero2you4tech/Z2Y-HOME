@@ -1,0 +1,477 @@
+{
+  "size": [
+    1600,
+    900
+  ],
+  "seed": 20261012,
+  "elements": [
+    {
+      "type": "label",
+      "text": "先有摩擦",
+      "at": [
+        150,
+        232
+      ],
+      "size": 44,
+      "color": "black"
+    },
+    {
+      "type": "line",
+      "from": [
+        150,
+        250
+      ],
+      "to": [
+        304,
+        254
+      ],
+      "color": "gray",
+      "width": 2
+    },
+    {
+      "type": "label",
+      "text": "再谈功能",
+      "at": [
+        150,
+        312
+      ],
+      "size": 44,
+      "color": "gray"
+    },
+    {
+      "type": "line",
+      "from": [
+        150,
+        330
+      ],
+      "to": [
+        296,
+        326
+      ],
+      "color": "gray",
+      "width": 2
+    },
+    {
+      "type": "scribble",
+      "at": [
+        300,
+        520
+      ],
+      "r": 92,
+      "loops": 4,
+      "color": "black",
+      "width": 3.4,
+      "wobble": 3.2
+    },
+    {
+      "type": "scribble",
+      "at": [
+        300,
+        520
+      ],
+      "r": 50,
+      "loops": 3,
+      "color": "red",
+      "width": 2.6,
+      "wobble": 3.0,
+      "opacity": 0.85
+    },
+    {
+      "type": "label",
+      "text": "一堆反复出现的摩擦",
+      "at": [
+        156,
+        690
+      ],
+      "size": 38,
+      "color": "red"
+    },
+    {
+      "type": "polyline",
+      "points": [
+        [
+          392,
+          520
+        ],
+        [
+          536,
+          486
+        ],
+        [
+          648,
+          430
+        ]
+      ],
+      "color": "orange",
+      "width": 3.4
+    },
+    {
+      "type": "arrow",
+      "from": [
+        604,
+        452
+      ],
+      "to": [
+        708,
+        372
+      ],
+      "color": "orange",
+      "width": 3.4
+    },
+    {
+      "type": "label",
+      "text": "先解决它",
+      "at": [
+        466,
+        424
+      ],
+      "size": 34,
+      "color": "orange",
+      "rotate": -5
+    },
+    {
+      "type": "line",
+      "from": [
+        700,
+        300
+      ],
+      "to": [
+        762,
+        392
+      ],
+      "color": "black",
+      "width": 3.6
+    },
+    {
+      "type": "line",
+      "from": [
+        920,
+        300
+      ],
+      "to": [
+        858,
+        392
+      ],
+      "color": "black",
+      "width": 3.6
+    },
+    {
+      "type": "line",
+      "from": [
+        700,
+        300
+      ],
+      "to": [
+        920,
+        300
+      ],
+      "color": "black",
+      "width": 3.6,
+      "wobble": 2.2
+    },
+    {
+      "type": "label",
+      "text": "问",
+      "at": [
+        812,
+        262
+      ],
+      "size": 46,
+      "color": "black",
+      "anchor": "middle",
+      "rotate": 0
+    },
+    {
+      "type": "rect",
+      "at": [
+        740,
+        392
+      ],
+      "w": 140,
+      "h": 180,
+      "color": "black",
+      "width": 3.6,
+      "wobble": 3.0
+    },
+    {
+      "type": "line",
+      "from": [
+        740,
+        468
+      ],
+      "to": [
+        700,
+        468
+      ],
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "line",
+      "from": [
+        700,
+        468
+      ],
+      "to": [
+        700,
+        428
+      ],
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "dot",
+      "at": [
+        700,
+        420
+      ],
+      "r": 11,
+      "color": "black"
+    },
+    {
+      "type": "blob",
+      "at": [
+        626,
+        552
+      ],
+      "rx": 44,
+      "ry": 54,
+      "color": "black",
+      "fill": "#111111"
+    },
+    {
+      "type": "dot",
+      "at": [
+        612,
+        538
+      ],
+      "r": 8,
+      "color": "white"
+    },
+    {
+      "type": "dot",
+      "at": [
+        640,
+        538
+      ],
+      "r": 8,
+      "color": "white"
+    },
+    {
+      "type": "line",
+      "from": [
+        610,
+        604
+      ],
+      "to": [
+        606,
+        662
+      ],
+      "color": "black",
+      "width": 3.4
+    },
+    {
+      "type": "line",
+      "from": [
+        646,
+        604
+      ],
+      "to": [
+        652,
+        662
+      ],
+      "color": "black",
+      "width": 3.4
+    },
+    {
+      "type": "line",
+      "from": [
+        658,
+        526
+      ],
+      "to": [
+        696,
+        480
+      ],
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "line",
+      "from": [
+        556,
+        664
+      ],
+      "to": [
+        948,
+        664
+      ],
+      "color": "black",
+      "width": 2.6,
+      "wobble": 1.6
+    },
+    {
+      "type": "arrow",
+      "from": [
+        884,
+        486
+      ],
+      "to": [
+        948,
+        486
+      ],
+      "color": "orange",
+      "width": 3.2
+    },
+    {
+      "type": "label",
+      "text": "长成产品",
+      "at": [
+        842,
+        624
+      ],
+      "size": 32,
+      "color": "orange",
+      "rotate": 2
+    },
+    {
+      "type": "rect",
+      "at": [
+        960,
+        420
+      ],
+      "w": 150,
+      "h": 132,
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "label",
+      "text": "阅读",
+      "at": [
+        1035,
+        500
+      ],
+      "size": 42,
+      "color": "black",
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "at": [
+        1140,
+        430
+      ],
+      "w": 150,
+      "h": 132,
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "label",
+      "text": "喝水",
+      "at": [
+        1215,
+        510
+      ],
+      "size": 42,
+      "color": "black",
+      "anchor": "middle"
+    },
+    {
+      "type": "rect",
+      "at": [
+        1320,
+        422
+      ],
+      "w": 150,
+      "h": 132,
+      "color": "black",
+      "width": 3.2
+    },
+    {
+      "type": "label",
+      "text": "记时",
+      "at": [
+        1395,
+        502
+      ],
+      "size": 42,
+      "color": "black",
+      "anchor": "middle"
+    },
+    {
+      "type": "label",
+      "text": "它会慢慢长出来",
+      "at": [
+        1046,
+        660
+      ],
+      "size": 36,
+      "color": "blue"
+    },
+    {
+      "type": "line",
+      "from": [
+        1000,
+        196
+      ],
+      "to": [
+        1160,
+        200
+      ],
+      "color": "black",
+      "width": 2.4
+    },
+    {
+      "type": "line",
+      "from": [
+        1000,
+        236
+      ],
+      "to": [
+        1180,
+        232
+      ],
+      "color": "black",
+      "width": 2.4
+    },
+    {
+      "type": "line",
+      "from": [
+        1000,
+        276
+      ],
+      "to": [
+        1140,
+        280
+      ],
+      "color": "black",
+      "width": 2.4
+    },
+    {
+      "type": "line",
+      "from": [
+        990,
+        182
+      ],
+      "to": [
+        1190,
+        292
+      ],
+      "color": "red",
+      "width": 3.6,
+      "wobble": 2.6
+    },
+    {
+      "type": "label",
+      "text": "不是功能清单",
+      "at": [
+        1226,
+        240
+      ],
+      "size": 40,
+      "color": "red"
+    }
+  ]
+}

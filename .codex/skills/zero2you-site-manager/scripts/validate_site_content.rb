@@ -128,6 +128,10 @@ else
   errors << "ui keys missing from zh: #{missing_zh.join(', ')}" unless missing_zh.empty?
 end
 
+apps_by_id = {}
+apps.each { |app| apps_by_id[app["id"].to_s] = app if app.is_a?(Hash) }
+valid_visual_kinds = %w[illustration product note]
+
 Dir[repo.join("_posts/*.md")].sort.each do |path|
   raw = File.read(path)
   parts = raw.split(/^---\s*$/, 3)
@@ -160,6 +164,38 @@ Dir[repo.join("_posts/*.md")].sort.each do |path|
     end
     errors << "#{File.basename(path)} must contain version" if post["version"].to_s.strip == ""
   end
+
+  visual = post["visual"].to_s.strip
+  linked_app = apps_by_id[post["app_id"].to_s]
+  resolved = nil
+  if !visual.empty?
+    errors << "#{File.basename(path)} visual must start with /" unless visual.start_with?("/")
+    unless repo.join(visual.sub(%r{\A/}, "")).file?
+      errors << "#{File.basename(path)} visual asset not found: #{visual}"
+    end
+    resolved = visual
+  elsif linked_app && (Array(linked_app["screenshots"]).first || linked_app["logo"])
+    resolved = "app visual"
+  end
+
+  if resolved.nil?
+    errors << "#{File.basename(path)} needs a visual: set `visual:` or give the linked app screenshots/logo"
+  end
+
+  kind = post["visual_kind"].to_s.strip
+  unless kind.empty? || valid_visual_kinds.include?(kind)
+    errors << "#{File.basename(path)} visual_kind must be one of #{valid_visual_kinds.join(', ')}"
+  end
+end
+
+support_page = repo.join("_pages/support.md")
+if support_page.file?
+  support_text = support_page.read
+  %w[https://issue-zh.zero2you.tech/ https://issue-en.zero2you.tech/].each do |url|
+    errors << "_pages/support.md must link #{url}" unless support_text.include?(url)
+  end
+else
+  errors << "missing _pages/support.md"
 end
 
 # 页面（支持页、关于页等）同样使用双语 div，规则保持一致。

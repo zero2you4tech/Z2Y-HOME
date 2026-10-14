@@ -16,11 +16,20 @@ layout: default
       <div class="z2y-journal-archive">
         {% for post in site.categories["article"] %}
           <a class="z2y-journal-archive__item" href="{{ post.url | relative_url }}">
-            <span class="z2y-journal-archive__index">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
-            <span class="z2y-journal-archive__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <span class="z2y-journal-archive__thumb">
+              {% if post.visual %}
+                <img src="{{ post.visual | relative_url }}" alt="{{ post.title | strip_html | escape_once }}" loading="lazy">
+              {% else %}
+                <span class="z2y-journal-archive__thumb-fallback">{{ post.title | slice: 0 }} </span>
+              {% endif %}
+            </span>
+            <span class="z2y-journal-archive__meta">
+              <span class="z2y-journal-archive__index">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
+              <span class="z2y-journal-archive__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            </span>
             <span class="z2y-journal-archive__content">
-              <strong>{{ post.title }}</strong>
-              {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+              <strong><span data-lang="zh">{{ post.title }}</span><span data-lang="en">{{ post.title_en | default: post.title }}</span></strong>
+              {% if post.excerpt %}<p><span data-lang="zh">{{ post.excerpt | strip_html | truncate: 180 }}</span><span data-lang="en">{{ post.excerpt_en | default: post.excerpt | strip_html | truncate: 180 }}</span></p>{% endif %}
             </span>
             <span class="z2y-journal-archive__arrow" aria-hidden="true">↗</span>
           </a>

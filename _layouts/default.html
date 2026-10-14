@@ -13,9 +13,16 @@
     <script>
       (function () {
         try {
+          var params = new URLSearchParams(window.location.search);
+          var query = (params.get("lang") || "").toLowerCase();
           var saved = localStorage.getItem("z2y-lang");
           var browser = (navigator.language || "zh").toLowerCase();
-          var lang = saved || (browser.indexOf("zh") === 0 ? "zh" : "en");
+          var lang = (query === "zh" || query === "en")
+            ? query
+            : (saved || (browser.indexOf("zh") === 0 ? "zh" : "en"));
+          if (query === "zh" || query === "en") {
+            localStorage.setItem("z2y-lang", query);
+          }
           document.documentElement.setAttribute("data-lang", lang);
           document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
         } catch (error) {

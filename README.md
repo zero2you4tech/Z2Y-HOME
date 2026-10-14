@@ -53,3 +53,11 @@ bundle exec jekyll serve
 ```
 
 如果本机 Ruby/Gem 环境无法安装 GitHub Pages 依赖，可以直接依赖 GitHub Actions 构建，或使用已安装的 Jekyll 环境运行 `jekyll build`。
+
+## 文章配图与支持入口
+
+- 每篇文章都有左侧视觉栏：产品动态自动复用该 App 的 App Store 截图，手记文章需要显式设置 `visual`。
+- 阅读 `_posts/2026-10-12-why-we-build.md` 可以看到手记文章配图的写法（小黑手绘配图 + 双语图注）。
+- 手绘配图由 `.codex/skills/zero2you-site-manager/scripts/xiaohei_sketch.rb` 从 JSON spec 渲染，spec、SVG、PNG 都会提交，方便以后改图。
+- 公开支持入口：https://issue-zh.zero2you.tech/ ｜ https://issue-en.zero2you.tech/ ，同时出现在 `/support/` 与 `/about/`。
+- 语言可以用链接直接指定：`?lang=zh` 或 `?lang=en`。

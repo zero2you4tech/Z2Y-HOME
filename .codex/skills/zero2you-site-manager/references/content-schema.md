@@ -70,7 +70,24 @@ related: false
 ---
 ```
 
-The body should contain separate `data-lang="zh"` and `data-lang="en"` blocks.
+Every post needs one of these front matter keys so the left visual panel is filled:
+
+```yaml
+visual: "/assets/apps/Z2Y-Example/screen-today.jpg" # or a 小黑 illustration
+visual_kind: "product"                              # illustration | product | note
+visual_caption: "中文图注"
+visual_caption_en: "English caption"
+```
+
+Release posts may omit `visual` when the linked app already has `screenshots` or a `logo` in `_data/apps.yml`, because the layout resolves the app screenshot automatically. Journal posts must set `visual` explicitly.
+
+Thought notes republished from the `aphorism-notebook` skill also set:
+
+```yaml
+source_url: "https://<thinking-site>/cards/<slug>"
+```
+
+The body should contain separate `data-lang="zh"` and `data-lang="en"` blocks, each with `markdown="1"`.
 
 ## Journal post
 
