@@ -75,14 +75,14 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
 
 - 完成后会留下一枚印记：**大小**表示实际时长，**颜色**表示类别，**轮廓**表示状态（完成、中断 / 暂停、周期锚点）。
 - 时间簿分日页、周页、月页，可以左右切换查看更早或更晚的区间。
-- 日页与周页对所有用户免费；月页日历与年度长期回顾属于可选的 Pro。
+- 日页、周页与月页都可以回看，年度长期回顾同样对所有用户免费。
 - 右上角的分享按钮可以把当前区间的印记导出成分享卡片；卡片来自真实记录，可以选择隐藏具体标题，且不会上传任何数据。
 
-## 免费与 Pro
+## 全部功能免费
 
-- 免费：基础计时、完成提醒、后台与锁屏状态、默认印记样式、日页 / 周页时间簿、本地历史与导出。
-- Pro（可选）：更多印记主题与页面纸张、月页日历与年度长期回顾、专属完成场景与分享卡片。
-- 设置里可以随时「恢复购买」；购买方案与价格以应用内购买页和 App Store 显示为准。
+- 计时、记时、专注三个板块，完成提醒、后台与锁屏状态全部可用，应用内没有内购。
+- 时间簿的日页、周页、月页与年度长期回顾，以及全部印记主题与页面纸张，都包含在免费版本里。
+- 数据只保存在本机，可以随时导出 JSON / CSV。
 
 ## 通知、锁屏与后台
 
@@ -138,14 +138,14 @@ Z2Y Remember Timer is a local-first timing app that keeps countdowns, recurring 
 
 - A finished session leaves a mark: **size** is the real duration, **colour** is the category, and **outline** is the status (completed, interrupted / paused, or a recurring anchor).
 - The time book has day, week, and month pages; move left and right to reach earlier or later ranges.
-- Day and week pages are free for everyone; the month calendar and the yearly long-term review belong to optional Pro.
+- Day, week, and month pages are all available, and the yearly long-term review is included too.
 - The share button in the header exports the marks of the current range as a share card. Cards come from real records, can hide specific titles, and are never uploaded.
 
-## Free and Pro
+## Everything is free
 
-- Free: core timing, completion alerts, background and lock-screen status, the default mark style, the day / week time book, local history, and export.
-- Pro (optional): more mark themes and papers, the month calendar with yearly review, and dedicated completion scenes and share cards.
-- **Restore purchases** is available in settings at any time. Plans and prices follow the in-app purchase screen and the App Store.
+- Countdown, remember, and focus are fully available, including completion alerts, background status, and lock-screen projection. There are no in-app purchases.
+- The time book's day, week, and month pages, the yearly review, and every mark theme and paper are included.
+- Data stays on your device and can be exported as JSON / CSV at any time.
 
 ## Notifications, lock screen, and background
 

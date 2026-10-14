@@ -794,8 +794,7 @@
     en: Countdowns, recurring reminders, and focus sessions in one app — every finished
       stretch leaves a mark you can revisit in the time book.
   description:
-    zh: Z2Y 记时围绕三个板块组织时间：计时给一段时长设定清晰的边界，明确开始，也明确结束；记时按天、工作日、每周、每月或每年记住周期事务，并用公历或农历记下纪念日，只在下一次发生前出现；专注把总时长拆成一圈圈，用轻提醒维持节奏。完成后会留下一枚印记：大小表示实际时长，颜色表示类别，轮廓表示状态。印记落进时间簿，日页与周页随时可以回看；月页与年度汇总属于可选的
-      Pro。应用不需要注册账号，没有云端与广告，方案、记录与印记都保存在设备上，计时状态离开应用也会继续。
+    zh: Z2Y 记时围绕三个板块组织时间：计时给一段时长设定清晰的边界，明确开始，也明确结束；记时按天、工作日、每周、每月或每年记住周期事务，并用公历或农历记下纪念日，只在下一次发生前出现；专注把总时长拆成一圈圈，用轻提醒维持节奏。完成后会留下一枚印记：大小表示实际时长，颜色表示类别，轮廓表示状态。印记落进时间簿，日页与周页随时可以回看；月页与年度汇总同样免费。应用不需要注册账号，没有云端与广告，方案、记录与印记都保存在设备上，计时状态离开应用也会继续。
     en: 'Z2Y Remember Timer organises time around three sections. Countdown gives
       a stretch of time a clear boundary — a clear start and a clear end. Remember
       keeps recurring commitments (daily, weekdays, weekly, monthly, yearly) and anniversaries
@@ -803,8 +802,8 @@
       Focus splits a total duration into rings with gentle cues that keep the rhythm.
       Every finished session leaves a mark: size is the real duration, colour is the
       category, and outline is the status. Marks fall into the time book, where day
-      and week pages are always available and the month page plus yearly review belong
-      to optional Pro. No account, no cloud, no ads: plans, records, and marks stay
+      and week pages are always available and the month page plus yearly review are
+      included. No account, no cloud, no ads: plans, records, and marks stay
       on your device, and a running timer continues after you leave the app.'
   logo: "/assets/apps/Z2Y-Timer/logo.png"
   accent: "#6fd3b4"
@@ -858,10 +857,6 @@
     caption:
       zh: 完成反馈：实际与计划时长对照，并把这段放进今天
       en: 'Completion moment: actual versus planned duration, placed into today'
-  - image: "/assets/apps/Z2Y-Timer/screenshots/iphone-05-timebook-month.png"
-    caption:
-      zh: 月页日历与年度回顾属于 Pro，日页与周页继续免费
-      en: The month calendar and yearly review belong to Pro; day and week stay free
   requirements:
   - zh: 运行 iOS 或 iPadOS 16.4 或更高版本的 iPhone 或 iPad
     en: iPhone or iPad running iOS or iPadOS 16.4 or later
@@ -895,10 +890,9 @@
     en: In focus, pick or build a focus rhythm (total duration plus ring length).
       Each finished ring gives one gentle cue, and the session result is kept when
       you stop.
-  - zh: 完成后打开时间簿：日页与周页回看节奏与累积，可以导出分享卡片；月页日历与年度汇总需要 Pro。
-    en: 'After finishing, open the time book: day and week pages show your rhythm
-      and totals, and share cards can be exported; the month calendar and yearly review
-      need Pro.'
+  - zh: 完成后打开时间簿：日页、周页与月页都能回看节奏与累积，可以导出分享卡片。
+    en: 'After finishing, open the time book: day, week, and month pages show your
+      rhythm and totals, and share cards can be exported.'
   - zh: 在设置中管理通知、声音与振动、外观与印记主题，并在「数据与隐私」中导出 JSON / CSV、导入旧版数据或查看隐私说明。
     en: In settings, manage notifications, sound and haptics, appearance and mark
       themes, then use Data & privacy to export JSON / CSV, import legacy data, or
@@ -912,15 +906,13 @@
       en: No. Every timing feature is available right after install, and plans, records,
         and marks are stored on your device.
   - q:
-      zh: 免费版和 Pro 有什么区别？
-      en: What does Pro add?
+      zh: 需要额外付费吗？
+      en: Does anything cost extra?
     a:
-      zh: 基础计时、完成提醒以及日页 / 周页时间簿对所有用户免费；Pro 提供更多印记主题与纸张、月页日历与年度长期回顾，以及专属分享卡片。购买方案与价格以应用内购买页和
-        App Store 显示为准。
-      en: Core timing, completion alerts, and the day / week time book are free for
-        everyone. Pro adds more mark themes and papers, the month calendar with yearly
-        review, and dedicated share cards. Plans and prices follow what the in-app
-        purchase screen and the App Store show.
+      zh: 不需要。计时、记时、专注三个板块，印记主题与纸张，日 / 周 / 月时间簿与年度长期回顾，以及分享卡片都对所有用户免费，应用内没有内购。
+      en: No. Countdown, remember, and focus, every mark theme and paper, the day /
+        week / month time book with the yearly review, and share cards are all free,
+        with no in-app purchases.
   - q:
       zh: 拒绝通知权限会怎样？
       en: What happens if I deny notifications?
