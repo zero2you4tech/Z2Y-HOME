@@ -221,54 +221,172 @@
   order: 4
   name:
     zh: Z2Y 强记单词
-    en: Z2Y Forced Memory Words
+    en: Z2Y Force Remember Words
   tagline:
-    zh: 把记忆变成定时提醒
-    en: Make recall a timed habit
+    zh: 定时弹出，随手强记
+    en: Timed pop-ups, steady recall
   summary:
-    zh: 用桌面定时弹窗帮助你在工作与学习之间保持高频词汇记忆。
-    en: A timed desktop recall tool for keeping vocabulary practice present throughout
-      the day.
+    zh: 按你设定的间隔弹出单词卡，用「记住了 / 忘记了」把复习变成一天里固定的节奏。
+    en: Word cards appear at the interval you set — mark them remembered or forgotten
+      to keep recall on a fixed rhythm.
   description:
-    zh: 工作+学习强记单词通过桌面定时弹出记忆卡片，让单词复习不再依赖主动打开学习应用。 适合需要利用碎片时间持续记忆的用户。
-    en: Forced Memory Words uses timed desktop pop-ups to make vocabulary review part
-      of the workday, without requiring you to open a study app first.
+    zh: Z2Y 强记单词是一款定时弹出式单词记忆软件，iPhone、iPad 与 Mac 上都能用。它不要求你先打开学习应用，而是按你设定的间隔把一张单词卡推到眼前：词性、中英释义、音标与发音、短语、例句与真题例句、同近义词都在一起，读完点「记住了」或「忘记了」，下一次提醒重新计时，卡片下方直接显示还要等多久。词书内置四级、六级、考研、专四、专八等真题词库与词典词库；单词列表可以搜索单词或释义、按词频排名筛选，并显示每个单词的出现、记住与遗忘次数。学习统计把学习进度、学习效率和遗忘次数最多的
+      10 个单词画成图表，方便决定下一轮重点补哪里。提醒间隔可在 1 到 3600 秒之间调整。
+    en: 'Z2Y Force Remember Words is a timed pop-up vocabulary trainer for iPhone,
+      iPad, and Mac. Instead of asking you to open a study app first, it puts a single
+      word card in front of you at the interval you set: part of speech, Chinese and
+      English definitions, phonetics with pronunciation, phrases, example sentences
+      including past-exam sentences, and synonyms. Mark it Remembered or Forgotten
+      and the next reminder starts counting down, with the waiting time shown right
+      below the card. Built-in word books cover CET-4, CET-6, postgraduate exams,
+      TEM-4, and TEM-8 lists along with dictionary collections. The word list searches
+      words or meanings, filters and sorts by frequency rank, and shows how often
+      each word appeared, was remembered, or was forgotten. Study statistics chart
+      learning progress, learning efficiency, and the top 10 most forgotten words,
+      so you know what to review next. The reminder interval can be adjusted between
+      1 and 3600 seconds.'
   logo: "/assets/apps/Z2Y-Words/logo.png"
   accent: "#b6d779"
   platforms:
+  - iOS
   - macOS
   price:
     zh: 免费
     en: Free
-  status: preview
+  status: available
   featured: false
-  version: ''
+  version: 1.2.2
   version_label:
-    zh: 版本待确认
-    en: Version pending
-  released_at: ''
-  updated_at: ''
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2025-04-03'
+  updated_at: '2026-07-23'
   min_os:
-    zh: macOS
-    en: macOS
+    zh: iOS / iPadOS 14.0 或 macOS 12.0 及更高版本
+    en: iOS or iPadOS 14.0, macOS 12.0 or later
   links:
-    primary: https://apps.apple.com/cn/app/z2y-%E5%BC%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/id6743989782
+    primary: https://apps.apple.com/app/id6743989782
     primary_label:
-      zh: 查看应用页面
-      en: View app page
+      zh: 在 App Store 查看
+      en: View on the App Store
   highlights:
-  - zh: 按设定周期弹出词汇记忆提醒
-    en: Timed vocabulary recall prompts
-  - zh: 适合工作与学习场景中的碎片记忆
-    en: Designed for short recall sessions during work and study
+  - zh: 按设定的间隔弹出单词卡，1–3600 秒之间可调
+    en: Word cards pop up at an interval you set, from 1 to 3600 seconds
+  - zh: 一张卡看完词性、中英释义、发音、短语、例句、真题例句与同近义词
+    en: One card holds part of speech, definitions, pronunciation, phrases, examples,
+      past-exam sentences, and synonyms
+  - zh: 内置四级、六级、考研、专四、专八等词书，可按词频排名检索
+    en: Built-in CET-4, CET-6, postgraduate, and TEM word books with frequency-rank
+      sorting
+  - zh: 选择题记忆检测会给出正确答案与解释
+    en: Multiple-choice recall checks come with the correct answer and an explanation
+  - zh: 学习统计呈现进度、效率与最容易被遗忘的单词
+    en: Statistics show progress, efficiency, and the words you forget most
   requirements:
-  - zh: macOS
-    en: macOS
+  - zh: iPhone、iPad 或 Mac，需 iOS / iPadOS 14.0 或 macOS 12.0 及更高版本
+    en: iPhone, iPad, or Mac running iOS or iPadOS 14.0, macOS 12.0 or later
+  - zh: 定时提醒需要通知权限
+    en: Timed reminders need notification permission
+  - zh: 播放发音需要联网，音频来自在线词典音频接口
+    en: Pronunciation needs a network connection; audio comes from an online dictionary
+      audio service
+  - zh: 词库与学习记录保存在本机，无需注册账号
+    en: Word data and study records stay on your device, and no account is required
   install:
-  - zh: 打开应用页面并确认当前发布状态。
-    en: Open the app page and confirm its current availability.
-  faq: []
-  changelog: []
+  - zh: 从 App Store 安装并打开，无需注册或登录。
+    en: Install the app from the App Store and open it; no sign-up or login is required.
+  - zh: 在单词本列表里选择一本词书，点「学习此书」开始加载（四级、六级、考研、专四、专八等）。
+    en: Pick a book in the word book list and tap Learn to load it (CET-4, CET-6,
+      postgraduate, TEM-4, TEM-8, and more).
+  - zh: 在设置中调整提醒间隔（1–3600 秒），保存后按新间隔重新计时。
+    en: Adjust the reminder interval in settings (1–3600 seconds); saving restarts
+      the countdown with the new interval.
+  - zh: 到点后单词卡自动出现：看完内容、播放发音，再点「记住了」或「忘记了」，卡片下方会显示下一次提醒的等待时间。
+    en: 'When the interval is up the card appears: read it, play the pronunciation,
+      then mark it Remembered or Forgotten — the countdown to the next reminder shows
+      under the card.'
+  - zh: 到「单词列表」搜索单词或释义、按词频排名筛选，并查看每个单词的出现、记住与遗忘次数。
+    en: In the word list, search words or meanings, filter and sort by frequency rank,
+      and check each word's appeared, remembered, and forgotten counts.
+  - zh: 用「做题」进行选择题记忆检测，答完查看正确答案与解释；到「学习统计」查看进度、效率与遗忘次数最多的 10 个单词。
+    en: Use Do Exam for multiple-choice recall checks with answers and explanations,
+      then open Study Statistics for progress, efficiency, and the top 10 most forgotten
+      words.
+  faq:
+  - q:
+      zh: 提醒间隔可以自己设定吗？
+      en: Can I set the reminder interval myself?
+    a:
+      zh: 可以。设置中可输入 1 到 3600 秒的间隔，保存后立即生效；单词卡下方会显示下一次提醒的等待时间。
+      en: Yes. Enter any interval between 1 and 3600 seconds in settings; it takes
+        effect right away, and the waiting time to the next reminder is shown under
+        the card.
+  - q:
+      zh: 需要注册账号吗？
+      en: Do I need an account?
+    a:
+      zh: 不需要。应用没有账号系统，词库与学习记录都保存在本机。
+      en: No. The app has no account system; word data and study records stay on your
+        device.
+  - q:
+      zh: 发音播放不出来是什么原因？
+      en: Why does pronunciation sometimes not play?
+    a:
+      zh: 单词发音的音频来自在线词典音频接口，需要网络连接；离线时卡片上的文字内容依然可用。
+      en: Pronunciation audio comes from an online dictionary audio service, so it
+        needs a network connection; the text on the card still works offline.
+  - q:
+      zh: 在中国大陆区 App Store 搜不到？
+      en: Why can't I find it on the App Store in mainland China?
+    a:
+      zh: 该应用目前未在中国大陆区 App Store 上架，可在已上架地区（如中国香港）的 App Store 中搜索「Z2Y 强记单词」查看。
+      en: The app is not currently listed on the App Store in mainland China; it is
+        available in storefronts such as Hong Kong — search for Z2Y 强记单词 there.
+  changelog:
+  - version: 1.2.2
+    date: '2026-07-23'
+    notes:
+      zh: 全新界面升级：优化词书、单词列表、学习与设置页面的视觉层级和操作体验；新增学习统计与图表，修复细节问题并提升整体稳定性。
+      en: 'A full interface refresh: clearer hierarchy and interactions across books,
+        word lists, study sessions, and settings, plus new study statistics and charts,
+        detail fixes, and better stability.'
+  - version: 1.2.0
+    date: '2025-06-13'
+    notes:
+      zh: 新增单词列表预览与背单词统计，支持随机题库做题，并为句子和短语加入朗读。
+      en: Added word list preview and study statistics, random quiz questions, and
+        audio playback for sentences and phrases.
+  - version: '1.0'
+    date: '2025-04-03'
+    notes:
+      zh: 首个版本在 App Store 发布。
+      en: First release on the App Store.
+  screenshots:
+  - image: "/assets/apps/Z2Y-Words/screenshots/iphone-01-recall.jpg"
+    caption:
+      zh: 单词卡：词性、中英释义、短语、例句与同近义词都在一张卡上，读完点「记住了」或「忘记了」
+      en: 'Word card: part of speech, definitions, phrases, examples, and synonyms
+        on one card — then mark it remembered or forgotten'
+  - image: "/assets/apps/Z2Y-Words/screenshots/iphone-02-word-list.jpg"
+    caption:
+      zh: 单词列表：搜索单词或释义，按词频排名排序，右侧显示每个单词的出现、记住与遗忘次数
+      en: 'Word list: search words or meanings, sort by frequency rank, and see appeared,
+        remembered, and forgotten counts'
+  - image: "/assets/apps/Z2Y-Words/screenshots/iphone-03-exam.jpg"
+    caption:
+      zh: 记忆检测：选择题答完后直接给出正确选项与解释
+      en: 'Recall check: answer a multiple-choice question and see the correct option
+        with an explanation'
+  - image: "/assets/apps/Z2Y-Words/screenshots/iphone-04-statistics.jpg"
+    caption:
+      zh: 学习统计：学习进度与学习效率用环形图分出记住、需要复习与未开始的比例
+      en: 'Study statistics: donut charts for progress and efficiency, split into
+        remembered, needs review, and not started'
+  - image: "/assets/apps/Z2Y-Words/screenshots/iphone-05-books.jpg"
+    caption:
+      zh: 单词本列表：四级、六级、考研、专四、专八等词书，选择后加载词库开始学习
+      en: 'Word books: CET-4, CET-6, postgraduate, TEM-4, and TEM-8 lists — pick one
+        and start studying'
 - id: z2y-reader
   order: 5
   name:
