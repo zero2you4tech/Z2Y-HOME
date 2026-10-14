@@ -503,13 +503,18 @@
     zh: 定时喝水，强制休息
     en: Timed hydration, enforced breaks
   summary:
-    zh: 通过定时全屏提醒监督自己按时喝水，以更有存在感的方式建立健康习惯。
-    en: A timed full-screen reminder that makes hydration hard to ignore.
+    zh: 主界面用倒计时环提示距离下一次补水还剩多久，到点后由透明悬浮窗口接管屏幕，帮助长时间工作的人按时喝水、离开座位。
+    en: A countdown ring shows how long is left until your next sip, and a transparent
+      floating window takes over the screen when the time is up.
   description:
-    zh: Z2Y 请喝水源于开发者自己的真实需求。它通过周期提醒和全屏阻断， 帮助长时间工作的人按时喝水、离开座位，逐渐建立稳定的健康习惯。
-    en: Z2Y Drink Water! began as a real personal need. Timed reminders and full-screen
-      interruptions help people who work for long stretches hydrate and step away
-      at regular intervals.
+    zh: Z2Y 请喝水源于开发者自己的真实需求。1.0.5 重做了提醒界面：主界面用倒计时环显示距离下一次补水的时间，并记录今日完成次数；到点后由透明悬浮窗口接管屏幕，至少
+      10 秒后才能确认离开座位。提醒间隔最长可设 3600 秒，也可以打开开机启动，让它登录后安静地待在后台。
+    en: Z2Y Drink Water! began as a real personal need. The 1.0.5 dashboard was rebuilt
+      around a countdown ring that shows the time until your next sip and keeps today's
+      total; when the time is up, a transparent floating window takes over the screen
+      and you must wait at least 10 seconds before you can confirm your way out of
+      the seat. Intervals go up to 3,600 seconds, and launch at login keeps the app
+      quietly running in the background.
   logo: "/assets/apps/Z2Y-Water/logo.png"
   accent: "#61c9df"
   platforms:
@@ -534,20 +539,27 @@
       zh: 在 App Store 查看
       en: View on the App Store
   highlights:
-  - zh: 周期提醒默认约 20 分钟一次
-    en: Default reminder interval of about 20 minutes
-  - zh: 全屏阻断至少持续约 10 秒
-    en: Full-screen interruption lasts at least about 10 seconds
-  - zh: 为难以主动休息的人设计
-    en: Designed for people who struggle to take breaks
+  - zh: 倒计时环显示距离下一次补水还剩多久
+    en: A countdown ring shows how long until your next sip
+  - zh: 到点由透明悬浮窗口接管屏幕，至少 10 秒后才能确认
+    en: A transparent floating window takes over the screen, with a 10-second wait
+      before you can confirm
+  - zh: 提醒间隔最长可设 3600 秒，并可开机启动
+    en: Intervals up to 3,600 seconds, plus launch at login
+  - zh: 记录今日完成次数，界面支持中英文
+    en: Tracks today's total with a bilingual interface
   requirements:
   - zh: macOS 13.0 或更高版本
     en: macOS 13.0 or later
   install:
   - zh: 从 App Store 下载并安装应用。
     en: Download and install from the App Store.
-  - zh: 首次启动后设置提醒周期。
-    en: Set the reminder interval on first launch.
+  - zh: 在设置中调整提醒间隔（最长 3600 秒），并按需要打开开机启动。
+    en: Set the reminder interval in Settings (up to 3,600 seconds) and enable launch
+      at login if you want it.
+  - zh: 提醒到点后，在悬浮窗口点击“我喝完了”确认，再回到工作。
+    en: When the reminder appears, confirm with “I drank water” in the floating window,
+      then get back to work.
   faq:
   - q:
       zh: 提醒为什么很难关闭？
@@ -557,12 +569,43 @@
       en: The product intentionally uses a strong interruption to pull you away from
         the screen. Confirm that you are comfortable with full-screen prompts before
         installing.
+  - q:
+      zh: 提醒间隔可以自己改吗？
+      en: Can I change the reminder interval?
+    a:
+      zh: 可以。在设置中调整定时频率，最长 3600 秒。
+      en: Yes. Adjust the interval in Settings; it goes up to 3,600 seconds.
+  - q:
+      zh: 可以让它开机自动运行吗？
+      en: Can it start automatically?
+    a:
+      zh: 可以。在设置中打开开机启动，应用会在登录后自动在后台运行。
+      en: Yes. Turn on launch at login in Settings and the app starts quietly in the
+        background when you sign in.
+  - q:
+      zh: 支持哪些系统版本？
+      en: Which macOS versions are supported?
+    a:
+      zh: macOS 13.0 或更高版本。
+      en: macOS 13.0 or later.
   changelog:
   - version: 1.0.5
     date: '2026-07-24'
     notes:
-      zh: App Store 当前发布版本。
-      en: Current release available on the App Store.
+      zh: 重做饮水提醒界面，新增透明悬浮窗口、倒计时进度和更清晰的设置体验；优化提醒流程与本地化显示，修复计时状态同步问题。
+      en: Rebuilt the hydration reminder interface with a transparent floating window,
+        clearer countdown progress, and a cleaner settings experience; improved the
+        reminder flow and localization, and fixed timer state handling.
+  screens_layout: wide
+  screenshots:
+  - image: "/assets/apps/Z2Y-Water/screen-dashboard.jpg"
+    caption:
+      zh: 主界面：倒计时环、今日完成次数与当前定时频率
+      en: 'Dashboard: the countdown ring, today''s total, and the current interval'
+  - image: "/assets/apps/Z2Y-Water/screen-settings.jpg"
+    caption:
+      zh: 设置：提醒间隔（最长 3600 秒）与开机启动
+      en: 'Settings: reminder interval (up to 3,600 seconds) and launch at login'
 - id: z2y-dmg
   order: 7
   name:
