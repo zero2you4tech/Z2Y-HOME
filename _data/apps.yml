@@ -1191,3 +1191,151 @@
     caption:
       zh: 周回顾：先看事实，再解释，最后做下周决策
       en: 'Weekly review: facts, explanation, then next week''s decision'
+- id: z2y-health
+  order: 14
+  status: available
+  featured: true
+  platforms:
+  - iOS
+  price:
+    zh: "¥1.00"
+    en: "$0.99"
+  links:
+    primary: https://apps.apple.com/cn/app/z2y-%E5%85%BB%E7%94%9F/id6751483661?uo=4
+    primary_label:
+      zh: 在 App Store 查看
+      en: View on the App Store
+    support: "/support/z2y-health/"
+  highlights:
+  - zh: 子午流注：显示当前时辰、初刻到三刻、对应经络与中医理论
+    en: 'Meridian flow: the current time phase and quarter, its meridian, and the
+      related theory'
+  - zh: 节奏提示与可执行的生活建议，并可展开十二时辰完整对照表
+    en: A rhythm cue with one actionable suggestion, plus the full twelve-phase table
+  - zh: 食补：把家中食材记成清单，按现有食材查看养生菜谱推荐
+    en: 'Food notes: keep an inventory of what you have and cook from those ingredients'
+  - zh: 233 道菜谱可按分类筛选，另有阳台种菜指南
+    en: 233 recipes with category filters, plus a balcony-gardening guide
+  - zh: 首次打开提供中英双语引导（中文 / EN）
+    en: A bilingual first-run guide (中文 / EN)
+  requirements:
+  - zh: 运行 iOS 15.6 或更高版本的 iPhone 或 iPad
+    en: iPhone or iPad running iOS 15.6 or later
+  - zh: 无需注册账号，添加的食材与偏好设置保存在本机
+    en: No account required; the ingredients you add and your preferences are stored
+      on your device
+  - zh: 内容为传统文化与生活方式知识，不构成医疗建议
+    en: Content covers traditional culture and lifestyle knowledge and is not medical
+      advice
+  install:
+  - zh: 从 App Store 安装 Z2Y 养生并打开，无需注册或登录。
+    en: Install Z2Y Health from the App Store and open it; no sign-up or login is
+      required.
+  - zh: 首次打开会看到中英双语引导，可在右上角切换「中文 / EN」，然后点「开始体验」进入应用。
+    en: The first launch opens a bilingual guide with a 中文 / EN switch in the top
+      corner; tap Start Experience to continue.
+  - zh: 在「养生」查看当前时辰与刻、对应经络、中医理论、节奏提示和生活建议；需要完整内容时打开十二时辰对照表。
+    en: On Wellness, review the current time phase and quarter, its meridian, the
+      related theory, the rhythm cue, and the daily suggestion; open the twelve-phase
+      table when you want the full list.
+  - zh: 在「食补」的「家」里添加手边食材（添加第一条后示例食材会自动清除），到「菜单」按分类浏览 233 道菜谱，再到「种菜」查看阳台种植方法。
+    en: In Food, add what you have at home on Home (the sample items clear once you
+      add your own), browse the 233-dish collection by category on Menu, and read
+      the balcony-gardening guide on Grow.
+  faq:
+  - q:
+      zh: 应用提供医疗或用药建议吗？
+      en: Does the app give medical or medication advice?
+    a:
+      zh: 不提供。应用只提供传统文化与生活方式知识，用于学习参考，不提供医疗诊断、健康测量、治疗建议或用药指导，也不能替代专业人士的意见。
+      en: No. The app presents traditional-culture and lifestyle knowledge for reference
+        only. It offers no medical diagnosis, measurements, treatment advice, or medication
+        guidance, and it cannot replace professional advice.
+  - q:
+      zh: 需要注册账号吗？
+      en: Do I need an account?
+    a:
+      zh: 不需要。应用没有账号体系，添加的食材、语言与偏好都保存在本机。
+      en: No. There is no account system; the ingredients you add, the language, and
+        your preferences stay on your device.
+  - q:
+      zh: 数据会在设备之间同步吗？
+      en: Does my data sync across devices?
+    a:
+      zh: 当前版本不连接云端，也没有账号同步，食材清单只保存在本机。
+      en: The current version has no cloud service and no account sync; your ingredient
+        list lives only on this device.
+  - q:
+      zh: 支持哪些设备与系统版本？
+      en: Which devices and system versions are supported?
+    a:
+      zh: iPhone 与 iPad，需要 iOS 15.6 或更高版本。
+      en: iPhone and iPad running iOS 15.6 or later.
+  - q:
+      zh: 内容是英文的吗？
+      en: Is the content in English?
+    a:
+      zh: 内容以中文为主，首次打开的双语引导可以在「中文 / EN」之间切换。
+      en: The content is mainly in Chinese; the first-run guide can be switched between
+        中文 and EN.
+  changelog:
+  - version: 1.0.1
+    date: '2026-08-07'
+    notes:
+      zh: App Store 上架 1.0.1：养生板块提供子午流注时辰提示、对应经络与十二时辰完整对照表；食补板块提供食材清单、233 道菜谱与阳台种菜指南；首次打开提供中英双语引导。
+      en: '1.0.1 on the App Store: Wellness shows the current meridian-flow phase,
+        its meridian, and the full twelve-phase table; Food adds an ingredient inventory,
+        a 233-dish recipe collection, and a balcony-gardening guide; the first launch
+        opens a bilingual guide.'
+  name:
+    zh: Z2Y 养生
+    en: Z2Y Health
+  tagline:
+    zh: 传统文化养生指南
+    en: A traditional-culture wellness guide
+  summary:
+    zh: 把传统时辰养生与日常饮食放进同一个应用：按时辰查看对应经络、节奏提示与生活建议，再用手边的食材找到能做的菜。
+    en: 'Traditional time-based wellness and everyday cooking in one app: see the
+      meridian, rhythm cue, and advice for the current time phase, then find dishes
+      you can cook with what you already have.'
+  description:
+    zh: Z2Y 养生是一款围绕传统文化与日常生活的养生应用。养生页以子午流注为线索，显示当前时辰与刻、对应经络、中医理论、节奏提示和一条当天可执行的生活建议，并可展开十二时辰完整对照表；食补页把手边的食材记成一份清单，按现有食材推荐养生菜谱，另有按分类整理的
+      233 道菜谱与阳台种菜指南。首次打开提供中英双语引导。应用内容用于传统文化与生活方式学习，不提供医疗诊断、治疗建议或用药指导。
+    en: 'Z2Y Health is a wellness app built around traditional culture and everyday
+      life. Its Wellness page follows the meridian-flow clock: it shows the current
+      time phase and quarter, the corresponding meridian, the related theory, a rhythm
+      cue, and one concrete suggestion for the day, with the full twelve-phase table
+      one tap away. The Food page keeps an inventory of what you already have at home,
+      suggests dishes from those ingredients, and adds a 233-dish recipe collection
+      with category filters plus a balcony-gardening guide. A bilingual guide introduces
+      the app on first launch. The content is for learning about traditional culture
+      and lifestyle; it does not provide medical diagnosis, treatment advice, or medication
+      guidance.'
+  logo: "/assets/apps/Z2Y-Health/logo.png"
+  accent: "#b55f35"
+  version: 1.0.1
+  version_label:
+    zh: App Store 当前版本
+    en: Current App Store version
+  released_at: '2026-08-06'
+  updated_at: '2026-08-07'
+  min_os:
+    zh: iOS 15.6 或更高版本
+    en: iOS 15.6 or later
+  screenshots:
+  - image: "/assets/apps/Z2Y-Health/screen-guide.jpg"
+    caption:
+      zh: 首次引导：可在「中文 / EN」之间切换
+      en: 'First-run guide: switch between 中文 and EN'
+  - image: "/assets/apps/Z2Y-Health/screen-wellness.jpg"
+    caption:
+      zh: 养生：当前时辰、对应经络与当天生活建议
+      en: 'Wellness: the current phase, its meridian, and the daily suggestion'
+  - image: "/assets/apps/Z2Y-Health/screen-food.jpg"
+    caption:
+      zh: 食补 · 家：把手边食材记成一份清单
+      en: 'Food · Home: keep an inventory of what you have'
+  - image: "/assets/apps/Z2Y-Health/screen-ipad-menu.jpg"
+    caption:
+      zh: 菜谱：233 道菜按分类筛选（iPad）
+      en: 'Recipes: 233 dishes with category filters (iPad)'
