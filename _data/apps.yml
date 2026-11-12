@@ -1538,3 +1538,140 @@
     caption:
       zh: 菜谱：233 道菜按分类筛选（iPad）
       en: 'Recipes: 233 dishes with category filters (iPad)'
+- id: my-macos
+  order: 15
+  status: available
+  featured: false
+  platforms:
+  - macOS
+  price:
+    zh: 免费
+    en: Free
+  links:
+    primary: https://github.com/petterobam/device-operate/releases/latest
+    primary_label:
+      zh: 下载最新版
+      en: Download latest
+    source: https://github.com/petterobam/device-operate
+    product: https://petterobam.github.io/device-operate/
+  highlights:
+  - zh: 实时 CPU、内存、Swap、磁盘 I/O、网络与温度监控，支持阈值告警
+    en: Real-time CPU, memory, swap, disk I/O, network, and temperature monitoring
+      with alerts
+  - zh: 应用清单、运行状态、资源占用与打开 / 重启 / 强停 / 卸载
+    en: App inventory with running state, resource usage, open, restart, force quit,
+      and uninstall
+  - zh: 存储分类、大文件与缓存清理，确认后安全移入废纸篓
+    en: Storage categories, large files, and cache cleanup with explicit confirmation
+  - zh: 按应用聚合的外联 / 入站连接与世界地图，支持 Clash/Mihomo 代理透视
+    en: Per-app outbound and inbound connections on a world map, with Clash/Mihomo
+      proxy awareness
+  - zh: LaunchAgent、LaunchDaemon 与 Crontab 统一管理，支持立即执行与日志
+    en: Manage LaunchAgents, LaunchDaemons, and crontab entries with run-now and logs
+  requirements:
+  - zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
+  - zh: Apple Silicon（arm64）
+    en: Apple Silicon (arm64)
+  - zh: 完全磁盘访问与自动化权限为可选项，用于应用授权、登录项等完整能力
+    en: Full Disk Access and Automation are optional and unlock permissions and login-item
+      management
+  install:
+  - zh: 从 GitHub Releases 下载 My-macOS-0.1.0-arm64.dmg。
+    en: Download My-macOS-0.1.0-arm64.dmg from GitHub Releases.
+  - zh: 打开 DMG，把「我的macOS」拖入「应用程序」。
+    en: Open the DMG and drag My macOS into Applications.
+  - zh: 首次打开即可使用；应用已完成 Developer ID 签名与 Apple 公证。
+    en: Open it directly; the app is Developer ID signed and notarized by Apple.
+  - zh: 按需在系统设置中授予完全磁盘访问或自动化权限。
+    en: Grant Full Disk Access or Automation in System Settings when you need those
+      features.
+  faq:
+  - q:
+      zh: 应用是免费的吗？
+      en: Is the app free?
+    a:
+      zh: 是。当前 0.1.0 通过 GitHub Releases 免费分发。
+      en: Yes. Version 0.1.0 is distributed for free through GitHub Releases.
+  - q:
+      zh: 为什么需要完全磁盘访问？
+      en: Why does it need Full Disk Access?
+    a:
+      zh: 读取各应用的授权（TCC）状态需要该权限；不授予时，资源监控、应用列表等其余功能仍然可用。
+      en: Reading per-app privacy decisions requires it; without it, monitoring, app
+        inventory, and other features still work.
+  - q:
+      zh: 支持 Intel Mac 吗？
+      en: Does it support Intel Macs?
+    a:
+      zh: 当前 0.1.0 只提供 Apple Silicon（arm64）构建。
+      en: Version 0.1.0 ships an Apple Silicon (arm64) build only.
+  - q:
+      zh: 为什么没有上架 Mac App Store？
+      en: Why is it not on the Mac App Store?
+    a:
+      zh: Mac App Store 强制沙盒，会限制进程/套接字枚举与系统工具调用。为保证完整系统管理能力，当前通过 Developer ID 公证分发。
+      en: The Mac App Store requires App Sandbox, which blocks process/socket enumeration
+        and system tooling. It is distributed as a notarized Developer ID build to
+        keep the full system-management feature set.
+  changelog:
+  - version: 0.1.0
+    date: '2026-11-12'
+    notes:
+      zh: 首个公开版本：实时监控、应用治理、存储清理、网络足迹、系统定时任务与 SSH/工具管理；Developer ID 签名并通过 Apple 公证。
+      en: 'First public release: real-time monitoring, app management, storage cleanup,
+        network footprint, scheduled tasks, and SSH/tool management; Developer ID
+        signed and notarized by Apple.'
+  name:
+    zh: 我的macOS
+    en: My macOS
+  tagline:
+    zh: 一个窗口管理你的 Mac
+    en: Your Mac, in one window
+  summary:
+    zh: 实时资源监控、应用治理、存储清理、网络足迹与系统定时任务，全部数据留在本机。
+    en: Real-time system monitoring, app management, storage cleanup, network footprint,
+      and scheduled tasks — with all data kept on your Mac.
+  description:
+    zh: 我的macOS 把 macOS 的系统状态、应用、存储、网络与定时任务收进一个窗口。它不是另一个活动监视器：看到异常进程可以直接强停，发现大文件可以移入废纸篓，网络足迹会把每个应用的外联与入站连接落到世界地图，LaunchAgent、LaunchDaemon
+      与 Crontab 也能统一查看和执行。所有系统数据都在本机处理，网络足迹不读取流量内容；需要完全磁盘访问或自动化权限的功能会明确提示。
+    en: 'My macOS brings system health, apps, storage, network, and scheduled tasks
+      into one window. It is more than another activity monitor: you can stop a runaway
+      process, move large files to the Trash, map every app''s outbound and inbound
+      connections, and manage LaunchAgents, LaunchDaemons, and crontab entries in
+      one place. All system data stays on your Mac, the network footprint never reads
+      payloads, and features that need Full Disk Access or Automation explain the
+      permission before you grant it.'
+  logo: "/assets/apps/My-macOS/logo.png"
+  accent: "#0f766e"
+  version: 0.1.0
+  version_label:
+    zh: GitHub 当前版本
+    en: Current GitHub release
+  released_at: '2026-11-12'
+  updated_at: '2026-11-12'
+  min_os:
+    zh: macOS 13.0 或更高版本
+    en: macOS 13.0 or later
+  screens_layout: wide
+  screenshots:
+  - image: "/assets/apps/My-macOS/screen-processes.jpg"
+    caption:
+      zh: 进程管理：CPU、内存、磁盘、网络与告警趋势
+      en: 'Processes: CPU, memory, disk, network, and alert trends'
+  - image: "/assets/apps/My-macOS/screen-network.jpg"
+    caption:
+      zh: 网络足迹：按应用聚合并把公网目标落在世界地图
+      en: 'Network footprint: per-app connections on a world map'
+  - image: "/assets/apps/My-macOS/screen-apps.jpg"
+    caption:
+      zh: 我的应用：应用清单、运行状态与一键治理
+      en: 'My apps: inventory, running state, and one-click actions'
+  - image: "/assets/apps/My-macOS/screen-storage.jpg"
+    caption:
+      zh: 存储空间：分类占用、缓存与可清理项
+      en: 'Storage: category usage, caches, and cleanup targets'
+  - image: "/assets/apps/My-macOS/screen-tasks.jpg"
+    caption:
+      zh: 系统定时任务：LaunchAgent、LaunchDaemon 与 Crontab
+      en: 'Scheduled tasks: LaunchAgents, LaunchDaemons, and crontab'
